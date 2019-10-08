@@ -16,7 +16,8 @@
             <- 블록 지정후 ctrl+/
         -->  
         input : text 예제 <br>
-        <input type="text"placeholder="아이디"name="id">
+        <input type="text"placeholder="아이디"name="id" required>
+         <input type="text" value="아이디" readonly> <!--readonly는 보여주지만 수정불가능하게 하고싶을때 씀 -->
         <!-- 
             value 속성 : 실제 값을 미리 입력하는 속성 
         -->
@@ -46,7 +47,47 @@
         모든 태그에서 id 속성은 중복이 불가능하기 때문에
         동일한 id를 가지는 태그가 있으면 하나만 인식된다.
         -->
+        <br>체크 박스 예제 <br>
+        당신이 좋아하는 과일은?(다중 선택 가능) <br>
 
+        <input type="checkbox" name="fruit" value="apple">사과
+        <input type="checkbox" name="fruit" value="orange">오렌지
+        <br>색상 예제<br>
+        <input type="color" name="color">
+        <br>시간 예제<br>
+        <input type="month"><br>
+        <input type="week" ><br>
+        <input type="date"><br>
+        <input type="datetime-local"><br>
+        <input type="time"><br>
+        이메일 예제<br>
+        <input type="email" name="email"><br>
+        <input type="file" name="file">
+        <br>히든 예제:안보이지만 input태그가 있습니다.<br>
+        <input type="hidden" name="숫자" value="123"><br>
+        이미지 예제<br>
+        <input type="image" src="https://images.mypetlife.co.kr/content/uploads/2019/06/06202021/adorable-animal-baby-416088-1024x774.jpg" alt="그림 없음">
+        <br>number 예제<br>
+        <input type="number">
+        <br>비밀번호 예제<br>
+        <input type="password">
+        <br>라디오 예제<br>
+        <input type="radio" name="gender" value="m" checked id="male">
+        <label for="male">남자</label>
+        <input type="radio" name="gender" value="f" id="female">
+        <label for="female">여자</label>
+        <br>url 예제 <br>
+        <input type="url">
+        <!-- 
+            유효성 검사는 검사하려는 문자열이 원하는 패던인지 아닌지 확인하는 과정 
+            기본 유효성 검사는 input태그의 url속성이나 email속성이 있다.
+            기타 방법으로는 jquery를 이용한 방법과 자바스크립트를 이용하는 방법이 있다.
+        -->
+        <br>search 예제<br>
+        <input type="search">
+        <br>range 예제<br>
+        <input type="range">
+        
      
     
     </form>
