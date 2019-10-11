@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>폰트 속성예제</title>
+    <link href="https://fonts.googleapis.com/css?family=Black+Han+Sans&display=swap" rel="stylesheet">
+    <!-- link는 html파일에 css파일을 가져오는것 -->
+    <style>
+        @import url(https://fonts.googleapis.com/css?family=Black+Han+Sans&display=swap);
+        /* @import url(http://fonts.googleapis.com/earlyaccess/nanumbrushscript.css); 
+        위에 있는 링크 태그와 같은 역할을 아래 @import가 해준다
+        css파일을 css로 가져오는것*/
+        
+    /* font-family : 폰트 종류 설정 */
+    body{
+        /* font-family: '돋움','dotum','helvetica','sans-serif'; */
+        font-family: 'Black Han Sans', sans-serif;
+        font-size: 16px;
+        /* font-weight는 100~900까지의 값을 가짐. 숫자가 클수록 두꺼워짐. 700은 bold로 지정 */
+        font-weight: 700;
+        /* 텍스트 데코는 170페이지참고
+        underline,overline,line-through */
+        text-decoration: line-through;
+        /* 글자 기울이기 : none,italic,oblique */
+        font-style: italic;
+        color: red;
+        /* 글자정렬 center, right, left, justify */
+        text-align: left;
+        width: 500px;
+        /* 글자 사이의 간격 */
+        letter-spacing: 1px;
+         /* 단어사이의 간격 */
+        word-spacing: 1px;
+         /* 줄 사이의 간격=>수직 가운데 정렬 */
+        line-height: 100px;
+        /* 글자의 들여쓰기 */
+        text-indent: 30px;
+        text-transform: capitalize;
+    }
+    </style>
+</head>
+<body>
+    안녕하세요. 제 이름은 김김김입니다. <br>
+    asdkwkw,. sdadwdadw <br>
+    asdwkwqnqkqqwe
+</body>
+</html>
