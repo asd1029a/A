@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>연습</title>
+    <style>
+    .table{
+        display: table;
+    }
+    .tr{display: table-row;}
+    .a{display: table-cell;
+       border: 1px solid black;
+       border-right: none;}
+       .a>a{
+           text-decoration: none;
+           color: black;
+       }
+       .a:last-of-type{
+           border-right: 1px solid black;
+           border-radius: 0 10px 10px 0;
+       }
+       .a:first-of-type{
+           border-radius: 10px 0 0 10px;
+       }
+    </style>
+</head>
+<body><div class="table">
+    <div class="tr">
+    <span class="a"><a href="#">메뉴1</a></span>
+    <span class="a"><a href="#">메뉴2</a></span>
+    <span class="a"><a href="#">메뉴3</a></span>
+</div>
+</div>
+    
+</body>
+</html>
