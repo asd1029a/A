@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>테두리 예제</title>
+    <style>
+    div{
+        width: 300px;
+        height: 300px;
+        /* border-style : 테두리 종류를 선택하는 속성으로 상하좌우가 동일할 경우 사용.
+        다르면 각각 사용해야한다.
+        border-top(bottom)(left)(right)-style  */
+        border-style:solid;
+        border-top-style: dotted;
+        /* border-width: 테두리 두깨로, 상하좌우 동일할 때 해당 속성사용 */
+        border-width: 1px;
+        border-color: red;
+        /* border-top : border-top-style + border-top-color +border-top=width */
+        border-top: solid blue 2px;
+        /* border : border-top+(bottom)(left)(right)
+        상하좌우 모든 테두리가 동일한 속성일 경우 */
+        border: solid green 3px;
+        background-image: url(../day2/123.jpg);
+        padding: 10px;
+        background-clip: content-box;
+    }</style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>
