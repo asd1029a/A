@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>float예제</title>
+    <style>
+        /* 부모태그는 자식태그에 float속성이 있으면 해당 자식태그를 감싸지 못한다 => 높이를 포함할 수 없다. */
+    .float-left{
+        float: left;
+        width: 100px;
+        height: 150px;
+        border: 1px solid;
+    }
+    .container{
+        border: 1px solid red;
+        background-color: yellow;
+    }
+    /* float을 이용할 때 부모의 높이가 계산되지 않은 경우
+    부모의 높이가 잡히도록 처리하는 방법. 
+    container 클래스가 있는 태그 마지막에 빈 내용("")을 넣고 float:left와 right를 해제한 후 해당 요소를 block태그로 만든다. */
+    .container::after{
+        content: "";
+        clear: both;
+        display: block;
+    }
+    .break{
+        clear: left;
+    }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="float-left"></div>
+        문 대통령은 이날 오전 경남 창원 경남대 대운동장에서 열린 제40주년 부마민주항쟁 기념식에 참석, 기념사를 통해 "지금 국민은 더 많은 민주주의와 더 좋은 민주주의를 요구하고 있다"며 이같이 밝혔다.
+
+특히 "모든 권력기관은 조직 자체를 위해서가 아닌 국민을 위해 존재한다는 민주주의의 상식을 명심해야 한다"고 거듭 강조했다.
+
+<br class="break"> 이날 행사는 부마민주항쟁이 지난달 국가기념일로 지정된 뒤 첫 기념식이다.
+
+문 대통령의 언급은 권력 남용 비판을 받아온 검찰에 대한 개혁을 의미하는 것으로, 조국 전 법무부 장관의 사퇴에도 검찰개혁 작업을 신속하고 강력하게 해나가겠다는 의지를 재천명한 것으로 보인다.
+
+동시에 조 전 장관의 사퇴를 수용한 것 역시 대통령으로서 국민의 목소리를 받아들인 측면이 강하다는 점을 강조한 것으로도 해석된다.
+
+문 대통령은 "민주주의를 통해 많은 국민은 자신의 목소리를 갖게 됐다"며 "각자의 목소리를 분출하며 민주주의는 더 다양해지고 자신의 목소리가 중요한 만큼
+
+다른 이들의 목소리도 중요하다는 것을 깨달아가고 있다"고 말했다.
+
+문 대통령은 "민주주의는 완성되는 게 아니라 끊임없이 실천하는 가운데 확장되는 것"이라며 "우리가 오늘 부마민주항쟁을 기념하는 것은 민주주의를 위한 어제의 노력이 더 발전된 민주주의로 확장되기를 희망하기 때문"이라고 언급했다.
+
+그러면서 "오늘 저는 언제나 행동으로 민주주의를 살려온 국민께 진심으로 감사드리며 이제 우리의 민주주의가 양보하고 나누며 상생하고 통합하는 더욱 성숙한 민주주의로 발전하길 희망한다"고 덧붙였다.
+    </div>
+    <div class="container">
+            <div class="float-left"></div>
+        </div>
+        <!--float : left나 right를 쓰면 엔터에 의한공백을 제거할 수 있다. -->
+        <div>
+            <div class="float-left"></div>
+            <div class="float-left"></div>
+        </div>
+</body>
+</html>

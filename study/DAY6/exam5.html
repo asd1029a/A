@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>연습예제3</title>
+    <style>
+    .box1{
+        border: 3px solid red;
+        width: 600px;
+    
+    }
+    .box2{
+        border: 3px solid blue;
+        width: 300px;
+        height: 300px;
+        box-sizing: border-box;
+        float: left;
+        
+    }
+    .box3{
+        border: 3px solid blue;
+        width: 300px;
+        height: 300px;
+        box-sizing: border-box;
+        float: left;
+    }
+    .box1::after{
+        clear: both;
+        content: "";
+        display: block;
+
+    }
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <div class="box2"></div><div class="box3"></div>
+    </div>
+</body>
+</html>

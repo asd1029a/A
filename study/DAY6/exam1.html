@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>복습1</title>
+    <style>
+    .box1{
+        width: 300px;
+        height: 400px;
+        border: 3px solid red;
+        
+       
+    }
+    .box2{
+        width: 300px;
+        height: 400px;
+        border: 3px solid blue;
+        box-sizing: border-box; 
+        /* 그대로 만들면 box-sizing : content-box로 만들어지며 width와 border합한 값으로 나옴 
+        box-sizing : border-box로 만들시 border 굵기에 상관없이 width 에 쓴값 그대로나옴 */
+   
+    }
+    </style>
+</head>
+<body>
+    <div class="box1"><div class="box2"></div></div>
+   
+</body>
+</html>
