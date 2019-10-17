@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    .nav{
+        background-color: blue;
+      
+    }
+    .nav>div{
+        height: 50px;
+        float: left;
+        font-size: 20px;
+        color: coral;
+        margin-top: 15px;
+        margin-right: 10px;
+    }
+    div:first-of-type{
+        margin-left: 5px;
+    }
+    .nav::after{
+        clear: both;
+        content: "";
+        display: block;
+    }
+    .nav>div>a{
+        text-decoration: none;
+        color: black;
+    }
+    .nav>div>:hover{
+        color: brown;
+    }
+    .in{
+        float:right;
+        margin-left: 850px;
+    }
+  .in>input{
+      height: 20px;
+      border-radius: 5px;
+  }
+  .in>input:focus{
+      border-radius: 0px;
+
+  }
+  .sub{
+      height: 100px;
+      float: left;
+  }
+  .sub::after{
+    clear: both;
+        content: "";
+        display: block;
+
+  }
+  .sub>div{
+      width: 150px;
+      border: 1px solid black;
+      height: 100px;
+      background-color: chartreuse;
+      text-align: center;
+      line-height: 100px;
+  }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <div><a href="">신세계</a></div>
+        <div><a href="">메뉴</a></div>
+        <div><a href="">게시판</a></div>
+        <div class="in"><input type="text"></div>
+    </div>
+    <div class="sub">
+      <div>사람</div>
+      <div>인간</div>
+      <div>동물</div>
+      <div>식물</div>
+  </div>
+</body>
+</html>
