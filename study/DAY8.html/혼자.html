@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{padding: 0;
+          margin: 0;
+        }
+
+    .top{
+        height: 70px;
+        background-color: teal;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+
+    }
+    .mid{
+        height: 1000px;
+        background-color: violet;
+        margin: 80px 10px 0 10px;
+    }
+    .mid>.ne{
+        width: 70px;
+        height: 70px;
+        background-color: tomato;
+        font-size: 20px;
+        text-align: center;
+        line-height: 60px;
+        bottom: 30px;
+        right: 30px;
+        position: fixed;
+    
+    }
+    .ne>a{
+        text-decoration: none;
+        color: black;
+      }
+    .box{
+        width: 100px;
+        height: 100px;
+        background-color: brown;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin: -50px 0 0 -50px;
+    }
+    .box:hover{
+        width: 200px;
+        height: 200px;
+        margin: -100px 0 0 -100px;
+        
+
+    
+    }
+    .box2{width: 60px;
+    height: 60px;
+    background-color: crimson;}
+    .box2:hover{
+        width: 70px;
+        height: 70px;
+        position: relative;
+        top: -5px;
+        left: -5px;
+    }
+
+    </style>
+</head>
+<body>
+    <div class="top"></div>
+    <div class="mid"> <div class="box2"></div>
+        <div class="box"></div><div class="ne"><a href="#">UP</a></div></div>
+</body>
+</html>

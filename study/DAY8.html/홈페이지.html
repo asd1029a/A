@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+    .nav{height: 70px;
+    background-color: burlywood;
+    display: flex; 
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+  
+   
+    }
+    .nav>.상자{
+     
+        border: 3px solid burlywood;
+        box-sizing: border-box;
+        width: 50px;
+        height: 50px;
+        float: left;
+        line-height: 42.5px;
+        text-align: center;
+        background-color: violet;
+        margin: 10px 0 0 0;
+      
+
+    }
+    .상자>a{
+        text-decoration: none;
+        color: black;
+      
+
+    }
+    .nav::after{
+        clear: both;
+        content: "";
+        display: block;
+    }
+    .sh{
+        width: 200px;
+        height: 30px;
+        position: absolute;
+        top: 15px;
+        right: 70px;
+        border-radius: 10px;
+        border-collapse: collapse;
+    }
+    .sh:focus{
+        border-radius: 0px;
+    }
+    button{
+        width: 40px;
+        height: 30px;
+        position: absolute;
+        top: 17px;
+        right: 13px;
+    }
+    .mid{
+        height: 1000px;
+        background-color: crimson;
+        position: relative;
+        top: 90px;
+        z-index: 0;
+    }
+    .d{
+        width: 100px;
+        height: 100px;
+        background-color: darkblue;
+        text-align: center;
+        line-height: 100px;
+        color: darkorange;
+        font-weight: bold;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin: -50px 0 0 -50px;
+    }
+    .d:hover{
+        width: 400px;
+        height: 400px;
+        position: relative;
+        margin: -250px 0 0 -250px;
+    }
+</style>
+</head>
+<body>
+    <div class="nav">
+        <div class="상자"><a href="#">상자1</a></div>
+            <div class="상자"><a href="#">상자2</a></div>
+                <div class="상자"><a href="#">상자3</a></div>
+                    <div class="상자"><a href="#">상자4</a></div>
+                    <input type="text" class="sh"><button>검색</button>
+    </div>
+    <div class="mid"><div class="d">Hi</div></div>
+</body>
+</html>
