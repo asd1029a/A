@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>박스 </title>
+    <style>
+    .nav{
+        border: 1px solid black;
+        padding: 10px;
+    }
+    .a>div{
+        border: 1px solid red;
+        height: 100px;
+        box-sizing: border-box;
+    }
+    .a{width:calc((100% - 30px) / 4);}
+    .left{
+        float: left;
+    }
+    .right,.mid{
+        float: right;
+    }
+    .mid{
+        margin-left: 10px;
+
+    }
+    .nav::after{
+        clear: both;
+        display: block;
+        content: "";
+    }
+    .a>.bot{
+        margin-top: 10px;
+        border-color: blue;
+    }
+    .a>.cen{
+        margin-top: 10px;
+        border-color: green;
+    }
+    
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <div class="a left">
+            <div class="top"></div>
+            <div class="cen"></div>
+            <div class="bot"></div>
+        </div>
+        <div class="a mid">
+            <div class="top"></div>
+            <div class="cen"></div>
+            <div class="bot"></div>
+        </div>
+        <div class="a mid">
+                <div class="top"></div>
+                <div class="cen"></div>
+                <div class="bot"></div>
+            </div>
+        <div class="a right">
+                <div class="top"></div>
+                <div class="cen"></div>
+                <div class="bot"></div>
+            </div>
+
+</div>
+</body>
+</html>
