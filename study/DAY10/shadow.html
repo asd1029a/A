@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>shadow</title>
+    <style>
+        div{
+            font-size: 30px;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+    .shadow1{
+        /* text-shadow 속성값 순서
+        1.수평으로 이동한 거리
+        2.수직으로 이동한 거리
+        3.번짐효과
+        4.색상 
+        아래예시 : 수평으로5px 수직으로 10px 번짐효과 0 색상 검은색 투명도 0.3 */
+        
+        text-shadow: 5px 10px 0 rgb(0, 0, 0,0.3);
+    }  
+    .shadow2{color: white;
+            text-shadow: 5px 5px 5px rgb(0, 0, 0);
+    }
+    .shadow3{
+        text-shadow: 2px 1px 0 #fff,0 0 8px rgba(0, 0, 0, 1.0);
+
+    }
+    .box1{
+        box-shadow: 0 0 10px rgba(255, 0, 0, 0.3);
+        display: inline;
+    }
+    .box2{
+        box-shadow: 5px 5px 5px rgba(255, 0, 0, 0.3);
+    }
+    .box3{
+        box-shadow: 0 0 2px black,
+                    0 0 10px rgba(255, 0, 0, 0.3);
+    }
+  
+    </style>
+</head>
+<body>
+    <div class="shadow1 box1">그림자 효과</div>
+    <div class="shadow2 box2">그림자 효과2</div>
+    <div class="shadow3 box3">그림자 효과3</div>
+
+</body>
+</html>

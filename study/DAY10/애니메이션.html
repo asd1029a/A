@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>애니메이션 예제</title>
+    <!-- 
+    animation과 transition
+    공통점 : 어떠한 효과를 줌
+    차이점 : transition은 가상 선택자에 변경된 속성들이 있고, 변경된 속성으로 변하는 과정을 관리하는 속성
+            animation은 가상 선택자가 필요없고 animation으로 이벤트를 등록한다. 
+            transition은 최종변경된 속성이 가상 선택자에 있고, animation은 최종 변경된 속성이 animation에 있다.
+
+    -->
+    <style>
+    .box{
+        width: 100px;
+        height: 100px;
+        background: -webkit-gradient(linear,left top,right bottom,color-stop(0%,red),color-stop(50%,yellow),color-stop(100%,green));
+        /* animation-name은 적용할 애니메이션 이름을 넣어준다. */
+        animation-name: scale;
+        /* animation-duration은 애니메이션의 지속(유지)시간 */
+        animation-duration: 1.5s;
+        /* animation-iteration-count는 애니메이션 반복 횟수 */
+        animation-iteration-count:infinite;
+        animation-timing-function: ease;
+        /* animation-delay : 애니메이션이 로딩된 후 애니메이션이 실행되기전까지 지연시간
+           animation-play-state : 애니메이션을 멈추거나(paused) 다시 시작(running)하는 속성. 
+           나중에 자바스크립트를 이용해야함
+           animation-fill-mode : 애니메이션이 종료된 후 상태를 처음 상태로 돌아갈지(backwards) 현상태(forwards)로 갈지를 설정하는 속성
+           하지만 지금 예제에서는 다음과 같은 이유로 크게 의미가 없다.
+           1.animation이 무한 반복
+           2.animation의 시작과 끝의 상태가 같기 때문에.
+            */
+        animation-delay: 1s;
+        animation-play-state: running;
+        animation-fill-mode: backwards;
+        /* animation-direction : 애니메이션 진행 방향으로
+        normal : 0% -> 100% 
+        reverse : 100% -> 0%
+        alternate 0% -> 100% -> 0%
+        alternate 100% -> 0% -> 100%*/
+
+        animation-direction: alternate;
+    }
+    /* p294 */
+    /* keyframes xxx : xxx이라는 애니메이션을 등록 */
+    @keyframes scale{
+        /* %는 애니메이션 실행 시간의 전체 시간을 기준으로 계산함
+        실행시간의 전체시간은 animation-duration 속성으로 지정한다.
+        0%는 from으로 대체 할 수있고, 100%는 to로 대체 할 수 있다.
+        from과 to를 사용 할 경우 중간의 %를 잘 사용하지않음. */
+        
+        0%{}
+     
+        100%{
+            width: 200px;
+            height: 200px;
+        }
+
+        }
+    </style>
+</head>
+<body>
+    <div class="box box1"></div>
+</body>
+</html>

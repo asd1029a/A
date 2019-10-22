@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>opacity</title>
+    <style>
+    body{
+        background-color: saddlebrown;
+    }
+    *{margin: 0;
+      padding: 0;}
+
+    .header{
+        height: 350px;
+        background-color: white;
+        position: absolute;
+        z-index: 10;
+        top: 0;
+        left: 0;
+        width: 100%;
+/* opacity가  적용된박스의 자식태그들은 부모의 투명도가 적용되서 흐릿하게 보일수도있다.*/
+    }
+    .footer{
+        background-color: black;
+        opacity: 0.7;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+
+        
+    }
+    </style>
+</head>
+<body>
+    <div class="header"></div>
+    <div class="footer"></div>
+</body>
+</html>
