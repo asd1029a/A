@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    p>img{
+        animation-name: aaa;
+        animation-duration: 3s;
+        animation-timing-function:ease;
+        animation-iteration-count: infinite;
+       
+    }
+    @keyframes aaa{
+        50%{transform:rotatez(360deg);
+        filter: blur(3px);}
+    }
+    div{
+        width: 200px;
+        height: 100px;
+        position: relative;
+        top: 200px;
+        left: 300px;
+        background-color: salmon;
+        opacity: 0.1;
+        animation-name: ddd;
+        animation-duration: 3s;
+        animation-timing-function:ease;
+        animation-iteration-count: infinite;
+
+    }
+    @keyframes ddd{
+            50%{opacity: 1;
+                position: relative;
+            width: 300px;
+            height: 200px;
+            left: 800px;
+            transform:rotatey(360deg);}
+            }
+    </style>
+</head>
+<body>
+    <p><img src="../DAY2/123.jpg" alt=""></p>
+    <div></div>
+</body>
+</html>
