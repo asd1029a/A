@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .nav{
+            background-color: teal;
+        }
+    
+        .nav li{
+            list-style: none;
+            float: left;
+            padding: 0 10px;
+            height: 50px;
+            line-height: 50px;
+            font-size: 25px;
+            font-weight: bold;
+        }
+        .clear::after{
+            clear: both;
+            display: block;
+            content: "";
+        }
+        @media screen and (max-width: 1079px) and (min-width:701px) {
+            .nav{float: left;
+            width: 200px;}
+            .nav li{
+                width: 200px;
+                border: 1px solid black;
+                border-bottom: none;
+            }
+            .nav li:last-child{
+                border-bottom: 1px solid black;
+            }    
+        }
+        @media screen and (max-width: 700px) {
+            .nav li{float: right;}
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <ul class="clear">
+            <li>메뉴1</li>
+            <li>메뉴2</li>
+            <li>메뉴3</li>
+        </ul>
+
+    </div>
+    
+</body>
+</html>

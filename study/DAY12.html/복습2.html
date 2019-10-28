@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/e86e1c58f4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .header{
+            background-color: burlywood;
+            height: 50px;
+
+        }
+        .clear::after{
+            clear: both;
+            display: block;
+            content: "";
+        }
+        .me{
+            font-size: 30px;
+            float: left;
+            padding: 0px 10px;
+            
+
+        }
+        .header>.box2,.header>.box3{
+            display: none;
+        }
+        div>input{height: 30px;
+            float: right;
+            position: relative;
+            top: 10px;
+            right: 150px;
+        }
+        button{
+            width: 40px;
+            height: 30px;
+            float: right;
+            position: relative;
+            top: 10px;
+            left: 70px;
+        }
+        .left{
+            position: relative;
+            top: 15px;
+            width: 200px;
+            display: inline-block;
+        }
+        .mi{
+            font-size: 30px;
+            border: 1px solid black;
+            text-align: center;
+            line-height: 55px;
+            border-bottom: none;
+            background-color: brown;
+           
+        }
+        .mi:last-child{
+            border-bottom: 1px solid black;
+        }
+        .na{
+            position: relative;
+            top: 15px;
+            width: calc(100% - 230px);
+            height: 700px;
+            border: 1px solid black;
+            float: right;
+            }
+            i{
+                float: right;
+                font-size: 30px;
+                position: relative;
+                top: 10px;
+                left: 150px;
+                display: none;
+            }
+            @media screen and (max-width: 1099px) {
+                .mi{display: none;}
+                .header>.box2,.header>.box3{
+                  display:inline-block;
+                    
+                }
+                .na{width: 100%;
+                   }
+                
+            }
+            @media screen and (max-width: 701px) {
+                .header>.box2,.header>.box3{
+                    display: none;}
+                 
+            }
+    </style>
+</head>
+<body>
+    <div class="header clear">
+        <div class="me box1">로고</div>
+        <div class="me box2">메뉴1</div>
+        <div class="me box3">메뉴2</div>
+        <div><input type="text"></div>
+        <button>검색</button>
+                <i class="fas fa-bars"></i>
+    </div>
+        <div class="left clear">
+            <div class="mi box1">메뉴1</div>
+            <div class="mi box2">메뉴2</div>
+            <div class="mi box3">메뉴3</div>
+         
+        </div>
+        <div class="na"></div>
+   
+</body>
+</html>

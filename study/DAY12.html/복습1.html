@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .nav{background-color: violet;
+}
+.nav::after{
+    clear: both;
+    display: block;
+    content: "";
+}
+.me{
+    font-size: 30px;
+    float: left;
+    padding: 10px;
+    font-weight: bold;
+}
+@media screen and (max-width: 1079px) {
+    .me{
+        float: right;
+    }
+    
+}
+    
+    </style>
+</head>
+<body>
+    <div class="nav">
+    <div class="me a1">메뉴1</div>
+    <div class="me a2">메뉴2</div>
+    <div class="me a3">메뉴3</div>
+</div>
+</body>
+</html>
