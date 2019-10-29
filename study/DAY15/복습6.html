@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>오버플로우</title>
+    <style>
+    .parent{
+        width: 300px;
+        border: 1px solid black;
+        /* overflow 속성은 자식이 부모를 벗어나는 크리를 가질 때 처리하는 속성 
+           hidden : 넘어가는 내용들을 가린다.    
+           auto : 내용이 넘어가면 스크롤을 생성.
+           visible : 자식의 넘어가는 내용이 보이도록 한다. 기본값
+        */
+        overflow: hidden;
+        height: 50px;
+    }
+    .child{
+        width: 400px;
+        border: 1px solid red;
+    }
+    .box{width: 400px;
+        border: 1px solid blue;
+        /* overflow 속성을 이용한 말줄임(...)표시 적용하는 방법 */
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="child">
+                The navigation bar can also be fixed at the top or at the bottom of the page.
+
+                A fixed navigation bar stays visible in a fixed position (top or bottom) independent of the page scroll.
+                
+                The .fixed-top class makes the navigation bar fixed at the top:
+        </div>
+    </div>
+    <div class="box">
+            The navigation bar can also be fixed at the top or at the bottom of the page.
+
+            A fixed navigation bar stays visible in a fixed position (top or bottom) independent of the page scroll.
+            
+            The .fixed-top class makes the navigation bar fixed at the top:
+    </div>
+</body>
+</html>
