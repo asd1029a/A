@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>최소공배수</title>
+    <script>
+    /*
+    공배수는 두 수의 배수 중에서 공통으로 있는 수
+    최소공배수는 두 수의 공배수 중 최소인 수
+    num1 과 num2 의 최소공배수를 구하라.
+    10 : 10 20 30 40 50 60 70 80..
+    15 : 15 30 45 60 ...
+    10과 15의 최소 공배수는 30
+    1.반복횟수 :i 는
+    */
+    var num1 = 10;
+    var num2 = 15;
+    var i;
+    for(i=1; ;i++){
+        if(i % num1 == 0  && i % num2 == 0)
+        { 
+            console.log('',num1,'과',num2,'의 최소 공배수는',i);
+           
+            break;
+        }
+    }
+    for(i=1;i <= num1 * num2; i++){
+        if(i % num1 == 0  && i % num2 == 0)
+        { 
+            console.log('',num1,'과',num2,'의 최소 공배수는',i);
+            break;
+        }
+    }
+    var num1 =10000;
+    var num2 =10;
+    for(i=num1; i<=num1*num2; i+=num1){
+        if(i % num2 == 0){
+            console.log('',num1,'과',num2,'의 최소 공배수는',i);
+            break;
+        }
+    }
+    var tmp;
+    if(num1 < num2){
+        tmp = num1;
+        num1 = num2;
+        num2 = tmp;
+    }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
