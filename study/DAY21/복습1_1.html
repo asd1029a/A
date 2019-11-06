@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="../JS/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+      /* $('.menu1').click(function(){
+           $('.menu1>ul').slideToggle(500);
+       })*/
+       $('.menu1').click(function(){
+           $(this).children('ul').slideToggle(500);
+        })
+    })
+    </script>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        li{list-style: none;}
+    nav{
+        background-color: papayawhip;
+    }
+    .menu{
+        height: 50px;
+        width: 100px;
+        text-align: center;
+        line-height: 48px;
+        font-size: 25px;
+        font-weight: bold;
+        border: 1px solid papayawhip;
+    }
+    nav>ul{
+        display: flex;
+    }
+    .menu:hover{
+        border-color: red;
+    }
+    nav li{
+        cursor: pointer;
+    }
+    .menu>ul{
+        width: 200px;
+        margin-top: 1px;
+        display: none;
+    }
+    .sub1{
+        background-color: papayawhip;
+        border: 1px solid papayawhip;
+    }
+    .sub1:hover{
+        border-color: peru;
+    }
+    </style>
+</head>
+<body>
+    <nav>
+    <ul>
+        <li class="menu menu1">메뉴1
+            <ul>
+                <li class="sub1">섭1</li>
+                <li class="sub1">섭2</li>
+            </ul>
+        </li>
+        <li class="menu menu1">메뉴2
+            <ul>
+                <li class="sub1">섭1</li>
+                <li class="sub1">섭2</li>
+            </ul>
+        </li>
+        <li class="menu menu1">메뉴3
+            <ul>
+                <li class="sub1">섭1</li>
+                <li class="sub1">섭2</li>
+            </ul>
+        </li>
+    </ul>
+    </nav>
+</body>
+</html>

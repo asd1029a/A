@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="../JS/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+        $('.box3').click(function(){
+            $('.box1').slideToggle(500);
+        })
+    })
+    </script>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+    .nav1{
+        height: 100px;
+        width: 100%;
+        background-color: orange;
+    }
+    .box{height: 100px;
+         width: 100px;
+         background-color: palegreen;
+         border: 1px solid black;
+         float: left;
+         border-right: none;
+         font-size: 20px;
+         font-weight: bold;
+         text-align: center;
+         line-height: 90px;
+         cursor: pointer;
+
+    }
+    .box:last-child{
+        border-right: 1px solid black;
+    }
+    .box1{
+        width: 150px;
+        height: 300px;
+        background-color: palegreen;
+        display: none;
+    }
+    div ul>li{
+        text-align: center;
+        font-size: 30px;
+        padding: 15px;
+    }
+    .box2{
+        width: 150px;
+    }
+    </style>
+</head>
+<body>
+    <div class="nav1">
+        <div class="box box3">메뉴1</div>
+        <div class="box box4">메뉴2</div>
+        <div class="box box5">메뉴3</div>
+    </div>
+        <div class="box1">
+            <ul class="box2">
+                <li>1번</li>
+                <li>2번</li>
+                <li>3번</li>
+                <li>4번</li>
+            </ul>
+        </div>
+</body>
+</html>
