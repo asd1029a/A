@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="../JS/jquery.min.js"></script>
+    <script>
+    $(function(){
+        $('.menu1').click(function(){
+            if(!$(this).children().hasClass('active')){
+                $('.menu1').children().removeClass('active')
+                $(this).children().addClass('active')
+                $('.menu1').children().slideUp(500);
+                $(this).children().slideDown(500);
+            
+
+            }
+               
+        })
+    })
+    </script>
+    <style>
+        *{
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .nav1{
+            display: flex;
+        }
+   .menu1{
+        font-weight: bold;
+        font-size: 30px;
+        padding-left: 20px;
+    }
+    li>ol{
+        padding-top: 20px;
+    }
+    ol>li{
+        padding-top: 10px;
+        background-color: green;
+    
+    }
+    .dis-none{
+        display: none;
+    }
+    </style>
+</head>
+<body>
+    <div class="nav1">
+       <ul>
+           <li class="menu1">메뉴1
+               <ol class="dis-none">
+                   <li>서브1</li>
+                   <li>서브2</li>
+                   <li>서브3</li>
+               </ol>
+
+           </li>
+       </ul>
+       <ul>
+            <li class="menu1">메뉴2
+                <ol class="dis-none">
+                    <li>서브1</li>
+                    <li>서브2</li>
+                    <li>서브3</li>
+                </ol>
+ 
+            </li>
+        </ul>
+        <ul>
+            <li class="menu1">메뉴3
+                <ol class="dis-none">
+                    <li>서브1</li>
+                    <li>서브2</li>
+                    <li>서브3</li>
+                </ol>
+    
+            </li>
+        </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>슬라이드</title>
+    <script src="../JS/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+        $('.menu').click(function(){
+            //지금 클릭된 메뉴와 이전 클릭된 메뉴가 다를 때. 
+            if(!$(this).children().hasClass('active')){
+                $('.menu').children().removeClass('active');
+                $(this).children().addClass('active');
+                $('.menu').children().slideUp(500);
+                $(this).children().slideDown(500);
+            }else{
+                $(this).children().slideToggle(500);
+            }
+            
+           
+           
+        })
+    })
+    </script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+    nav ul>li{
+        width: 80px;
+        list-style: none;
+        height: 50px;
+        padding-left: 10px;
+        line-height: 45px;
+        font-size: 25px;
+        font-weight: bold;
+        cursor: pointer;
+        border: 1px solid cadetblue;
+    }
+    nav ul>li:hover{
+        border: 1px solid black;
+    }
+    nav ul{
+        display: flex;
+    }
+    nav{
+        background-color: cadetblue;
+    }
+    nav .menu>ol>li{
+        list-style: none;
+        height: 50px;
+    }
+    nav .menu>ol{
+        height: 150px;
+        display: none;
+        background-color: brown;
+    }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li class="menu">메뉴1
+                <ol>
+                    <li>서브1</li>
+                    <li>서브1</li>
+                    <li>서브1</li>
+                </ol>
+            </li>
+            <li class="menu">메뉴2
+                <ol>
+                    <li>서브2</li>
+                    <li>서브2</li>
+                    <li>서브2</li>
+                </ol>
+            </li>
+            <li class="menu">메뉴3</li>
+        </ul>
+    </nav>
+</body>
+</html>

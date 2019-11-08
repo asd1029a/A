@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>구그루</title>
+    <script src="../JS/jquery.min.js"></script>
+    <script>
+    $(function(){
+        $('.spn').eq('0').css('color','blue');
+        $('.spn').eq('1').css('color','red');
+        $('.spn').eq('2').css('color','yellow');
+        $('.spn').eq('3').css('color','blue');
+        $('.spn').eq('4').css('color','green');
+        $('.spn').eq('5').css('color','red');
+        $('.btn5').click(function(){
+            var str =  $('.num2').text();
+            str = parseInt(str);
+            var stt = $('.num3').text();
+            stt = parseInt(stt);
+            if($(this).hasClass('up1')){
+                str+=1;
+                if(str>stt){
+                    str=1;
+                }
+            }else{
+                str-=1;
+                if(str==0){
+                    str=stt;
+                }
+            }$('.num2').text(str)
+        })
+      
+        })
+   
+    </script>
+    <style>
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    .nav1{
+        height: 50px;
+        width: 100%;
+        background-color: gainsboro;
+        display: flex;
+    }
+    .nav1>.mail{
+        position: absolute;
+        right: 200px;
+        padding: 10px;
+    }
+    .nav1>.img{
+        position: absolute;
+        right: 120px;
+        padding: 10px;
+    }
+    .nav1>.btn1{
+        position: absolute;
+        right: 30px;
+        margin-top: 10px;
+        height: 30px;
+        width: 70px;
+        font-weight: bold;
+        font-size: 15px;
+    
+    }
+    .spn{
+        text-align: center;
+        line-height: 300px;
+        font-size: 100px;
+        font-weight: bold;
+        
+    }
+    .inp{
+        margin-left: calc(50% - 300px);
+        height: 50px;
+        width: 600px;
+        border-radius: 10px;
+        text-decoration: none;
+        font-size: 40px;
+        
+    
+    }
+    .inp:hover{
+        border-color: tomato;
+    }
+    .btn2{
+        height: 50px;
+        width: 70px;
+        font-weight: bold;
+        font-size: 15px;
+        margin-left: 10px;
+        background-color: tomato;
+        color: thistle;
+    }
+    .text1{
+        list-style: none;
+        padding-top: 10px;
+        background-color: yellow;
+
+    }
+    .text1>li{
+        padding-top: 5px;
+        font-weight: bold;
+    }
+    .goo{
+        margin-left: calc(50% - 150px);
+    }
+    .num1{
+        text-align: center;
+    }
+    </style>
+</head>
+<body>
+    <div class="nav1">
+        <div class="mail">Gmail
+            <ul class="text1">
+                <li>하이</li>
+                <li>하이요</li>
+                <li>하이이</li>
+            </ul>
+        </div>
+    <div class="mail">이미지
+            <ul class="text1">
+                    <li>하이</li>
+                    <li>하이요</li>
+                    <li>하이이</li>
+                </ul>
+        </div>
+        <button class="btn1">로그인</button>
+    </div>
+    <div class="goo"><span class="spn">G</span><span class="spn">o</span><span class="spn">o</span><span class="spn">g</span><span class="spn">l</span><span class="spn">e</span></div>
+    <span class="box1"></span><input type="text" class="inp"><button class="btn2">복사</button>
+    <div class="num1">
+        <span class="num2">1</span>/<span class="num3">5</span>
+        <button class="btn5 up1">up</button><button class="btn5 down1">down</button>
+    </div>
+</body>
+</html>

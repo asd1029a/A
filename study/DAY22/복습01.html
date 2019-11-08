@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="../JS/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+        $('.btn1').click(function(){
+            $('.box').removeClass('diss')
+            var str = '<div class="box1">'
+            +'<input type="text" class="inp" value="입력하세요.">'
+            +'<button class="btn2">클릭</button>'
+            +'</div>';
+      
+        $('.box').append(str);
+        })
+
+    })
+    </script>
+    <style>
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    .box1{
+        width: 90%;
+        height: 150px;
+        margin: 0 auto;
+        background-color: brown;
+        margin-top: 50px;
+      
+    }
+    .diss{
+        display: none;
+    }
+    
+    .btn1{
+        margin-left:5%;
+        margin-top:5%;
+        font-size: 25px;
+        color: black;
+        background-color: pink;
+        border-radius: 10px;
+
+    }
+    .inp{
+        height: 70%;
+        width: 70%;
+        margin: 20px;
+        border-radius: 10px;
+        font-size: 50px;
+        color: gray;
+    }
+    .btn2{
+        height: 70%;
+        width: 20%;
+        margin: 20px;
+        border-radius: 10px;
+        font-size: 50px;
+        color: gray;
+    }
+    </style>
+</head>
+<body>
+    <button class="btn1">추가</button>
+    <div class="box diss">
+        <div class="box1">
+        <input type="text" class="inp" value="입력하세요.">
+        <button class="btn2">클릭</button>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="../JS/jquery.min.js"></script>
+    <script>
+    $(function(){
+        $('.bt').click(function(){;
+        var str = $('.num1').text();
+        str = parseInt(str);
+        var stt = $('.num2').text();
+        stt = parseInt(stt);
+        if($(this).hasClass('btn1')){
+            str+=1;
+            if(str>stt){
+                str=1;
+            }
+
+        }else{
+            str-=1;
+            if(str==0){
+                str=stt
+            }
+
+        }$('.num1').text(str);
+    })
+        
+        })
+    </script>
+    <style>
+    .bt{
+        border: 2px dotted blue;
+        width: 100px;
+        height: 100px;
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+        line-height: 90px;
+    }
+    .btns{display: flex;}
+    span{
+        font-size: 30px;
+    }
+    .num1{
+        font-weight: bolder;
+    }
+    </style>
+</head>
+<body>
+    <div class="btns">
+        <div class="bt btn1">증가</div>
+        <div class="bt btn2">감소</div>
+    </div>
+    <p><span class="num1">1</span>/<span class="num2">30</span></p>
+</body>
+</html>
