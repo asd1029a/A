@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="../JS/jquery.min.js"></script>
+    <script>
+    $(function(){
+        $('form').submit(function(){;
+        $('#idError').html('');
+        $('#pwError').html('');
+        $('#pw2Error').html('');
+        var id = $('#id').val();
+        if(!(id.length >= 5 || id.length <= 10)){
+            $('#idError').html('아이디는 5~10자리만 입력가능합니다')
+            $('#id').focus();
+            return false;
+        }
+    })
+       $('#id').keyup(function(){;
+       var id = $('#id').val();
+        if(!(id.length >= 5 || id.length <= 10)){
+            $('#idError').html('아이디는 5~10자리만 입력가능합니다')
+        }
+    })
+    })
+    </script>
+    <style>
+        .nav1{
+            width: 400px;
+            margin: 200px auto;
+            
+        }
+        .red{
+            color: red;
+        }
+        </style>
+
+</head>
+<body>
+    <form action="">
+    <div class="nav1">
+    <div>
+        <input type="text" id="id" placeholder="아이디">
+        <div class="red" id="idError"></div>
+    </div>
+    <div>
+        <input type="password"id="pw" placeholder="비밀번호">
+        <div class="red" id="pwError"></div>
+    </div>
+    <div>
+        <input type="password"id="pw2" placeholder="비밀번호 확인">
+        <div class="red" id="pw2Error"></div>
+    </div>
+    <button>회원가입</button>
+</form>
+</div>
+</body>
+</html>

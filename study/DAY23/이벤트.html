@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>이벤트 등록</title>
+    <script src="../JS/jquery.min.js"></script>
+    <script>
+    $(function(){
+      //  $('.menu').hover(function(){
+        //    $(this).children().slideToggle(500);
+        $('.menu').hover(function(){
+        $(this).children().slideDown(500).css('background-color','blue');
+        }
+        ,function(){
+        $(this).children().slideUp(500).css('background-color','red');
+        })
+    })
+    /*
+    jquery의 장점 : 브라우저에 상관없이 동작한다.
+    이벤트 등록방법
+    $('선택자').이벤트명(function){
+        구현;
+    })
+
+    $('선택자').on('이벤트명',function(){
+        구현;
+    })
+
+    $('선택자').hover(function(){})
+     - 마우스를 선택자에 올려놓거나 벗어났을때 동작을 한다.
+     - 마우스에 올려놓았을 때 한번 벗어났을때 한번씩 실행된다.
+     = mousein 과 mouseout이 합쳐진 함수이다.
+     - mousein 일때와 mouseout 일때 같은 함수가 실행되는 경우이다.
+
+      $('선택자').hover(function(){},function(){})
+    - 첫번째 함수는 mousein일 때 동작하고 두번째 함수는 mouseout 일 때 동작한다.
+    */
+    </script>
+    <style>
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+
+    }
+    li{
+        list-style: none;
+        cursor: pointer;
+    }
+    .menu{
+        width: 100px;
+        height: 50px;
+        text-align: center;
+        line-height: 48px;
+        font-size: 25px;
+
+    }
+    .menu:hover{
+        background-color: coral;
+    }
+    nav>ul{
+        display: flex;
+    }
+    nav{
+        background-color: darkorange;
+    }
+    .submenu{
+        display: none;
+        background-color: darkorange;
+    }
+    .submenu:hover{
+        background-color: chocolate;
+    }
+    </style>
+</head>
+<body>
+    <nav>
+    <ul>
+        <li class="menu">메뉴1
+            <ul class="submenu">
+                <li>서브1</li>
+                <li>서브2</li>
+            </ul>
+        </li>
+        <li class="menu">메뉴2
+            <ul class="submenu">
+                <li>서브1</li>
+                <li>서브2</li>
+            </ul>
+        </li>
+        <li class="menu">메뉴3
+            <ul class="submenu">
+                <li>서브1</li>
+                <li>서브2</li>
+            </ul>
+        </li>
+        <li class="menu">메뉴4
+            <ul class="submenu">
+                <li>서브1</li>
+                <li>서브2</li>
+            </ul>
+        </li>
+     
+    </ul>
+</nav>
+</body>
+</html>
