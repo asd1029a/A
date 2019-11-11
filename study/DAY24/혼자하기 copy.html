@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="../JS/jquery.min.js"></script>
+    <script>
+    $(function(){
+        $('.img1').click(function(){
+            $('.div11').append('<img src="../DAY2/123.jpg" alt="">')
+        })
+        $('.img2').click(function(){
+            $('.div11>img').last().remove();
+        })
+    })
+    </script>
+  
+</head>
+<body>
+    <button class="img1">이미지복사</button><button class="img2">이미지삭제</button>
+    <div class="div11"><img src="../DAY2/123.jpg" alt=""></div>
+</body>
+</html>

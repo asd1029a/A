@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="../JS/jquery.min.js"></script>
+    <script>
+    $(function(){
+        $('.domain').change(function(){
+            //select박스에서 선택된 값의 value를 가져와서 str1에 저장
+            var str1 = $(this).val();
+            //도메인 입력창에 select박스에서 가져온 값(str1)으로 설정
+            $('.email').val(str1)
+            //직접입력이면 readonly를 false로
+            if(str1 == ''){
+                $('.email').prop('readonly', false);
+            }else{
+                $('.email').prop('readonly', true);
+            }
+            
+        })
+    })
+    /*
+    요소 정보 가져오는 방법
+    $('선택자')
+
+    요소 정보 중 a라는 속성을 가져오는 방법
+    $('선택자').prop('a')
+    요소 정보 중 a라는 속성의 값을 b로 설정하는 방법
+     $('선택자').prop('a',"b")
+    */
+    </script>
+    <style>
+    select{
+        margin-left: 10px;
+    }
+    </style>
+</head>
+<body>
+    <input type="text" class="box1">@<input type="text" class="email"><select class="domain">
+        <option value="">직접입력</option>
+        <option value="naver.com">네이버</option>
+        <option value="google.com">구글</option>
+        <option value="hanmail.net">다음</option>
+    </select>
+</body>
+</html>

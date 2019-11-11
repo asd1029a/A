@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="../JS/jquery.min.js"></script>
+    <script>
+    $(function(){
+        $('.btn1').click(function(){
+            if($('.box1').css('display') == 'none'){
+                $('.box1').show();
+            }else{
+                $('.box1').hide();
+            }
+           
+        })
+        $('.btn2').click(function(){
+            if($('.box2').css('margin-left') != '0px'){
+                $('.box2').animate({'margin-left' : '0px'}, 500)
+            }else{
+                $('.box2').animate({'margin-left' : '-200px'}, 500)
+            }
+        })
+        $('#check1').click(function(){
+            var check = $(this).prop('checked');
+            $('.box3').prop('checked', check);
+        })
+        $('#select').change(function(){
+            var com = $('#select').val();
+            $('.com').val(com);
+            if(com == ''){
+              $('.com').prop('readonly', false)
+            }else{
+                $('.com').prop('readonly', true)
+            }
+        })
+        $('.menu').click(function(){
+            $('.menu').removeClass('bg-co');
+            $(this).addClass('bg-co');
+
+            
+        })
+    })
+    $('.img').click(function(){
+        var img = '<img src="../DAY2/123.jpg" alt="">'
+        $('.div11').append(img);
+    })
+    </script>
+    <style>
+/*
+1.버튼 클릭시 상자 사라졌다 나타남 clear
+2.버튼 클릭시 옆에서 상자 나옴 다시 들어감 clear
+3.체크박스 5개가 있는데 맨 위 체크박스를 누르면 전부 체크됨
+4.email을 만들고 옆에 선택하는 칸을 만들어서 그 칸에 해당하는 게 나오게끔함
+5.상단에 메뉴를 만들어 클릭시 그 메뉴만 색이 변하도록 함
+6.이미지복사. 버튼 클릭시 이미지가 복사되고 다른 하나는 삭제하게만든다 첫번째꺼부터 삭제하도록
+*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.nav{
+    width: 100%;
+    height: 100px;
+    background-color: darkgray;
+    display: flex;
+}
+.menu{
+    width: 100px;
+    height: 100%;
+    border: 1px solid black;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 90px;
+}
+.btn1,.btn2{
+    all:unset;
+    border: 1px solid black;
+    width: 100px;
+    height: 50px;
+    font-size: 20px;
+    text-align: center;
+    line-height: 40px;
+    font-weight: bold;
+
+}
+.box1{
+    width: 200px;
+    height: 200px;
+    background-color: coral;
+    margin: 0 auto 0;
+    display: none;
+
+}
+.box2{
+    width: 200px;
+    height: 200px;
+    background-color: coral;
+    margin-left: -200px;
+}
+.bg-co{
+    background-color: brown;
+    color: white;
+}
+
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <div class="menu">메뉴1</div>
+        <div class="menu">메뉴2</div>
+        <div class="menu">메뉴3</div>
+    </div>
+    <button class="btn1">상자버튼</button>
+    <div class="box1"></div>
+    <button class="btn2">상자버튼2</button>
+    <div class="box2"></div>
+    <input type="checkbox" id="check1">
+    <input type="checkbox" class="box3">
+    <input type="checkbox" class="box3">
+    <input type="checkbox" class="box3">
+    <input type="checkbox" class="box3">
+    <input type="text">@<input type="text" class="com"> <select id="select">
+        <option value="">검색창</option>
+        <option value="naver.com">네이버</option>
+        <option value="daum.net">다음</option>
+        <option value="google.com">구글</option>
+    </select>
+    <button class="img">이미지복사</button>
+    <div class="div11"><img src="../DAY2/123.jpg" alt=""></div>
+</body>
+</html>

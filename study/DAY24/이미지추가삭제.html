@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="../JS/jquery.min.js"></script>
+    <script>
+    $(function(){
+        $('.btn_add').click(function(){
+            $('.img_box').append('<img src="../DAY2/123.jpg" alt="" class="box1">');
+        })
+        $('.btn_re').click(function(){
+            $('.box1').last().remove();
+        })
+    })
+    /*
+    기능 : 삭제 버튼을누르면 마지막 이미지를 삭제
+    대상 : 버튼
+    이벤튼 : click
+    사용해야하는 함수들 :
+    = last(): 해당 요소들 중 마지막 요소를 찾는 함수 
+    = remove(): 본인을 포함하여 자식까지 다 지우는 함수 
+    동작순서
+    1. 마지막 이미지를 삭제 
+    */
+    </script>
+    <style>
+  .btn{
+      all:unset;
+      border: 1px solid black;
+      width: 40px;
+      height: 30px;
+  }
+    </style>
+
+</head>
+<body>
+    <button class="btn_add">추가</button><button class="btn_re">삭제</button>
+    <div class="img_box"><img src="../DAY2/123.jpg" alt="" class="box1"></div>
+</body>
+</html>

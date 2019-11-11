@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="../JS/jquery.min.js"></script>
+    <script>
+        // append() : 자식 요소 끝에 새 요소를 추가
+        // 동작순서 : 마지막 이미지 뒤에 새 이미지 추가
+    $(function(){
+        $('.btn').click(function(){
+            var str = '<input type="image" src="../DAY2/123.jpg" class="img">'
+            $('.im').append(str);
+        })
+    })
+    </script>
+    <style>
+  .btn{
+      all:unset;
+      border: 1px solid black;
+      width: 40px;
+      height: 30px;
+  }
+    </style>
+
+</head>
+<body>
+    <button class="btn">복사</button>
+    <div class="im"><input type="image" src="../DAY2/123.jpg"></div>
+</body>
+</html>

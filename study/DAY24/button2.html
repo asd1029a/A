@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="../JS/jquery.min.js"></script>
+    <script>
+        /*
+        대상 : btn
+        이벤트 : click
+        사용 함수 : animate
+        animate({'속성1':값1, '속성2':값2}속도,)
+        */
+    $(function(){
+        $('.btn').click(function(){
+            var ml = $('.box').css('margin-left');
+            if(ml = '0px' ){
+                $('.box').animate({'margin-left': '-200px' },500)
+            }else{
+                $('.box').animate({'margin-left': '0px' },500)
+            }
+           
+        })
+    })
+    </script>
+    <style>
+        *{
+            margin: 0;
+            box-sizing: border-box;
+        }
+    .box{
+        width: 200px;
+        height: 200px;
+        border: 1px solid royalblue;
+        margin-left: -200px;
+        background-color: saddlebrown;
+        
+    }
+    </style>
+</head>
+<body>
+    <button class="btn">버튼</button>
+    <div class="box"></div>
+</body>
+</html>

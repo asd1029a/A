@@ -14,8 +14,21 @@
             var id = $(this).prop('id');
             //아이디 입력 창의 내용이 바뀌었는데 빈 문자열인 경우
             //비번 입력창의 내용이 바뀌었는데 빈 문자열인 경우 
-          
-            
+            if(id != 'pw2' && str.length == 0){
+                $(this).next().text('필수 항목입니다');
+            }
+            else if(id == 'id' && (str.length < 5 || str.length > 10)){
+                $(this).next().text('아이디는 최소 5자에서 최대 10자입니다.');
+            }
+            else if(id == 'pw1' && (str.length < 8 || str.length > 15)){
+                $(this).next().text('비밀번호는 최소 8자에서 최대 15자입니다.');
+            }
+            else if(id == 'pw2'){
+                var str2 = $('#pw1').val();
+                if(str != str2){
+                    $(this).next().html('비밀번호와 일치하지 않습니다.');
+                }
+            }
         })
         $('#pw1').keyup(function(){
             $(this).next().text('');
