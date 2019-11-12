@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="../JS/jquery.min.js"></script>
+    <script>
+  
+    $(function(){
+        $('.box').click(function(){
+            var cnt2 = 0; 
+            var str = '';
+            var arr = [];
+            $('.inp').each(function(){
+                if($(this).prop('checked')){
+                    cnt2++;
+                    var val = $(this).val()
+                    str += (cnt2 == 1?'':',').val;
+                    arr.push($(this).val());
+                }
+            })
+            if(cnt2 == 0){
+                alert('1개이상 선택하세요')
+                return false;
+            }else{
+               // alert(str)
+               alert(arr.join(','));
+            }
+        })
+    })
+    
+    </script>
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .box{
+        all:unset;
+        width: 150px;
+        border: 1px solid black;
+    }
+    </style>
+</head>
+<body>
+    <form action="">
+    <div>취미를 선택하세요(1개이상)</div>
+    <div><input type="checkbox" class="inp" value="야구">야구</div>
+    <div><input type="checkbox" class="inp" value="농구">농구</div>
+    <div><input type="checkbox" class="inp" value="축구">축구</div>
+    <div><input type="checkbox" class="inp" value="기타">기타</div>
+    <button class="box">제출</button>
+    
+</form>
+</body>
+</html>

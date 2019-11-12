@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="../JS/jquery.min.js"></script>
+    <script>
+        
+        /*
+        eq(index) : index+1번째  요소를 선택
+        removeClass('클래스명'): 클래스제거
+        addClass('클래스명') : 클래스추가
+        length :해당 요소들의 개수
+        동작순서
+        0.전역변수 index선언 초기값 0 
+        1.모든 메뉴에 select 클래스를 제거
+        2.다음 또는 이전 메뉴에 select 클래스 추가
+        2-1.다음 버튼인 경우 
+        -index에 1을 더함
+        -index가 최대 길이를 넘지 않도록 처리
+        -더해진 index와 일치하는 요소에 select 클래스 추가 
+        2-2.이전 버튼인 경우 
+        -index에 1을 뺌
+        -index가 0보다 작지 않도록 처리
+        -뺀 index와 일치하는 요소에 selectt 클래스 추가
+        */
+        var num = 0;
+    $(function(){
+        $('button').click(function(){
+            $('.menu').removeClass('bg-co')
+           
+                if($(this).hasClass('lef')){
+                    num += 1;
+                    num < 3;
+                  
+                    $('.menu').eq(num).addClass('bg-co')
+                }
+                else{
+                    if($(this).hasClass('rig')){
+                    num -= 1;
+                    num > 0;
+                    $('.menu').eq(num).addClass('bg-co')
+                }
+            }
+        })
+    })      
+    </script>
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .nav{
+        display: flex;
+        background-color: gray;
+    }
+    .menu{
+        width: 100px;
+        height: 100px;
+        border: 1px solid black;
+        text-align: center;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 90px;
+        
+        
+    }
+    button{
+        height: 50px;
+        width: 100px;
+    }
+    .bg-co{
+        background-color: tomato;
+        border-color: red;
+    }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <div class="menu menu1">메뉴1</div>
+        <div class="menu menu2">메뉴2</div>
+        <div class="menu menu3">메뉴3</div>
+    </div>
+        <button class="lef"><</button><button class="rig">></button>
+</body>
+</html>

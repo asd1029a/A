@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="../JS/jquery.min.js"></script>
+    <script>
+        var sum = 0; //현재 체크된 체크박스의 개수
+    $(function(){
+        $('.inp').change(function(){
+          var inp =  $(this).prop('checked')
+            if(inp = true){
+                sum ++;
+            }else{
+                sum --;
+            }
+        })
+        $('.box').click(function(){
+            if(sum == 0){
+                alert('한개 이상 선택하세요.')
+                return false;
+            }
+            
+        })
+    })
+    </script>
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .box{
+        all:unset;
+        width: 150px;
+        border: 1px solid black;
+    }
+    </style>
+</head>
+<body>
+    <form action="">
+    <div>취미를 선택하세요(1개이상)</div>
+    <div><input type="checkbox" class="inp">야구</div>
+    <div><input type="checkbox" class="inp">농구</div>
+    <div><input type="checkbox" class="inp">축구</div>
+    <div><input type="checkbox" class="inp">기타</div>
+    <button class="box">제출</button>
+    
+</form>
+</body>
+</html>

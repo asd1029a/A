@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="../JS/jquery.min.js"></script>
+    <script>
+        // cnt는 스크립트가 실행 될 때 선언돼서 스크립트가 다 끝날때까지(페이지가 넘어갈때) 유지됨.
+        // 지역변수(cnt1) 전역변수(cnt) 차이를 보여주는 예제.
+        var cnt = 0;
+    $(function(){
+        $('.box').click(function(){
+            // 버튼을 클릭할 때 cnt2가 생성되어 클릭이벤트가 종료되기 전까지 유지된다.
+            var cnt1 = 0;
+            cnt++;
+            cnt1++;
+            console.log('cnt',cnt);
+            console.log('cnt1',cnt1);
+            var cnt2 = 0; //체크된 체크박스의 개수
+            //클래스가 box인 요소들을 각각 가져와서 function()에 구현된 작업을 실현
+            $('.inp').each(function(){
+            //각 체크박스의 checked 속성이 true인 요소의 개수를 파악
+            //체크박스에서 꺼내온 요소 하나가 this
+                if($(this).prop('checked')){
+                    cnt2++;
+                }
+
+            })
+            // 클릭한 버튼이 this
+            if(cnt2 == 0){
+                alert('1개이상 선택하세요')
+                return false;
+            }
+        })
+    })
+    /*
+    $('선택자').이벤트명(function(){
+
+    })
+    $('선택자').each(function(){
+        $(this)
+    })
+    
+    each : 요소들을 하나씩 꺼내어 작업할 때 사용한다.
+    each는 이벤트 안에 사용이 된다.
+    $('선택자').이벤트(function(){
+        $('선택자').each(function(){
+
+        });
+    })
+    */
+    </script>
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .box{
+        all:unset;
+        width: 150px;
+        border: 1px solid black;
+    }
+    </style>
+</head>
+<body>
+    <form action="">
+    <div>취미를 선택하세요(1개이상)</div>
+    <div><input type="checkbox" class="inp">야구</div>
+    <div><input type="checkbox" class="inp">농구</div>
+    <div><input type="checkbox" class="inp">축구</div>
+    <div><input type="checkbox" class="inp">기타</div>
+    <button class="box">제출</button>
+    
+</form>
+</body>
+</html>
