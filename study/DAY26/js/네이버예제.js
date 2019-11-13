@@ -1,0 +1,9 @@
+$(function(){
+    $('.keyboard').click(function(){
+        $('.keyboard-icon').toggleClass('keyboard-icon2');  
+    })
+    $('.auto').click(function(){
+        $('.auto-in').toggleClass('active');  
+        $('.click-boxs').toggle();
+    })
+})

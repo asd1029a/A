@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>네이버 혼자만들자</title>
+    <script src="../JS/jquery.min.js"></script>
+    <script>
+    $(function(){
+        $('.keyboard').click(function(){
+            $('.keyboard-in').toggleClass('action')
+        })
+        $('.click-box').click(function(){
+            $('.click-box-in').toggleClass('action')
+            $('.box1').toggle();
+        })
+    })
+    </script>
+    <style>
+    *{margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body{
+        min-width: 1100px;
+    }
+     /* header와 관련된 css */
+    .header{
+        height: 178px;
+    }
+    .header-top{
+        height: 130px;
+    }
+    .header-bot{
+        height: 48px;
+        border-top: 1px solid /*rgb(241, 243, 246)*/;
+        border-bottom: 2px solid/* rgb(209, 216, 228)*/;
+    }
+    /* main과 관련된 css */
+    .main{
+        height: 1466px;
+   
+    }
+    .container{
+        width: 1080px;
+        border: 1px solid none;
+        height: 100%;
+        margin: 0 auto;
+        position: relative;
+    
+    }
+    .box-left{
+        border: none;
+        width: 740px;
+        height: 100%;
+        float: left;
+    }
+    .box{
+        width: 100%;
+        margin-top: 8px;
+    }
+    .left-contents1,.right-contents1{
+        height: 120px;
+    }
+    .left-contents2{
+        height: 46px;
+    }
+    .left-contents3{
+        height: 246px;
+    }
+    .left-contents4,.right-contents4{
+        height: 884px;
+    }
+    .left-contents5,.right-contents5{
+        height: 130px;
+    }
+    .box-right{
+        border: none;
+        width: 332px;
+        height: 100%;
+        float: right;
+    }
+    .right-contents2{
+        height: 142px;
+    }
+    .right-contents3{
+        height: 150px;
+    }
+    .container::after{
+        clear: both;
+        content: "";
+        display: block;
+    }
+    .naver{
+        width: 198px;
+        height: 48px;
+        background-position: -4px -4px;
+        position: absolute;
+        margin-top: 30px;
+    }
+    .search-box1{
+        width: 521px;
+        height: 49px;
+        margin-top: 35px;
+        left: 218px;
+        position: absolute;
+    }
+    .search-box2{
+        width: 474px;
+        height: 49px;
+        border: 2px solid #03cf5d;  
+    }
+    .search-in{
+        margin: 12px 0 0 9px;
+        width: 405px;
+        height: 23px;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 23px;
+        border: none;
+        outline: none;
+    }
+    .keyboard{
+        position: absolute;
+        top: 50%;
+        right: 76px;
+        width: 31px;
+        height: 41px;
+        margin-top: -21px;
+        padding: 15px 6px;
+    }
+    .keyboard-in{
+        width: 19px;
+        height: 11px;
+        background-position: -33px -60px;
+        display: block;
+    }
+    .keyboard-in.action{
+        background-position: -60px -60px;
+    }
+    .click-box{
+        position: absolute;
+        top: 50%;
+        width: 27px;
+        height: 42px;
+        margin-top: -21px;
+        padding: 19px 12px 19px 6px; 
+        right: 49px;
+    }
+    .click-box-in{
+        width: 9px;
+        height: 4px;
+        background-position: -87px -60px;
+    }
+    .click-box-in.action{
+        background-position: -138px -60px;
+    }
+    .click-btn{
+        width: 49px;
+        height: 49px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        background: #03cf5d;
+        box-sizing: border-box;
+    }
+    .btn-in{
+        width: 21px;
+        height: 21px;
+        position: absolute;
+        top: 14px;
+        left: 14px;
+        background-position: -4px -60px;
+        display: block;
+    }
+    .box1{
+        background-color: gray;
+        width: 519px;
+        height: 90px;
+        margin-top: 10px;
+        z-index: 100;
+    }
+    /* footer와 관련된 css */
+    .footer{
+     height: 314px;
+     margin-top: 8px;
+    }
+    /* 배경 css*/
+    .bg1{
+        background-image: url("https://s.pstatic.net/static/www/img/uit/2019/sp_search.svg");
+    }
+    /* 배경 색 관련 클래스 */
+    .bg-white{
+        background-color: white;
+    }
+    .bg-body{
+        background-color: rgb(242,244,247);
+    }
+  
+    </style>
+</head>
+<body class="bg-body">
+    <!-- 178
+    1466 242 244 247; cpntainer안 박스 width 740 332
+314 -->
+    <div class="header bg-white">
+        <div class="header-top">
+            <div class="container">
+                <div class="naver bg1"></div>
+                <div class="search-box1">
+                    <div class="search-box2">
+                        <input type="text" class="search-in">
+                        <a href="#" class="keyboard"><div class="keyboard-in bg1"></div></a>
+                        <a href="#" class="click-box"><div class="click-box-in bg1"></div></a>
+                        <div class="click-btn">
+                            <div class="btn-in bg1">
+                        </div>
+                    </div>
+                    <div class="box1"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-bot"></div>
+    </div>
+    <div class="main">
+        <div class="container">
+            <div class="box-left">
+                <div class="left-contents1 box bg-white">
+                   <a href="#">
+                       <img src="./img/img-1.jpg" alt="">
+                   </a>
+                </div>
+                <div class="left-contents2 box bg-white"></div>
+                <div class="left-contents3 box bg-white"></div>
+                <div class="left-contents4 box bg-white"></div>
+                <div class="left-contents5 box bg-white"></div>
+            </div>
+            <div class="box-right">
+                    <div class="right-contents1 box bg-white"></div>
+                    <div class="right-contents2 box bg-white"></div>
+                    <div class="right-contents3 box bg-white">
+                        <a href="#">
+                            <img src="./img/img-2.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="right-contents4 box bg-white"></div>
+                    <div class="right-contents5 box bg-white"></div>
+            </div>
+        </div>
+    </div>
+    <div class="footer bg-white"></div>
+
+</body>
+</html>
