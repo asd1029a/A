@@ -1,0 +1,455 @@
+@charset 'urf-8';
+*{margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body{
+      min-width: 1100px;
+      position: relative;
+  }
+   /* header와 관련된 css */
+  .header{
+      height: 178px;
+  }
+  .header-top{
+      height: 130px;
+  }
+  .header-bot{
+      height: 48px;
+      border-top: 1px solid #f1f3f6/*rgb(241, 243, 246)*/;
+      border-bottom: 2px solid #f1f3f6/* rgb(209, 216, 228)*/;
+  }
+  /* main과 관련된 css */
+  .main{
+      height: 1466px;
+ 
+  }
+  .container{
+      width: 1080px;
+      border: 1px solid none;
+      height: 100%;
+      margin: 0 auto;
+      position: relative;
+      
+  
+  }
+  .box-left{
+      border: none;
+      width: 740px;
+      height: 100%;
+      float: left;
+  }
+  .box{
+      width: 100%;
+      margin-top: 8px;
+  }
+  .left-contents1,.right-contents1{
+      height: 120px;
+  }
+  .left-contents2{
+      height: 46px;
+  }
+  .left-contents3{
+      height: 246px;
+  }
+  .left-contents4,.right-contents4{
+      height: 884px;
+  }
+  .left-contents5,.right-contents5{
+      height: 130px;
+  }
+  .box-right{
+      border: none;
+      width: 332px;
+      height: 100%;
+      float: right;
+  }
+  .right-contents2{
+      height: 142px;
+  }
+  .right-contents3{
+      height: 150px;
+  }
+  .container::after{
+      clear: both;
+      content: "";
+      display: block;
+  }
+  /* 헤어 탑과 관련됨 css*/
+  .logo{
+      width: 198px;
+      height: 48px;
+      background-position: -4px -4px;
+      z-index: 99;
+      position: absolute;
+      top: 50%;
+      left: -2px;
+      margin-top: -25px;
+  }
+  .search-box{
+      width: 521px;
+      height: 49px;
+      box-sizing: border-box;
+      position: absolute;
+      top: 50%;
+      margin-top: -20px;
+      left: 219px;
+  }
+  .search-in{
+      border: 2px solid #03cf5d;
+      width: 474px;
+      height: 49px;
+  }
+  .search{
+      width: 405px;
+      height: 23px;
+      margin: 12px 0 0 9px;
+      border: none;
+      outline: none;
+      font-size: 18px;
+      font-weight: bold;
+      line-height: 23px;
+  }
+  .keyboard{
+      width: 31px;
+      height: 41px;
+      padding: 15px 6px;  
+      display: block;
+      position: absolute;
+      right: 76px;
+      top: 50%;
+      margin-top: -21px;
+  }
+  .keyboard-icon{
+      width: 19px;
+      height: 11px;
+      background-position: -33px -60px;
+      display: block;
+  }
+  .keyboard-icon2{
+      width: 19px;
+      height: 11px;
+      background-position: -60px -60px;
+      display: block;
+  }
+  .auto{
+      width: 27px;
+      height: 42px;
+      padding: 19px 12px 19px 6px;
+      display: block;
+      position: absolute;
+      right: 49px;
+      top: 50%;
+      margin-top: -21px;
+  }
+  .auto-in{
+      width: 9px;
+      height: 4px;
+      background-position: -87px -60px;
+      display: block;
+  }
+  .auto-in.active{
+      background-position: -138px -60px;
+  }
+  .search-btn{
+      width: 49px;
+      height: 49px;
+      background-color: #03cf5d;
+      position: absolute;
+      right: 0;
+      top: 0;
+  }
+  .click-box{
+      background-color: white;
+      border: 1px solid #bec8d8;
+      width: 100%;
+      height: 55px;
+      margin-top: -2px;
+      position: relative;
+
+  }
+  .click-box-str{
+      line-height: 52px;
+      color: gray;
+      padding-left: 10px;
+      font-size: 13px;
+  }
+  .click-box2{
+      background-color: #f9fafc;
+      border: 1px solid #bec8d8;
+      width: 100%;
+      height: 33px;
+      border-top: none;
+      z-index: 100;
+    
+  }
+  .click-boxs{
+      display: none;
+      z-index: 100;
+  }
+  /*
+  부모가 absolute 이고 자식도 absolute이면 자식은 부모를 기준으로함 
+  초록화살표 background-position: -138px -60px; 초록키보드 background-position: -60px -60px;
+  */
+  .search-icon{
+      position: absolute;
+      top: 14px;
+      left: 14px;
+      width: 21px;
+      height: 21px;
+      background-position: -4px -60px;
+  }
+  .happybean{
+      width: 34px;
+      height: 11px;
+      background-position: -143px -99px;
+      position: absolute;
+      right: 0px;
+      top: 20px;
+  }
+  .happybean:hover{
+      background-position: -136px -157px;
+  }
+  .green-container{
+      width: 303px;
+      height: 32px;
+      box-sizing: border-box;
+      padding: 16px 0 0 4px;
+      display: flex;
+      float: left;
+  }
+  .green-container>a{
+      margin-left: 14px;
+      height: 16px;
+      display: block;
+      float: left;
+      z-index: 1;
+   
+  }
+  .green-container>a:first-child{
+      margin-left: 0px;
+  }
+  .mail { width: 25px; background-position: 0 -285px; }
+  .cafe { width: 27px; background-position: -279px -52px; }
+  .blog { width: 40px; background-position: -100px -182px; }
+  .kin  { width: 40px; background-position: -101px -156px; }
+  .shop { width: 26px; background-position: -279px -156px; }
+  .pay  { width: 25px; background-position: -70px -285px; }
+  .tv   { width: 32px; background-position: -125px -130px; margin-top: -1px; }
+
+  .black-container{
+      height: 38px;
+      box-sizing: border-box;
+      padding: 16px 0 0 14px;
+      float: left;
+  }
+  .box-menu{
+      height: 28px;
+      width: 62px;
+      border: 1px solid #e3e7ee;
+      background-color: #fcfdfe;
+      display: inline-block;
+      margin-top: -8px;
+  }
+  .select{
+      border-color: #00b336;
+  }
+  .black-box{
+          height: 16px; 
+          border: none;
+          background-color: transparent;
+          display: block;
+          margin-top: 0px;
+          float: left;
+          margin-left: 14px;
+  }
+  .black-box:first-child{
+      margin-left:0px;
+  }
+  .dic{width: 26px; background-position: -279px -208px;}
+  .news{width: 28px; background-position: -128px -104px;}
+  .stock{width: 26px; background-position: -36px -259px;}
+  .deal{width: 40px; background-position: -151px -156px;}
+  .map{width: 27px; background-position: -279px -130px;}
+  .movie{width: 27px; background-position: -234px -233px;}
+  .music{width: 26px; background-position: -72px -259px;}
+  .book{width: 13px; background-position: -140px -78px;}
+  .comic{width: 27px; background-position: -279px 0;}
+
+  .an_bar{
+      height: 14px;
+      border: 0.5px solid #ebeef3;
+      float: left;
+      margin: 18px 16px 0;
+
+
+  }
+  .more{
+      width: 55px;
+      background-position: 0 -104px;
+      margin-top: 16px;
+      float: left;
+      margin-left: 0px;
+      cursor: pointer;
+  }
+  .fold{
+      width: 42px;
+      height: 15px;
+      background-position: 0 -208px;
+  }
+   .gray_box{
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 178px;
+      bottom: 0;
+      background-color: black;
+      opacity: 0.3;
+      z-index: 10;
+  }
+  .white_box{
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 178px;
+      height: 353px;
+      background-color: white;
+      z-index: 11;
+  }
+  /*.page_box{
+      height: 34px;
+      border-bottom: 1px solid #ebeef3;
+  }
+  .lef_btn{
+      all: unset;
+      width: 33px;
+      height: 11px;
+      border-left: 1px solid #ebeef3;
+      text-align: center;
+      cursor: pointer;
+      padding: 11px 0;
+      float:right;
+  }
+  .lef_icon{
+      width: 6px;
+      height: 11px;
+      background-position: -433px -324px;
+      display: inline-block;
+      padding: 11px 0;
+  }
+  .rig_btn{
+      all: unset;
+      float: right;
+      width: 33px;
+      height: 11px;
+      border-left: 1px solid #ebeef3;
+      text-align: center;
+      cursor: pointer;
+      padding: 11px 0;
+  }
+  .rig_icon{
+      width: 6px;
+      height: 11px;
+      background-position: -433px -303px;
+      display: inline-block;
+      padding: 11px 0;
+  }
+  .num_box_ori{
+      position: absolute;
+      right: 78px;
+      height: 14px;
+      color: #888;
+      font-size: 12px;
+      font-family: Tahoma,sans-serif;
+      padding: 8px 0;
+  }
+  .num_box1{
+      font-weight: bold;
+
+  }
+  */
+  /* 오른쪽 두번째 컨텐츠 관련 css */
+  .r2_top{
+      height: 33px;
+      border-bottom: 1px solid #ebeef3;
+      padding-left: 15px;
+  }
+  .r2_top_left{
+      float: left;
+  }
+  .r2_top_right{
+    float: right;
+}
+  .r2_btn_box{
+      display: flex;
+  }
+  .r2_btn{
+      width: 34px;
+      height: 33px;
+      border-left: 1px solid #ebeef3;
+      cursor: pointer;
+      padding: 11px 0;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+  }
+  .r2_next_icon{
+    width: 6px;
+    height: 11px;
+    background-position: -433px -324px;
+    display: inline-block;
+  }
+  .r2_prev_icon{
+    width: 6px;
+    height: 11px;
+    background-position: -433px -303px;
+    display: inline-block;
+  }
+  .r2_page_box{
+    position: absolute;
+    right: 0;
+    margin-top: 10px;
+    margin-right: 78px;
+    color: #888;
+    font-size: 12px;
+    font-family: Tahoma,sans-serif;
+    line-height: 14px;
+    
+  }
+  .r2_page_num1{
+      font-weight: bold;
+      color: black;
+  }
+  /* 배경 이미지 관련 css */
+  .bg1{
+      background-image: url("https://s.pstatic.net/static/www/img/uit/2019/sp_search.svg");
+  }
+  .bg2{
+      background-image: url("https://s.pstatic.net/static/www/img/uit/2019/sp_main_v191029.png");
+  }
+  .bg3{
+      background-image: url("https://s.pstatic.net/static/www/img/uit/2019/sp_nav.png");
+  }
+  .bg4{
+      background-image: url("https://s.pstatic.net/static/www/img/2017/sp_timesquare_v170913a.png");
+  }
+  /*
+  -position:absolute를 이용할 때 부모를 기준으로 잡기위해선 부모를 position:relatiive로 만든다.
+  -background-position 을 이용하여 배경 이미지의 시작지점을 지정한다.  
+  */
+  /* footer와 관련된 css */
+  .footer{
+   height: 314px;
+   margin-top: 8px;
+  }
+  /* 배경 색 관련 클래스 */
+  .bg-white{
+      background-color: white;
+  }
+  .bg-body{
+      background-color: rgb(242,244,247);
+  }
+  /* 공통 클래스*/
+  .display_none{
+      display: none;
+  }
