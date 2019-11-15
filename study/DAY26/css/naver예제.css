@@ -42,6 +42,7 @@
   .box{
       width: 100%;
       margin-top: 8px;
+      border: 1px solid #dee3db;
   }
   .left-contents1,.right-contents1{
       height: 120px;
@@ -420,6 +421,77 @@
       font-weight: bold;
       color: black;
   }
+  /* 왼쪽 3번째 컨텐츠 관련 css*/
+  .l3_top{
+      height: 45px;
+      border-bottom: 1px solid #ebeef3;
+  }
+  .l3_bot{
+      height: 200px;
+      background-color: white;
+  }
+  .l3_bot2{
+    display: flex;
+    height: 67px;
+    border-bottom: 1px solid #ebeef3;
+  }
+  .l3_bot2:last-of-type{
+      border-bottom: none;
+  }
+  .l3_bot_logo{
+      width: 100%;
+      height: 100%;
+      background-color: white;
+      border: 1px solid #f1f3f6;
+      padding: 21px 0 22px;
+      text-align: center;
+  }
+  /* .api_logo{
+      
+  } */
+  .l3_line{
+    top: 66px;
+    left: 0;
+    z-index: 2;
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #ffffff;
+  }
+  .l3_box{
+      width: 95px;
+      height: 30px;
+      text-align: center;
+      margin-left: 12px;
+      display: flex;
+      display: none;
+  }
+  .l3_gu{
+    width: 36px;
+    height: 100%;
+    border: 1px solid #e3e7ee;
+    background-color: #fff;
+    color: #222;
+    text-decoration: none;
+    font-size: 12px;
+    padding: 7px 0;
+    line-height: 12px;
+  }
+  .l3_gu:first-child{
+      border-right: none;
+  }
+  .l3_gi{
+    width: 59px;
+    height: 100%;
+    border: 1px solid #e3e7ee;
+    background-color: #fff;
+    color: #222;
+    text-decoration: none;
+    font-size: 12px;
+    padding: 7px 0;
+    line-height: 12px;
+  }
+  
   /* 배경 이미지 관련 css */
   .bg1{
       background-image: url("https://s.pstatic.net/static/www/img/uit/2019/sp_search.svg");
@@ -453,3 +525,4 @@
   .display_none{
       display: none;
   }
+ 
