@@ -92,94 +92,16 @@
         content: "";
         display: block;
     }
-    .naver{
-        width: 198px;
-        height: 48px;
-        background-position: -4px -4px;
-        position: absolute;
-        margin-top: 30px;
-    }
-    .search-box1{
-        width: 521px;
-        height: 49px;
-        margin-top: 35px;
-        left: 218px;
-        position: absolute;
-    }
-    .search-box2{
-        width: 474px;
-        height: 49px;
-        border: 2px solid #03cf5d;  
-    }
-    .search-in{
-        margin: 12px 0 0 9px;
-        width: 405px;
-        height: 23px;
-        font-weight: 700;
-        font-size: 18px;
-        line-height: 23px;
-        border: none;
-        outline: none;
-    }
-    .keyboard{
-        position: absolute;
-        top: 50%;
-        right: 76px;
-        width: 31px;
-        height: 41px;
-        margin-top: -21px;
-        padding: 15px 6px;
-    }
-    .keyboard-in{
-        width: 19px;
-        height: 11px;
-        background-position: -33px -60px;
-        display: block;
-    }
-    .keyboard-in.action{
-        background-position: -60px -60px;
-    }
-    .click-box{
-        position: absolute;
-        top: 50%;
-        width: 27px;
-        height: 42px;
-        margin-top: -21px;
-        padding: 19px 12px 19px 6px; 
-        right: 49px;
-    }
-    .click-box-in{
-        width: 9px;
-        height: 4px;
-        background-position: -87px -60px;
-    }
-    .click-box-in.action{
-        background-position: -138px -60px;
-    }
-    .click-btn{
-        width: 49px;
-        height: 49px;
-        position: absolute;
-        top: 0;
-        right: 0;
-        background: #03cf5d;
-        box-sizing: border-box;
-    }
-    .btn-in{
-        width: 21px;
-        height: 21px;
-        position: absolute;
-        top: 14px;
-        left: 14px;
-        background-position: -4px -60px;
-        display: block;
-    }
-    .box1{
-        background-color: gray;
-        width: 519px;
-        height: 90px;
-        margin-top: 10px;
-        z-index: 100;
+    .naver_logo{
+    display: block;
+    overflow: hidden;
+    width: 198px;
+    height: 48px;
+    background-position: -4px -4px;
+    text-indent: 101%;
+    white-space: nowrap;
+    position: absolute;
+    top: 35px;
     }
     /* footer와 관련된 css */
     .footer{
@@ -197,7 +119,7 @@
     .bg-body{
         background-color: rgb(242,244,247);
     }
-  
+    
     </style>
 </head>
 <body class="bg-body">
@@ -207,18 +129,18 @@
     <div class="header bg-white">
         <div class="header-top">
             <div class="container">
-                <div class="naver bg1"></div>
-                <div class="search-box1">
-                    <div class="search-box2">
-                        <input type="text" class="search-in">
-                        <a href="#" class="keyboard"><div class="keyboard-in bg1"></div></a>
-                        <a href="#" class="click-box"><div class="click-box-in bg1"></div></a>
-                        <div class="click-btn">
-                            <div class="btn-in bg1">
+                <div class="naver_logo bg1"></div>
+                <div class="search_box">
+                    <div class="search_bar">
+                        <input type="text">
+                        <div class="keyboard_out">
+                            <div class="keyboard_in"></div>
+                        </div>
+                        <div class="keyboard2_out">
+                            <div class="keyboard2_in"></div>
                         </div>
                     </div>
-                    <div class="box1"></div>
-                    </div>
+                    <div class="search_btn"></div>
                 </div>
             </div>
         </div>

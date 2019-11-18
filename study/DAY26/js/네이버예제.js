@@ -9,6 +9,10 @@ $(function(){
     $('.more').click(function(){
         $(this).toggleClass('fold')
         $('.more_box').toggle()
+        $('.an_bar2').toggleClass('display_none')
+        $('.an_bar2_top').removeClass('display_none')
+        $('.an_bar2_bot').addClass('display_none')
+
     })
     $('.lf_btn').click(function(){
         var str = $('.num_box1').text()
@@ -44,7 +48,35 @@ $(function(){
             }
         }$('.r2_page_num1').text(str2)
     
-    })$('.l3_bot_logo')
+    })
+    // x버튼  // 
+    $('.menu_cle').click(function(){
+        $('.more').toggleClass('fold')
+        $('.more_box').toggle()
+        $('.an_bar2').toggleClass('display_none')
+        $('.an_bar2_top').removeClass('display_none')
+        $('.an_bar2_bot').addClass('display_none')
+    })
+    // 선택버튼 //
+    $('.menu_sel').click(function(){
+        $('.an_bar2_top').toggleClass('display_none')
+        $('.an_bar2_bot').toggleClass('display_none')
+    })
+    // 취소버튼 //
+    $('.menu_cancel').click(function(){
+        $('.an_bar2_bot').toggleClass('display_none')
+        $('.an_bar2_top').toggleClass('display_none')
+    })
+    
+    $('.l3_bot_logo').hover(function(){
+        $(this).find('.api_logo').toggle();
+        $(this).find('.l3_box').toggle();
+        
+    })
+    $('.l3_gu').hover(function(){
+        $('.l3_gu').toggleClass('l3_gu_hover');
+        $('.l3_gi').toggleClass('l3_gi_hover');
+    });
 })
 /*$('.r2_btn').click(function(){
     //다음 페이지로 가야할지 이전페이지로 가야할지를 결정하는 함수
