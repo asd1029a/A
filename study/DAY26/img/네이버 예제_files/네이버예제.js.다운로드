@@ -103,10 +103,8 @@ $(function(){
         $('.white_box1_1').removeClass('text_el');
         if(!$(this).hasClass('fold')){
             closeWhiteBox();
-            $('.menu_cancel').click()
         }
     })
-
     $('.lf_btn').click(function(){
         var str = $('.num_box1').text()
         var stt = $('.num_box2').text()
@@ -150,14 +148,11 @@ $(function(){
         $('.an_bar2_top').removeClass('display_none')
         $('.an_bar2_bot').addClass('display_none')
         closeWhiteBox();
-        $('.menu_cancel').click()
     })
     // 선택버튼 //
     $('.menu_sel').click(function(){
         $('.an_bar2_top').toggleClass('display_none')
         $('.an_bar2_bot').toggleClass('display_none')
-        $('.white_checkbox').toggleClass('display_none');
-        $('.white_checkbox').removeClass('white_checkbox2');
         // $('.black-container .black-box').each(function(){
         //     if(!$(this).hasClass('box-menu')){
         //         $(this).addClass('display_none')
@@ -166,10 +161,11 @@ $(function(){
         //     }
         // })
         selMenuTmp = selMenu.slice(0);
-        drawMenu(selMenuTmp);console.log(selMenuTmp)
+        drawMenu(selMenuTmp);
         setInputCheckbox(selMenuTmp);
         //녹색박스 설정//
         $('.box-menu').eq(selMenu.length).addClass('select');
+        
     })
     // 취소버튼 //
     $('.menu_cancel').click(function(){
@@ -179,8 +175,7 @@ $(function(){
         closeWhiteBox();
         // 메뉴 설정에서 선택된 메뉴들을 적용하지 않겠다.
         selMenuTmp = [];
-        setInputCheckbox(selMenu);
-        initBlackMenu(selMenu);
+        setInputCheckbox(selMenuTmp);
     })
     
     $('.l3_bot_logo').hover(function(){
@@ -193,6 +188,11 @@ $(function(){
         $('.l3_gu').toggleClass('l3_gu_hover');
         $('.l3_gi').toggleClass('l3_gi_hover');
     });
+    // 더보가 -> 메뉴설정 -> 체크박스들  //
+    $('.menu_sel').click(function(){
+        $('.white_checkbox').toggleClass('display_none');
+        $('.white_checkbox').removeClass('white_checkbox2');
+    })   
     // 체크를 해제하는 상황은 신경쓸 필요가 없다.//
     // 체크를 해야하는 상황은 신경써야 한다. 최대 개수가 5개
     $('.white_box1_1').click(function(){
@@ -226,21 +226,11 @@ $(function(){
             $('.box-menu').eq(selMenuTmp.length).addClass('select');
     })
     $('.menu_check').click(function(){
-        if(selMenuTmp.length == 0){
-            alert('선택된 메뉴가 없습니다. 초기설정으로 돌아갑니다.')
-        }
-    selMenu = selMenuTmp.splice(0);
+        selMenu = selMenuTmp.splice(0);
         // white박스랑 black박스 닫고
         $('.more').click();
         //메뉴 적용
         initBlackMenu();
-    })
-    $('.menu_reset').click(function(){
-        alert('초기설정으로 돌아갑니다.')
-        $('.more').click();
-        selMenu = [];
-        initBlackMenu();
-        setInputCheckbox(selMenu);
     })
 })
 
