@@ -37,15 +37,6 @@ function initBlackMenu(){
     })
 }
 }
-// white-box 가 닫히면서 해야할 작업들
-function closeWhiteBox(){
-    // 검은 메뉴를 초기화 할지 아니면 선택된 메뉴로 보여줄지 결정 
-    if(selMenu.length == 0){
-        initBlackMenu();
-    }else{
-
-    }
-}
 //arr를 기준으로 검은색 메뉴들을 빈 박스 또는 선택된 메뉴로 배치
 function drawMenu(arr){
     if(arr.length > 5){
@@ -100,9 +91,9 @@ $(function(){
         $('.an_bar2_top').removeClass('display_none')
         $('.an_bar2_bot').addClass('display_none')
         $('.white_checkbox').addClass('display_none');
-        $('.white_box1_1').removeClass('text_el');
+
         if(!$(this).hasClass('fold')){
-            closeWhiteBox();
+            initBlackMenu();
             $('.menu_cancel').click()
         }
     })
@@ -149,7 +140,7 @@ $(function(){
         $('.an_bar2').toggleClass('display_none')
         $('.an_bar2_top').removeClass('display_none')
         $('.an_bar2_bot').addClass('display_none')
-        closeWhiteBox();
+        initBlackMenu();
         $('.menu_cancel').click()
     })
     // 선택버튼 //
@@ -176,7 +167,7 @@ $(function(){
         $('.an_bar2_bot').toggleClass('display_none')
         $('.an_bar2_top').toggleClass('display_none')
         $('.white_checkbox').addClass('display_none');
-        closeWhiteBox();
+        initBlackMenu();
         // 메뉴 설정에서 선택된 메뉴들을 적용하지 않겠다.
         selMenuTmp = [];
         setInputCheckbox(selMenu);
@@ -202,6 +193,7 @@ $(function(){
                 return;
             }
         }
+        //선택된 메뉴의 클래스명을 가져옴 (input태그의 지정된 value값을 가져옴)
         var value = $(this).find('.white_checkbox').val();
         $(this).find('.white_checkbox').toggleClass('white_checkbox2');
         if($(this).hasClass('white_checkbox2')){
@@ -209,6 +201,8 @@ $(function(){
         }else{
             $(this).find('.white_checkbox').prop('checked',false)
         }
+        //선택된 메뉴를 selMenuTmp에 추가할지 삭제될지를 결정
+        //selMenuTmp에 선택된 메뉴가 있는지 없는지 체크하는 부분으로 indexOf는 있으면 0보다 크거나 같은값을 알려주고 없으면 -1을 알려준다.
         var pos = selMenuTmp.indexOf(value);
         // 선택한 메뉴가 체크가 된 경우
         if(pos == -1){

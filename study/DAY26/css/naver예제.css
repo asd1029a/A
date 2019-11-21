@@ -693,6 +693,57 @@
     background-position: -53px -62px;
   
 }
+/* 인기검색어 */
+.new_box_ul{
+    list-style:none;
+    
+}
+.search_new_box{
+    position: absolute;
+    top: 50%;
+    overflow: hidden;
+    right: 0;
+    margin-top: -10px;
+    width: 198px;
+    height: 20px;
+    padding: 3px 0 0 21px;
+    z-index: 0;
+}
+.new_box_in_num{
+    position: absolute;
+    left: 0;
+    min-width: 17px;
+    text-align: center;
+    font-family: Arial,Sans-serif;
+    line-height: 18px;
+    color: #00ab33;
+    font-size: 16px;
+    margin-top: 3px;
+    
+}
+.new_box_in_text{
+    margin-top: -1px;
+    width: 140px;
+    letter-spacing: -1px;
+    font-size: 14px;
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.new_box_icon{
+    position: absolute;
+    top: 50%;
+    right: 4px;
+    margin-top: -3px;
+    width: 11px;
+    height: 6px;
+    background-position: -223px -147px;
+}
+.real_search_link{
+    text-decoration: none;
+    color: black;
+}
   /* 배경 이미지 관련 css */
   .bg1{
       background-image: url("https://s.pstatic.net/static/www/img/uit/2019/sp_search.svg");
@@ -712,7 +763,9 @@
   .bg6{
     background-image: url("https://s.pstatic.net/static/www/img/2018/sp_more_v180627.png");
   }
- 
+  .bg7{
+    background-image: url("https://s.pstatic.net/static/www/img/uit/2019/sp_main_v191113.png");
+  }
   /*
   -position:absolute를 이용할 때 부모를 기준으로 잡기위해선 부모를 position:relatiive로 만든다.
   -background-position 을 이용하여 배경 이미지의 시작지점을 지정한다.  
