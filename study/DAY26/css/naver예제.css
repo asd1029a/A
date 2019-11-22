@@ -706,7 +706,7 @@
     margin-top: -10px;
     width: 198px;
     height: 20px;
-    padding: 3px 0 0 21px;
+    padding: 2px 0 0 21px;
     z-index: 0;
 }
 .new_box_in_num{
@@ -719,6 +719,7 @@
     color: #00ab33;
     font-size: 16px;
     margin-top: 3px;
+    height: 18px;
     
 }
 .new_box_in_text{
@@ -730,6 +731,7 @@
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+    height: 18px;
 }
 .new_box_icon{
     position: absolute;
@@ -743,6 +745,52 @@
 .real_search_link{
     text-decoration: none;
     color: black;
+}
+/* 실시간 뉴스 */
+.news_cast{
+    position: relative;
+    padding: 15px 0 0 16px;
+}
+.news_casts{
+    overflow: hidden;
+    height: 20px;
+    
+}
+.news_cast_1{
+    font-family: Dotum,'돋움',Helvetica,"Apple SD Gothic Neo",sans-serif;
+    font-size: 12px;
+    vertical-align: top;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    line-height: 20px;
+    width: 340px;
+}
+.news_main{
+    margin: 0;
+    padding: 0;
+    float: left;
+}
+.news_main1{
+    display: block;
+    margin-right: 12px;
+    color: #000;
+    text-decoration: none;
+    letter-spacing: -1px;
+    font-weight: 700;
+    font-size: 14px;
+    font-family: NanumSquare,Dotum,"돋움",Helvetica,AppleSDGothicNeo,sans-serif;
+    line-height: 16px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.news_main_icon{
+    display: inline-block;
+    margin-left: 8px;
+    width: 5px;
+    height: 9px;
+    background-position: -256px -100px;
+    vertical-align: middle;
 }
   /* 배경 이미지 관련 css */
   .bg1{
@@ -765,6 +813,9 @@
   }
   .bg7{
     background-image: url("https://s.pstatic.net/static/www/img/uit/2019/sp_main_v191113.png");
+  }
+  .bg8{
+    background-image: url("https://s.pstatic.net/static/www/img/2018/sp_newscast_v180511.png");
   }
   /*
   -position:absolute를 이용할 때 부모를 기준으로 잡기위해선 부모를 position:relatiive로 만든다.

@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    *{
+        padding: none;
+        margin: none;
+        box-sizing: border-box;
+    }
+    /* header */
+    .header{
+        height: 112px;
+        width: 100%;
+        background-color: blue;
+    }
+    /* body  */
+    .body{
+        background: #eff2f8;
+        height: 1824.3px;
+    }
+    .body::after{
+        clear: both;
+        display: block;
+        content: "";
+        /* body left */
+    }
+    .body_left,.body_right{
+        width: 50%;
+        position: relative;
+        float: left;
+        height: 100%;
+        background-color: #e6e9f3;
+    }
+    .channel_journal{
+        overflow: hidden;
+        height: 101px;
+    }
+    .channel_journal_type{
+        position: relative;
+        margin: 0 0 10px;
+        background: #fff;
+        position: relative;
+        height: 91px;
+    }
+    .journal_box{
+        height: 388px;
+        background-color: orchid;
+    }
+    .journal_box2{
+        height: 338px;
+        background-color: salmon;
+    }
+    .journal_box3{
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+    }
+    .channel_box3_1{
+        position: relative;
+        height: 155px;
+        width: 100%;
+        margin-bottom: 0;
+    }
+    .journal_box3_2{
+        height: 436px;
+        background-color: blueviolet;
+    }
+    .cap{
+        min-height: 120px;
+        max-height: 155px;
+        overflow: hidden;
+        position: relative;
+        width: 100%;
+    }
+    .cap_1{
+        vertical-align: top;
+        margin: 0 40px 0 40px;
+        width: calc(100% - 80px);
+
+    }
+    /* body right */
+    .channel_journal_r{
+        height: 152px;
+        width: 100%;
+    }
+    .channel_journal_r_type{
+        height: 142px;
+        width: 100%;
+        background-color: cadetblue;
+    }
+    .channel_journal_mm{
+        height: 549.3px;
+        width: 100%;
+        margin-bottom: 10px;
+        background-color: chartreuse;
+    }
+    .channel_journal_pan{
+        height: 174px;
+        margin-bottom: 10px;
+        padding-bottom: 20px;
+        background-color: cornflowerblue;
+    }
+    /* footer */
+    .footer{
+        background-color: #eff2f8;
+        padding-bottom: 50px;
+        height: 262px;
+    }
+    .footer_topbox{
+        height: 47px;
+        padding: 15px;
+        margin-bottom: 10px;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 17px;
+        letter-spacing: -1px;
+        color: #888;
+        background-color: #f7f9fb;
+    }
+    .footer_midbox{
+        margin-top: -10px;
+        padding: 8px 15px;
+        height: 51px;
+    }
+    .midbox_left{
+        width: 40px;
+        height: 40px;
+        background-color: crimson;
+        
+    }
+    .midbox_right{
+        width: 40px;
+        height: 40px;
+        background-color: crimson;
+    }
+    .footer_botbox{
+        overflow: hidden;
+        position: relative;
+        padding: 13px 0 21px;
+        text-align: center;
+        border-top: 1px solid #e3e7ee;
+        height: 114px;
+    }
+    .botbox_1{
+        padding-bottom: 8px;
+        font-size: 0;
+        line-height: 0;
+        white-space: nowrap;
+        font-family: "Helvetica Neue",AppleSDGothicNeo-Medium,sans-serif;
+        height: 35px;
+    }
+    .botbox_2{
+        padding: 1px 0;
+        font-size: 0;
+        line-height: 0;
+        height: 22px;
+    }
+    .botbox_3{
+        padding: 1px 0;
+        font-size: 0;
+        line-height: 0;
+        height: 22px;
+    }
+    @media screen and (max-width: 640px) {
+        .body{
+        position: relative;
+        width: 100%;
+        height: 100%;
+        }
+        .body_left,.body_right{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: #e6e9f3;
+        }
+        
+        .body_right{
+            position: absolute;
+            top: 214px;
+            width: 100%;
+            z-index: 5;
+        }
+        .journal_box{
+        height: 388px;
+        background-color: orchid;
+        position: absolute;
+            bottom: 0;
+        }
+        .journal_box2{
+            height: 338px;
+            background-color: salmon;
+            position: absolute;
+            bottom: 0;
+        }
+        .journal_box3{
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+    }
+    </style>
+</head>
+<body>
+<div>
+    <div class="header"></div>
+    <div class="body">
+        <span class="body_left">
+            <div class="channel_journal">
+                <div class="channel_journal_type"></div>
+            </div>
+            <div class="journal_box"></div>
+            <div class="journal_box2"></div>
+            <div class="journal_box3">
+                <div class="journal_box3_1">
+                    <a href="#" class="cap">
+                        <img src="https://ssl.pstatic.net/tveta/libs/1261/1261680/c801a99efe20ed385167_20191113115841487.jpg" class="cap_1">
+                    </a>
+                </div>
+                <div class="journal_box3_2"></div>
+            </div>
+        </span>
+        <span class="body_right">
+            <div class="channel_journal_r">
+                <div class="channel_journal_r_type"></div>
+            </div>
+            <div class="channel_journal_mm"></div>
+            <div class="channel_journal_pan"></div>
+            <div class="journal_box2"></div>
+        </span>
+    </div>
+    <div class="footer">
+        <div class="footer_topbox">각 언론사가 직접 기사를 편집합니다.</div>
+        <div class="footer_midbox">
+            <span class="midbox_left">
+                <span class="midbox_left_1"></span>
+                <span class="midbox_left_2"></span>
+            </span>
+            <span class="midbox_right">
+                <span class="midbox_right_1"></span>
+                <span class="midbox_right_2"></span>
+            </span>
+        </div>
+        <div class="footer_botbox">
+            <div class="botbox_1"></div>
+            <div class="botbox_2"></div>
+            <div class="botbox_3"></div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
