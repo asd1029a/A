@@ -42,10 +42,16 @@
 
             
         })
-    })
-    $('.img').click(function(){
+        $('.img').click(function(){
         var img = '<img src="../DAY2/123.jpg" alt="">'
         $('.div11').append(img);
+       
+    }) 
+    $('.img2').click(function(){
+        var img = '<img src="../DAY2/123.jpg" alt="">' 
+    $('.div11>img').last().remove();
+    
+    })
     })
     </script>
     <style>
@@ -130,7 +136,7 @@
         <option value="daum.net">다음</option>
         <option value="google.com">구글</option>
     </select>
-    <button class="img">이미지복사</button>
+    <button class="img">이미지복사</button><button class="img2">이미지복사</button>
     <div class="div11"><img src="../DAY2/123.jpg" alt=""></div>
 </body>
 </html>

@@ -31,7 +31,10 @@
                 }
             }$('.num2').text(str)
         })
-      
+        $('.btn2').click(function(){
+            var sty = '<input type="text" class="inp">';
+            $('.nno').append(sty);
+        })
         })
    
     </script>
@@ -132,11 +135,13 @@
         </div>
         <button class="btn1">로그인</button>
     </div>
+    <div class="nno">
     <div class="goo"><span class="spn">G</span><span class="spn">o</span><span class="spn">o</span><span class="spn">g</span><span class="spn">l</span><span class="spn">e</span></div>
     <span class="box1"></span><input type="text" class="inp"><button class="btn2">복사</button>
     <div class="num1">
         <span class="num2">1</span>/<span class="num3">5</span>
         <button class="btn5 up1">up</button><button class="btn5 down1">down</button>
     </div>
+</div>
 </body>
 </html>

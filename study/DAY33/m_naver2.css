@@ -1,0 +1,161 @@
+@charset 'utf-8';
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: #eff2f8;
+}
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0; 
+    z-index: 101;
+}
+.search{
+    height: 60px;
+    background-color: white;
+    display: flex;
+}
+.menu_list{
+    height: 52px;
+    background-color: #0eca68;
+}
+.body{
+    margin-top: 112px;
+    position: relative;   
+}
+.body::after{
+    clear: both;
+    content: "";
+    display: block;
+    
+}
+.contents{
+    width: 50%;
+    background-color: white;
+    margin-bottom: 10px;
+}
+/* 홀수번째 요소 왼쪽으로 */
+.contents:nth-of-type(2n-1){
+    float: left;
+}
+/* 짝수번째 요소 오른쪽으로 */
+.contents:nth-of-type(2n){
+    float: right;
+}
+.economy{
+    height: 337.8px;
+}
+.news_all{
+    height: 200px;
+}
+.news_location{
+    height: 141.34px;
+}
+.pan{
+    height: 174px;
+}
+.news_list{
+    height: 547px;
+}
+.broadcast{
+    height: 435.8px;
+}
+.press{
+    height: 387px;
+}
+.internet{
+    height: 337.8px;
+}
+.edit{
+    height: 90.8px;
+}
+.ad{
+    height: 140px;
+}
+.line{
+    width: 1px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: calc(50% - 0.5px);
+    background-color: #efefef;
+    z-index: 100;
+}
+.logo{
+    position: relative;
+    width: 54px;
+    padding: 19px 14px 19px 15px;
+}
+.logo_icon{
+    width: 24px;
+    height: 22px;
+    background-position: -32px -312px;
+}
+.search_line{
+    height: 22px;
+    width: 1px;
+    background-color: #eceff3;
+    position: absolute;
+    top: 50%;
+    margin-top: -11px;
+    right: -1px;
+    
+}
+.search_btn_group{
+    width: 137px;
+    display: flex;
+    padding: 0 7px;
+}
+.search_btn_group>button{
+    all:unset;
+    width: 40px;
+    margin-right: 1px;
+    height: 60px;
+    display: block; 
+}
+.btn_mic,
+.btn_loc,
+.btn_pic{
+    width: 28px;
+    height: 28px;
+    margin: 0 auto;
+}
+.btn_mic{
+    background-position: -321px -93px;
+}
+.btn_loc{
+    background-position: -321px -60px;
+}
+.btn_pic{
+    background-position: -321px -27px;
+}
+.search_input{
+    width:calc(100% - 54px - 137px);
+    padding: 17px 0 16px 14px;
+}
+.search_input>input{
+    width: 100%;
+    height: 27px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: -.4px;
+}
+.search_input>input::placeholder{
+    color: #c7cad1;
+}
+/* url */
+.bg1{background-image: url("https://s.pstatic.net/static/www/m/uit/2019/sp_search_v191106.png");
+    background-size: 451px 440px;
+    }
+.bg2{background-image: url("https://s.pstatic.net/static/www/m/uit/2019/sp_nav_3x_v190731.png");
+}
+.search_bar::placeholder{
+    color: #c7cad1;
+    }

@@ -1,0 +1,34 @@
+@charset 'utf-8';
+@media (max-width:640px){
+   
+    .news_all{
+        height: 200.86px;
+    }
+    .news_location{
+        height: 141.8px;
+    }
+    .pan{
+        height: 174px;
+    }
+    .news_list{
+        height: 156.1px;
+    }
+    .broadcast{
+        height: 435.8px;
+    }
+    .press{
+        height: 338px;
+    }
+    .internet{
+        height: 337.8px;
+    }
+    .edit{
+        height: 90.8px;
+    }
+    .ad{
+        height: 140px;
+    }
+    .line{
+        display: none;
+    }
+}

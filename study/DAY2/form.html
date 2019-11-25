@@ -16,9 +16,18 @@
                 서버에서 처리하는 과정이 필요
  -->
     
-    <form action="" method="GET">
-        <input type="text" name="id">
+    
+        <input type="checkbox" name="id" checked value="dod" id="id">
         <button>제출</button>
-    </form>
+        <script src="../JS/jquery.min.js"></script>
+        <script>
+        $('#id').val('mon');
+        $('button').click(function(){
+            $('#id').prop('checked');
+            $('#id').prop('checked',!$('#id').prop('checked'))
+        })
+        
+        </script>
+   
 </body>
 </html>
