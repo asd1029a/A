@@ -23,6 +23,7 @@ body{
 .menu_list{
     height: 52px;
     background-color: #0eca68;
+    position: relative;
 }
 .body{
     margin-top: 112px;
@@ -69,7 +70,8 @@ body{
     height: 387px;
 }
 .internet{
-    height: 337.8px;
+    height: 338px;
+    position: relative;
 }
 .edit{
     height: 90.8px;
@@ -150,12 +152,230 @@ body{
 .search_input>input::placeholder{
     color: #c7cad1;
 }
+/* 검색창 눌렀을 때 */
+.search_in{
+    position: absolute;
+    margin-top: 0.5px;
+    width: 100vw;
+    height: 100vh;
+    background-color: #e6e9f3;
+    z-index: 300;
+}
+.search_in_top{
+    z-index: 301;
+    height: 60px;
+    width: 100%;
+    background-color: white;
+    border-bottom:0.5px solid #0eca68;
+    display: flex;
+}
+.search_in_backbtn{
+    width: 57px;
+    height: 60px;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+}
+.search_in_backbtn_in{
+    width: 21px;
+    height: 18px;
+    background-position: -366px -298px;
+    margin: 21px 18px;
+}
+.search_input2{
+    width:calc(100% - 115px);
+    padding: 17px 26px 16px 0px;
+}
+.search_input2>input{
+    width: 100%;
+    height: 27px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: -.4px;
+}
+.search_input2>input::placeholder{
+    color: #c7cad1;
+}
+.search_in_btn{
+    all:unset;
+    width: 58px;
+}
+.search_in_btn_icon{
+    width: 24px;
+    height: 24px;
+    background-position: -206px -93px;
+    margin: 0 auto;
+}
+.search_in_mid{
+    z-index: 301;
+    height: 165px;
+    width: 100%;
+    background-color: white;
+    text-align: center;
+    padding: 53px 0 54px;
+    color: #666;
+    line-height: 29px;
+    font-weight: 400;
+    font-size: 17px;
+}
+.search_in_str1{
+    color: #8f8f8f;
+    font-size: 15px;
+}
+.search_in_str2{
+    color: #00c73c;
+    font-size: 15px;
+}
+.search_in_bot{
+    z-index: 301;
+    height: 46px;
+    width: 100%;
+    background-color: white;
+    border-top: 1px solid #ecf0f2;
+    display: flex;
+    padding: 10px 0 10px;
+}
+.search_in_auto_close{
+    padding: 0 7px;
+    color: #8f8f8f;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: -.3px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.auto_close_side{
+    float: left;
+    height: 13px;
+    margin-top: 7px;
+    border-left: 1px solid #e2e5e8;
+}
+.search_in_help{
+    padding: 0 7px;
+    color: #8f8f8f;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: -.3px;
+    cursor: pointer;
+}
+.search_in_close{
+    padding: 0 7px;
+    color: #8f8f8f;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: -.3px;
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+}
+/* 인터넷it지 */
+.internet_str{
+    padding: 3px 15px 10px;
+    font-weight: 700;
+    font-size: 14px;
+    color: #555;
+    letter-spacing: -1px;
+}
+.internet_box{
+    padding: 0 9px 14px 10px;
+}
+.internet_boxs{
+    width: 25%;
+    float: left;
+    margin-bottom: 11px;
+}
+.internet_boxs::after{
+    clear: both;
+    content: "";
+    display: block;
+}
+.boxs1{
+    position: relative;
+    display: block;
+    margin: 0 6px 0 5px;
+    padding-top: 12px;
+    height: 87px;
+    background: #f2f4f9;
+    border: solid 1px #edeff4;
+    border-radius: 3px;
+}
+.plus_icon{
+    position:absolute;
+    right: 5px;
+    top: 5px;
+    width: 13px;
+    height: 13px;
+    background-position: -594px -429px;
+}
+.internet_box_logo{
+    width: 42px;
+    height: 42px;
+    position: relative;
+    margin: 0 auto;   
+}
+.internet_box_logo>img{
+    border-radius: 21px;
+}
+.internet_box_logo_name{
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-top: 4px;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 16px;
+    letter-spacing: -.8px;
+    color: #444;
+}
+.click_box{
+    background: #fff;
+    border: solid 1px #19c546;
+}
+.click_icon{
+    top: 7px;
+    width: 13px;
+    height: 10px;
+    background-position: -347px -516px;
+}
+.gudok{
+    position: fixed;
+    right: 0;
+    bottom: 18px;
+    left: 0;
+    margin-bottom: 0;
+    z-index: 2220;
+}
+.gudok_box{
+    background-image: linear-gradient(170deg,#02cf55,#1ec5a2);
+    margin: 0 auto;
+    text-align: center;
+    box-shadow: 0 2px 6px 0 rgba(11,166,92,.3);
+    border-radius: 20px;
+    border: none;
+    width: 220px;
+    height: 40px;
+    padding: 11px 0 10px;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 19px;
+    letter-spacing: -1px;
+    color: #fff;
+}
 /* url */
 .bg1{background-image: url("https://s.pstatic.net/static/www/m/uit/2019/sp_search_v191106.png");
     background-size: 451px 440px;
     }
 .bg2{background-image: url("https://s.pstatic.net/static/www/m/uit/2019/sp_nav_3x_v190731.png");
 }
+.bg3{background-image: url("https://s.pstatic.net/static/www/m/uit/2019/sp_cui_v191114.png");
+    background-size: 621px 592px;
+}
 .search_bar::placeholder{
     color: #c7cad1;
     }
+.display_none{
+    display: none;
+}
+

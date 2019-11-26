@@ -277,7 +277,14 @@ body{
     height: 24px;
     background-position: -198px -108px;
 }
-
+.gudok{
+    position: fixed;
+    right: 0;
+    bottom: 18px;
+    left: 0;
+    margin-bottom: 0;
+    z-index: 2220;
+}
 /* url */
 .bg1{background-image: url("https://s.pstatic.net/static/www/m/uit/2019/sp_search_v191106.png");
     }

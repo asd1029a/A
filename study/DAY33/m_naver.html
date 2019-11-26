@@ -7,12 +7,37 @@
     <title>Document</title>
     <link rel="stylesheet" href="m_naver2.css">
     <link rel="stylesheet" href="m_naver1.css">
-    <script src="m_naver.js"></script>
+    <script src="../js/jquery.min.js"></script>
+    <script src="../DAY33/m_naver.js"></script>
     <style>
     </style>
 </head>
 <body>
     <div class="header">
+        <div class="search_in display_none">
+            <div class="search_in_box">
+                <div class="search_in_top">
+                    <a href="#" class="search_in_backbtn">
+                        <div class="search_in_backbtn_in bg1"></div>
+                    </a>
+                    <div class="search_input2">
+                        <input type="text" placeholder="검색어를 입력해주세요.">
+                    </div>
+                    <button class="search_in_btn">
+                        <div class="search_in_btn_icon bg1"></div>
+                    </button>
+                </div>
+                <div class="search_in_mid">
+                    최근 검색어 내역이 없습니다.<br>
+                    <span class="search_in_str1">설정이 초기화된다면</span>&nbsp;<a href="https://m.help.naver.com/support/contents/contentsView.help?contentsNo=4029&lang=ko" class="search_in_str2">도움말</a><span  class="search_in_str1">을 확인해주세요.</span>
+                </div>
+                <div class="search_in_bot">
+                    <div class="search_in_auto_close">자동저장 끄기</div><span class="auto_close_side"></span>
+                    <div class="search_in_help">도움말</div>
+                    <div class="search_in_close">닫기</div>
+                </div>
+            </div>
+        </div>
         <div class="search">
         <a href="#" class="logo">
             <div class="logo_icon bg1"></div>
@@ -34,8 +59,111 @@
         </div>
     </div>
     <div class="body">
-       
+        <div class="contents economy"></div>
+        <div class="contents news_all"></div>
+        <div class="contents news_location"></div>
+        <div class="contents pan"></div>
+        <div class="contents news_list"></div>
+        <div class="contents broadcast"></div>
+        <div class="contents press"></div>
+        <div class="contents internet">
+            <p class="internet_str">인터넷·IT지</p>
+            <div class="internet_box">
+                <div class="internet_boxs">
+                    <div class="boxs1">
+                        <a href="#" class="plus_icon bg3"></a>
+                        <div class="internet_box_logo"><img src="https://s.pstatic.net/mimgnews/image/upload/office_logo/119/2018/08/08/logo_119_57_20180808174508.png" width="100%"></div>
+                        <div class="internet_box_logo_name">데일리안</div>
+                    </div>
+                </div>
+                <div class="internet_boxs">
+                    <div class="boxs1">
+                        <a href="#" class="plus_icon bg3"></a>
+                        <div class="internet_box_logo"><img src="https://s.pstatic.net/mimgnews/image/upload/office_logo/029/2018/08/08/logo_029_57_20180808174608.png" width="100%"></div>
+                        <div class="internet_box_logo_name">디지털타임스</div>
+                    </div>
+                </div>
+                <div class="internet_boxs">
+                    <div class="boxs1">
+                        <a href="#" class="plus_icon bg3"></a>
+                        <div class="internet_box_logo"><img src="https://s.pstatic.net/mimgnews/image/upload/office_logo/092/2018/08/08/logo_092_57_20180808174708.png" width="100%"></div>
+                        <div class="internet_box_logo_name">지디넷코리아</div>
+                    </div>
+                </div>
+                <div class="internet_boxs">
+                    <div class="boxs1">
+                        <a href="#" class="plus_icon bg3"></a>
+                        <div class="internet_box_logo"><img src="https://s.pstatic.net/mimgnews/image/upload/office_logo/047/2018/08/08/logo_047_57_20180808174708.png" width="100%"></div>
+                        <div class="internet_box_logo_name">오마이뉴스</div>
+                    </div>
+                </div>
+                <div class="internet_boxs">
+                   <div class="boxs1">
+                        <a href="#" class="plus_icon bg3"></a>
+                        <div class="internet_box_logo"><img src="https://s.pstatic.net/mimgnews/image/upload/office_logo/138/2018/08/08/logo_138_57_20180808174508.png" width="100%"></div>
+                        <div class="internet_box_logo_name">디지털데일리</div>
+                    </div>
+                </div>
+                <div class="internet_boxs">
+                   <div class="boxs1">
+                        <a href="#" class="plus_icon bg3"></a>
+                        <div class="internet_box_logo"><img src="https://s.pstatic.net/mimgnews/image/upload/office_logo/002/2018/08/08/logo_002_57_20180808174808.png" width="100%"></div>
+                        <div class="internet_box_logo_name">프레시안</div>
+                    </div>
+                </div>
+                <div class="internet_boxs">
+                   <div class="boxs1">
+                        <a href="#" class="plus_icon bg3"></a>
+                        <div class="internet_box_logo"><img src="https://s.pstatic.net/mimgnews/image/upload/office_logo/293/2018/08/08/logo_293_57_20180808174608.png" width="100%"></div>
+                        <div class="internet_box_logo_name">블로터</div>
+                    </div>
+                </div>
+                <div class="internet_boxs">
+                   <div class="boxs1">
+                        <a href="#" class="plus_icon bg3"></a>
+                        <div class="internet_box_logo"><img src="https://s.pstatic.net/mimgnews/image/upload/office_logo/030/2018/08/08/logo_030_57_20180808174708.png" width="100%"></div>
+                        <div class="internet_box_logo_name">전자신문</div>
+                    </div>
+                </div>
+                <div class="internet_boxs">
+                   <div class="boxs1">
+                        <a href="#" class="plus_icon bg3"></a>
+                        <div class="internet_box_logo"><img src="https://s.pstatic.net/mimgnews/image/upload/office_logo/031/2018/08/08/logo_031_57_20180808174608.png" width="100%"></div>
+                        <div class="internet_box_logo_name">아이뉴스24</div>
+                    </div>
+                </div>
+                <div class="internet_boxs">
+                   <div class="boxs1">
+                        <a href="#" class="plus_icon bg3"></a>
+                        <div class="internet_box_logo"><img src="https://s.pstatic.net/mimgnews/image/upload/office_logo/079/2018/08/08/logo_079_57_20180808174508.png" width="100%"></div>
+                        <div class="internet_box_logo_name">노컷뉴스</div>
+                    </div>
+                </div>
+                <div class="internet_boxs">
+                   <div class="boxs1">
+                        <a href="#" class="plus_icon bg3"></a>
+                        <div class="internet_box_logo"><img src="https://s.pstatic.net/mimgnews/image/upload/office_logo/006/2018/08/08/logo_006_57_20180808174608.png" width="100%"></div>
+                        <div class="internet_box_logo_name">미디어오늘</div>
+                    </div>
+                </div>
+                <div class="internet_boxs">
+                   <div class="boxs1">
+                        <a href="#" class="plus_icon bg3"></a>
+                        <div class="internet_box_logo"><img src="https://s.pstatic.net/mimgnews/image/upload/office_logo/629/2019/09/26/logo_629_57_20190926182826.png" width="100%"></div>
+                        <div class="internet_box_logo_name">더팩트</div>
+                    </div>
+                </div>
+                <div class="gudok display_none">
+                    <div class="gudok_box"><span class="gudok_num"></span>개 언론사 구독
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="contents edit"></div>
+        <div class="contents ad"></div>
+        <div class="line"></div>
     </div>
-    <div class="footer"></div>
+    <div class="footer">
+    </div>
 </body>
 </html>
