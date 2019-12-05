@@ -127,19 +127,163 @@
     .body_str_2{
         letter-spacing: -1px; 
     }
+    .body_add_box{
+        width: 999px;
+        height: 275px;
+        position: relative;
+        margin: 0 auto;
+        margin-top: 540px;
+    }
+    .add_box_1{
+        width: 100%;
+        height: 75px;
+        display: flex;        
+
+    }
+    .add_box_1_top{
+        width: 25%;
+        height: 100%;
+        position: relative;
+        padding: 25px;
+        
+    }
+    .add_box_1_top>img{
+        position: absolute;
+        right: 5px;
+        top: 12.5px;
+    }
+    .add_box_1_top_str{
+        color: white;
+        font-weight: bold;
+    }
+    .add_box_1_top_str_2{
+        color: white;
+        font-size: 10px;
+        margin-top: 8px;
+    }
+    .add_box_2{
+        width: calc(100% - 40px);
+        margin-top: 50px;
+        height: 90px;
+        background-color: #f6fbfc;
+        opacity: 0.8;
+        padding: 30px 20px 30px 20px;
+    }
+     .add_box_2_str{
+         position: relative;
+         margin-bottom: 5px;
+     }
+     .add_box_2_str>button{
+         all:unset;
+         background-color: #acacac;
+         border-radius: 3px;
+         position: absolute;
+         font-size: 10px;
+         text-align: center;
+         color: white;
+         font-weight: 600;
+         width: 32px;
+         right: 0;
+         top: 3px;
+     }
+    .add_box_2_inbox{
+        width: calc(100% - 40px);
+        height: 90px;
+        position: relative;
+        top: -120px;
+        left: 20px;
+        display: flex;
+    }
+    
+    .add_box_2_first{
+        width: 230px;
+        height: 100%;
+    }
+    .add_box_2_left{
+        display: flex;
+        width: 230px;
+        position: relative;
+    }
+    .add_box_2_second{
+        width: 160px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        font-size: 12px;
+    }
+    .add_box_2_second2{
+        font-size: 12px; 
+        position: absolute;
+        right: 0px; 
+        color: #a4a4a4;
+    }
+    .add_box_2_last{
+        right: 0;
+        position: absolute;
+    }
+    .add_box_2_mid{
+        margin-left: 20px;
+        width: 460px;
+        position: relative;
+    }
+    .add_box_2_str_2{
+        display: flex;
+        margin-bottom: 5px;
+    }
+    .add_box_2_str_2>button{
+         all:unset;
+         background-color: #acacac;
+         border-radius: 3px;
+         position: absolute;
+         font-size: 10px;
+         text-align: center;
+         color: white;
+         font-weight: 600;
+         width: 32px;
+         right: 0;
+         top: 3px;
+     }
+     .add_box_2_mid_picbox{
+         display: flex;
+     }
+     .add_box_2_mid_picbox>img{
+         margin-right: 10px;
+     }
     /* footer */
     .footer{
+        padding-top: 20px;
         position: absolute;
         background-color: white;
-        height: 125px;
-        width: 1920px;
+        height: 105px;
+        width: 1000px;
         bottom: 0;
+    }
+    .footer_str{
+        color: #919191;
+        text-align: right;
+        font-size: 13px;
+    }
+    .logo_2{
+        position: relative;
+        top: -40px;
     }
     .color{
         color: #32acdb;
     }
     .color2{
         color: black;
+    }
+    .color3{
+        background-color: #4bc2b7;
+    }
+    .color4{
+        background-color: #db6132;
+    }
+    .color5{
+        background-color: #665759;
+    }
+    .color6{
+        background-color: #32acdb;
     }
 </style>
 </head>
@@ -175,8 +319,73 @@
                 <div class="body_str_1">같이 떠날래요?</div>
                 <div class="body_str_2">세상에서 가장 아름답고 평화로운 길.<br>걸어서 여행하는 이들을 위한 길.</div>
             </div>
+            <div class="body_add_box">
+                <div class="add_box_1">
+                    <div class="add_box_1_top color6">
+                      <div class="add_box_1_top_str">예약안내</div><div class="add_box_1_top_str_2">행복이 넘치는 에프아일랜드<br>온라인 예약 기본 수칙과<br>환불 위약금을 알 수 있습니다.</div><img src="의자사진2.png" alt=""></div>
+                    <div class="add_box_1_top color3">
+                      <div class="add_box_1_top_str">예약안내</div><div class="add_box_1_top_str_2">행복이 넘치는 에프아일랜드<br>온라인 예약 기본 수칙과<br>환불 위약금을 알 수 있습니다.</div><img src="바다사진.png" alt=""></div>
+                    <div class="add_box_1_top color4">
+                      <div class="add_box_1_top_str">예약안내</div><div class="add_box_1_top_str_2">행복이 넘치는 에프아일랜드<br>온라인 예약 기본 수칙과<br>환불 위약금을 알 수 있습니다.</div><img src="의자사진.png" alt=""></div>
+                    <div class="add_box_1_top color5">
+                      <div class="add_box_1_top_str">예약안내</div><div class="add_box_1_top_str_2">행복이 넘치는 에프아일랜드<br>온라인 예약 기본 수칙과<br>환불 위약금을 알 수 있습니다.</div><img src="인간사진.png" alt=""></div>
+                </div>
+                <div class="add_box_2"></div>
+                <div class="add_box_2_inbox">
+                    <div class="add_box_2_first">
+                        <div class="add_box_2_str">공지사항<button>VIEW</button>
+                    </div>
+                        <div class="add_box_2_left">
+                            <div class="add_box_2_second">· 2009년 동아아파트 재건축합니다아아아아아아아</div><div class="add_box_2_second2">2015.08.01</div>
+                        </div>    
+                        <div class="add_box_2_left">
+                            <div class="add_box_2_second">· 한마음 한뜻으로 함께 나눔의 나눔나눔나뭄</div><div class="add_box_2_second2">2015.08.01</div>
+                        </div>    
+                        <div class="add_box_2_left">
+                            <div class="add_box_2_second">· 2009년 동아아파트 재건축합니다아아아아아아아</div><div class="add_box_2_second2">2015.08.01</div>
+                        </div>    
+                        <div class="add_box_2_left">
+                            <div class="add_box_2_second">· 한마음 한뜻으로 함께 나눔의 나눔나눔나뭄</div><div class="add_box_2_second2">2015.08.01</div>
+                        </div>  
+                    </div>
+                    <div class="add_box_2_mid">
+                        <div class="add_box_2_str_2">지점소개<button>VIEW</button></div>
+                        <div class="add_box_2_mid_picbox">
+                            <img src="배경1번.png" alt="">
+                            <img src="배경2.png" alt="">
+                            <img src="배경3.png" alt="">
+                            <img src="배경4.png" alt="">
+                        </div>
+                    </div> 
+                    <div class="add_box_2_last">
+                        <div class="add_box_2_str">질문답변<button>VIEW</button>
+                    </div>
+                        <div class="add_box_2_left">
+                            <div class="add_box_2_second">· 2009년 동아아파트 재건축합니다아아아아아아아</div><div class="add_box_2_second2">2015.08.01</div>
+                        </div>    
+                        <div class="add_box_2_left">
+                            <div class="add_box_2_second">· 한마음 한뜻으로 함께 나눔의 나눔나눔나뭄</div><div class="add_box_2_second2">2015.08.01</div>
+                        </div>    
+                        <div class="add_box_2_left">
+                            <div class="add_box_2_second">· 2009년 동아아파트 재건축합니다아아아아아아아</div><div class="add_box_2_second2">2015.08.01</div>
+                        </div>    
+                        <div class="add_box_2_left">
+                            <div class="add_box_2_second">· 한마음 한뜻으로 함께 나눔의 나눔나눔나뭄</div><div class="add_box_2_second2">2015.08.01</div>
+                        </div>  
+                    </div> 
+                </div>
+            </div>
         </div>
-        <div class="footer"></div>
+        <div class="footer container">
+            <div class="logo">
+                <div class="header_str color"><span class="big_font">F. I</span>sland</div><div class="header_str_2">힐링! 자연과 하나되는 휴식공간</div><div class="header_str_3 color">에프<span class="color2">아일랜드</span></div>
+            </div>
+            <div class="logo_2">
+                <div class="footer_str">서울시 마포구 마포대로 33 한화오벨리스크 A-3705 ㅣ 전화번호 : 010-4553-1024 ㅣ 이메일 : ykeedo@nate.com</div>
+                <div class="footer_str">대표이사 : 고경태 ㅣ 개인정보관리책임자 :</div>
+                <div class="footer_str">COPYRIGHT(C) 2016 BY MODERNITY. ALL RIGHT RESERVED.</div>
+            </div>
+        </div>
     </div>
 </body>
 </html>
