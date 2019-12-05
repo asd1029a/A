@@ -81,6 +81,51 @@
     }
     .header_list{
         padding-left: 270px;
+        display: flex;
+        position: absolute;
+        top: 40px;
+        right: 460px;
+    }
+    .header_list_top{
+        color: black;
+        font-size: 20px;
+        text-align: center;
+        padding-left: 12px;
+        margin-right: 12px;
+        border-left: 1px solid #ededed;
+        letter-spacing: -1px;
+    }
+    .header_list_top:first-of-type{
+        border: none;
+    }
+    .header_list_top:last-of-type{
+        margin-right: 0px;
+    }
+    .header_list_bot{
+        font-size: 13px;
+        color: #adadad;
+        letter-spacing: -1px;
+        line-height: 20px;
+    }
+    /* body */
+    .body{
+        width: 1000px;
+        height: 915px;
+        position: absolute;
+        top: 160px;
+    }
+    .body_str{
+        position: absolute;
+        top: 130px;
+        right: 460px;
+    }
+    .body_str_1{
+       font-family:cursive;
+       font-size: 50px;
+       letter-spacing: -1px;
+    }
+    .body_str_2{
+        letter-spacing: -1px; 
     }
     /* footer */
     .footer{
@@ -92,6 +137,9 @@
     }
     .color{
         color: #32acdb;
+    }
+    .color2{
+        color: black;
     }
 </style>
 </head>
@@ -110,19 +158,24 @@
                 </div>
             </div>
             <div class="logo">
-                <div class="header_str color"><span class="big_font">F. I</span>sland</div><div class="header_str_2">힐링! 자연과 하나되는 휴식공간</div><div class="header_str_3 color">에프아일랜드</div>
+                <div class="header_str color"><span class="big_font">F. I</span>sland</div><div class="header_str_2">힐링! 자연과 하나되는 휴식공간</div><div class="header_str_3 color">에프<span class="color2">아일랜드</span></div>
             </div>
             <div class="header_list">
-                <div class="header_list_top color">story</div>
-                <div class="header_list_top"></div>
-                <div class="header_list_top"></div>
-                <div class="header_list_top"></div>
-                <div class="header_list_top"></div>
-                <div class="header_list_top"></div>
-                <div class="header_list_top"></div>
+                <div class="header_list_top color">story<div class="header_list_bot">대표인사말</div></div>
+                <div class="header_list_top">room<div class="header_list_bot">객실안내<br>외부풍경</div></div>
+                <div class="header_list_top">reservation<div class="header_list_bot">예약안내<br>실시간예약</div></div>
+                <div class="header_list_top">info<div class="header_list_bot">예약안내<br>실시간예약<br>상당문의</div></div>
+                <div class="header_list_top">travel<div class="header_list_bot">주변여행지<br>레일바이크<br>등산</div></div>
+                <div class="header_list_top">map<div class="header_list_bot">자가이용시<br>대중교통이용시<br>약도안내</div></div>
+                <div class="header_list_top">community<div class="header_list_bot">예약문의<br>여행후기<br>포토갤러리<br>공지사항</div></div>
             </div>
         </div>
-        <div class="body"></div>
+        <div class="body container">
+            <div class="body_str"> 
+                <div class="body_str_1">같이 떠날래요?</div>
+                <div class="body_str_2">세상에서 가장 아름답고 평화로운 길.<br>걸어서 여행하는 이들을 위한 길.</div>
+            </div>
+        </div>
         <div class="footer"></div>
     </div>
 </body>
