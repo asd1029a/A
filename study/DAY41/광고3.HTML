@@ -71,9 +71,26 @@
         height: 44px;
         border: 3px solid #fa5065;
         margin-bottom: 10px;
+        line-height: 70px;
     }
     .post_in{
-        height: 138px;
+        height: 118px;
+        padding: 10px;
+        overflow: hidden;
+    }
+    .post_in_top{
+        font-weight: bold;
+        font-size: 12px;
+    }
+    .post_in_top>img{
+        float: right;
+    }
+    .post_in_bot{
+        font-size: 12px;
+        letter-spacing: -1px;
+        height: 18px;
+        overflow: hidden;
+        margin-bottom: 1px;
     }
     .body_icon{
         height: 35px;
@@ -81,7 +98,8 @@
         padding: 5px 0 0 0;
     }
     .group{
-        height: 308px;
+        height: 298px;
+        padding: 5px;
     }
     /* body_middle */
     .body_middle{
@@ -91,6 +109,10 @@
     .where{
         height: 158px;
         background-color: #ffedf2;
+    }
+    .where>img{
+        height: 158px;
+        width: 508px;
     }
     .search{
         height: 53px;
@@ -163,7 +185,6 @@
         width: 220px;
         line-height: 75px;
         height: 100%;
-        border-right: 1px solid black;
     }
     .footer_box2{
         text-align: center;
@@ -176,8 +197,8 @@
     }
     /*  */
     .border{
-        border: 1px solid #d4d4d4;
         margin-bottom: 10px;
+        border: 1px solid #d4d4d4;
     }
     .font_size{
         font-size: 11px;
@@ -185,6 +206,22 @@
     .red{
         color:red;
         font-weight: bold;
+    }
+    .jul1{
+        margin-top: 5px;
+        border: 0.5px solid #d4d4d4;
+        margin-bottom: 5px;
+    }
+    .jum1{
+        color: #8f8f8f;
+        font-size: 15px;
+        font-weight: bold;
+    }
+    .jul2{
+        border: 0.5px solid #d4d4d4;
+    }
+    .padding{
+        padding: 5px 0 5px 0;
     }
     
     </style>
@@ -208,13 +245,38 @@
         <div class="boby">
             <div class="body_left">
                 <div class="login border"></div>
-                <div class="blog"></div>
-                <div class="post_in border"></div>
+                <div class="blog"><img src="blog_go.png" alt=""></div>
+                <div class="post_in border">
+                    <div class="post_in_top">공지사항<img src="재생버튼.png" alt=""></div>
+                    <div class="jul1"></div>
+                    <div class="post_in_bot"><span class="jum1">· </span><우리아이위치추적기>드려요</div>
+                    <div class="post_in_bot"><span class="jum1">· </span>기말 리포트,다운받고 선물 접수</div>
+                    <div class="post_in_bot"><span class="jum1">· </span>번역가 이미도의 댓글 수다 초대</div>
+                    <div class="post_in_bot"><span class="jum1">· </span><우리아이위치추적기>드려요</div>
+                    <div class="post_in_bot"><span class="jum1">· </span><우리아이위치추적기>드려요</div>
+                    <div class="post_in_bot"><span class="jum1">· </span><우리아이위치추적기>드려요</div>
+                </div>
                 <div class="body_icon"><img src="mnet.png" alt=""></div>
-                <div class="group border"></div>
+                <div class="group border">
+                    <div class="post_in_top">글 주제별 분류</div>
+                    <div class="jul1"></div>
+                    <div class="post_in_bot"><span class="jum1">· </span>얼짱/몸짱</div>
+                    <div class="post_in_bot"><span class="jum1">· </span>게임</div>
+                    <div class="post_in_bot"><span class="jum1">· </span>만화/애니</div>
+                    <div class="post_in_bot"><span class="jum1">· </span>영화/비디오</div>
+                    <div class="post_in_bot"><span class="jum1">· </span>음악</div>
+                    <div class="post_in_bot"><span class="jum1">· </span>방송/연예</div>
+                    <div class="post_in_bot"><span class="jum1">· </span>취미</div>
+                    <div class="post_in_bot"><span class="jum1">· </span>문화/예술</div>
+                    <div class="post_in_bot"><span class="jum1">· </span>컴퓨터/인터넷</div>
+                    <div class="post_in_bot"><span class="jum1">· </span>종교/봉사</div>
+                    <div class="post_in_bot"><span class="jum1">· </span>생활/건강</div>
+                    <div class="post_in_bot"><span class="jum1">· </span>스포츠/레져</div>
+                    <div class="post_in_bot"><span class="jum1">· </span>기타</div>
+                </div>
             </div>
             <div class="body_middle">
-                <div class="where border"></div>
+                <div class="where border"><img src="middle_1.png" alt=""></div>
                 <div class="search border"></div>
                 <div class="bloglife">
                     <div class="bloglife_1"></div>
@@ -239,6 +301,7 @@
         <div class="footer">
             <div class="footer_box border">
                 <div class="footer_box1"><img src="footer1.png" alt=""></div>
+                <div class="padding"><div class="jul2"></div></div>
                 <div class="footer_box2"><img src="footer2.png" alt=""></div>
                 <div class="footer_box2"><img src="footer3.png" alt=""></div>
                 <div class="footer_box2"><img src="footer4.png" alt=""></div>
