@@ -45,7 +45,7 @@
         margin: 0 15px 0 15px;
         color: white;
         font-weight: 600;
-        line-height: 35px;
+        line-height: 15px;
     }
     .header_box{
         color: black;
@@ -57,17 +57,136 @@
     /* boby */
     .boby{
         padding: 10px 60px 50px 60px;
+        height: 670px;
+        display: flex;
     }
+    /* body_left */
     .body_left{
         width: 185px;
     }
+    .login{
+        height: 98px;
+    }
+    .blog{
+        height: 44px;
+        border: 3px solid #fa5065;
+        margin-bottom: 10px;
+    }
+    .post_in{
+        height: 138px;
+    }
+    .body_icon{
+        height: 35px;
+        text-align: center;
+        padding: 5px 0 0 0;
+    }
+    .group{
+        height: 308px;
+    }
+    /* body_middle */
     .body_middle{
         padding: 0 10px 0 10px;
         width: 510px;
     }
+    .where{
+        height: 158px;
+        background-color: #ffedf2;
+    }
+    .search{
+        height: 53px;
+    }
+    .bloglife{
+        height: 115px;
+        display: flex;
+        margin-bottom: 10px;
+    }
+    .bloglife_1{
+        height: 109px;
+        border: 3px solid #fa5065;
+        width: calc(50% - 11px);
+        
+    }
+    .bloglife_2{
+        height: 100%;
+        width: calc(50% - 5px);
+        margin-left: 10px;
+    }
+    .best_str{
+        height: 165px;
+        display: flex;
+        margin-bottom: 10px;
+    }
+    .best_str_1{
+        height: 100%;
+        width: calc(50% - 5px);
+    }
+    .best_str_2{
+        height: 100%;
+        width: calc(50% - 5px);
+        margin-left: 10px;
+    }
+    .photo{
+        height: 135px;
+        width: 100%;
+    }
+    /* body_right */
     .body_right{
         width:309px;
     }
+    .live_search{
+        border: 3px solid #fa5065;
+        height: 154px;
+        margin-bottom: 10px;
+    }
+    .adds{
+        height: 178px;
+    }
+    .best_blog{
+        height: 163px;
+    }
+    .dat{
+        height: 135px;
+    }
+    /* footer */
+    .footer{
+        margin-top: 40px;
+        text-align: center;
+    }
+    .footer_box{
+        width: 773px;
+        height: 48px;
+        margin: 0 auto;
+        display: flex;
+    }    
+    .footer_box1{
+        text-align: center;
+        width: 220px;
+        line-height: 75px;
+        height: 100%;
+        border-right: 1px solid black;
+    }
+    .footer_box2{
+        text-align: center;
+        width: 90px;
+        line-height: 55px;
+        height: 100%;
+    }
+    .footermargin{
+        margin-top: 10px;
+    }
+    /*  */
+    .border{
+        border: 1px solid #d4d4d4;
+        margin-bottom: 10px;
+    }
+    .font_size{
+        font-size: 11px;
+    }
+    .red{
+        color:red;
+        font-weight: bold;
+    }
+    
     </style>
 </head>
 <body>
@@ -87,11 +206,51 @@
             <div class="header_bot"></div>
         </div>
         <div class="boby">
-            <div class="body_left"></div>
-            <div class="body_middle"></div>
-            <div class="body_right"></div>
+            <div class="body_left">
+                <div class="login border"></div>
+                <div class="blog"></div>
+                <div class="post_in border"></div>
+                <div class="body_icon"><img src="mnet.png" alt=""></div>
+                <div class="group border"></div>
+            </div>
+            <div class="body_middle">
+                <div class="where border"></div>
+                <div class="search border"></div>
+                <div class="bloglife">
+                    <div class="bloglife_1"></div>
+                    <div class="bloglife_2"></div>
+                </div>
+                <div class="best_str">
+                    <div class="best_str_1"></div>
+                    <div class="best_str_2"></div>
+                </div>
+                <div class="photo"></div>
+            </div>
+            <div class="body_right">
+                <div class="live_search"></div>
+                <div class="adds border"></div>
+                <div class="best_blog border"></div>
+                <div class="dat">
+                    <div class="month"></div>
+                    <div class="singo"></div>
+                </div>
+            </div>
         </div>
-        <div class="footer"></div>
+        <div class="footer">
+            <div class="footer_box border">
+                <div class="footer_box1"><img src="footer1.png" alt=""></div>
+                <div class="footer_box2"><img src="footer2.png" alt=""></div>
+                <div class="footer_box2"><img src="footer3.png" alt=""></div>
+                <div class="footer_box2"><img src="footer4.png" alt=""></div>
+                <div class="footer_box2"><img src="footer5.png" alt=""></div>
+                <div class="footer_box2"><img src="footer6.png" alt=""></div>
+                <div class="footer_box2"><img src="footer7.png" alt=""></div>
+            </div>
+            <div class="font_size">회사소개 | 이용약관 | 개인정보취급방침 | 청소년보호정책 | 광고문의 | 문의하기 | 신고하기 | 사이트맵</div>
+            <div class="font_size footermargin">대표이사 강철준 | 개인정보관리책임자 이현우</div>
+            <div class="font_size">사업자등록번호 000-00-00000 | 서울시 강남구 삼성동 192-12 세원빌딩 7층 | 대표전화 010-50</div>
+            <div class="font_size">Copyright ⓒ <span class="red">TopJJang.</span> All Rights reserved.</div>
+        </div>
     </div>
 </body>
 </html>
