@@ -54,6 +54,44 @@
             $('.pinterest1').toggleClass('display_none')
             $('.pinterest2').toggleClass('display_none')
         })
+        $('.contact_btn').click(function(){
+            $('.idError').html('');
+            $('.adError').html('');
+            $('.emError').html('');
+            $('.phError').html('');
+            $('.maError').html('');
+
+            var id = $('.id1').val();
+            if(id.length == 0){
+                $('.idError').html('아이디는 필수 항목입니다');
+                $('.id1').focus();
+            return false;
+            }
+            var ad = $('.address1').val();
+            if(ad.length == 0){
+                $('.adError').html('주소는 필수 항목입니다');
+                $('.iaddress1').focus();
+            return false;
+            }
+            var em = $('.email1').val();
+            if(em.length == 0){
+                $('.emError').html('이메일은 필수 항목입니다');
+                $('.email1').focus();
+            return false;
+            }
+            var ph = $('.phone1').val();
+            if(ph.length == 0){
+                $('.phError').html('번호는 필수 항목입니다');
+                $('.phone1').focus();
+            return false;
+            }   
+            var ma = $('.massage1').val();
+            if(ma.length == 0){
+                $('.maError').html('메세지는 필수 항목입니다');
+                $('.massage1').focus();
+            return false; 
+            }$('form').submit();
+        })
     })
     </script>
     <style>
@@ -416,21 +454,22 @@
         height: 58px;
         text-align: center;
     }
-    .contact_message{
-        display: flex;
-        margin: 0 auto;
-        width: 613px;
-        height: 153px;
-    }
-    .contact_message>div{
+    .massage1{
+        all:unset;
         border: 1px solid black;
         width: 613px;
-        height: 153px;
-        padding-top: 20px;
+        height: 200px;
         text-align: center;
+    }
+    .contact_message{
+        display: flex;
+        margin: 20px auto;
+        width: 613px;
+        height: 200px;
     }
     .contact_btn{
         margin: 50px auto;
+        display: block;
         width: 100px;
         height: 60px;
         cursor: pointer;
@@ -464,6 +503,11 @@
     }
     .footer_str>img{
         margin-left:20px;
+    }
+    .red{
+        color: red;
+        font-size: 12px;
+        text-align: center;
     }
     
     @font-face {
@@ -647,16 +691,23 @@
                         </div>
                     </div>
             </div>
+            <form action="">
             <div class="contact display_none">
                 <div class="contact_str">LET'S KEEP IN TOUCH</div>
-                <div class="contact_name"><input type="text" value="NAME"></div>
-                <div class="contact_name"><input type="text" value="ADDRESS"></div>
-                <div class="contact_name"><input type="text" value="EMAIL"></div>
-                <div class="contact_name"><input type="text" value="PHONE NUMBER"></div>
-                <div class="contact_message"><div>MASSAGE</div></div>
-                <div class="contact_btn"><button>SEND</button></div>
+                <div class="contact_name"><input type="text" placeholder="NAME" class="id1"></div>
+                <div class="idError red"></div>
+                <div class="contact_name"><input type="text" placeholder="ADDRESS" class="address1"></div>
+                <div class="adError red"></div>
+                <div class="contact_name"><input type="text" placeholder="EMAIL" class="email1"></div>
+                <div class="emError red"></div>
+                <div class="contact_name"><input type="text" placeholder="PHONE NUMBER" class="phone1"></div>
+                <div class="phError red"></div>
+                <div class="contact_message"><textarea name="" id="" cols="30" rows="10" class="massage1" placeholder="MESSAGE"></textarea></div>
+                <div class="maError red"></div>
+                <a href="#" class="contact_btn"><button>SEND</button></a>
             </div>
         </div>
+        </form>
         <div class="footer">
             <div class="footer_str"><div class="footer_str_1">© 2023 by Mustacchio. All rights reserved.</div>
                 <img src="../images/icons/icon-twitter.jpg" alt="" class="twitter1">
