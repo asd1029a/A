@@ -8,6 +8,9 @@
     <script src="../js/jquery.min.js"></script>
     <script>
     $(function(){
+        var typeStr = location.href.split('?');
+        var type = typeStr[1].split('=');
+        
         $('.header_menu').click(function(){
             $('.header_menu').css('color','black')
             $('.home').addClass('display_none')
@@ -92,6 +95,21 @@
             return false; 
             }$('form').submit();
         })
+        if(type[1] == 'g'){
+            $('.gallery1').click();
+        }
+        if(type[1] == 'a'){
+            $('.about1').click();
+        }
+        if(type[1] == 'h'){
+            $('.home1').click();
+        }
+        if(type[1] == 'b'){
+            $('.blog1').click();
+        }
+        if(type[1] == 'c'){
+            $('.contact1').click();
+        }
     })
     </script>
     <style>
@@ -117,12 +135,14 @@
         margin-top: 40px;
     }
     .header_menu{
+        all:unset;
         display: inline-block;
         margin: 0 20px 0 20px;
         font-family:Arial, Helvetica, sans-serif;
         font-size: 15px;
         font-weight: bolder;
         cursor: pointer;
+
     }
     /* body */
     .body{
@@ -548,11 +568,11 @@
                 <img src="../images/logo.jpg" alt="">
             </div>
             <div class="menus">
-                <div class="header_menu colormenu home1">HOME</div>
-                <div class="header_menu about1">ABOUT</div>
-                <div class="header_menu gallery1">GALLERY</div>
-                <div class="header_menu blog1">BLOG</div>
-                <div class="header_menu contact1">CONTACT</div>
+                <a href="http://127.0.0.1:5500/study/day40/%EA%B4%91%EA%B3%A02.html?type=h" class="header_menu colormenu home1">HOME</a>
+                <a href="http://127.0.0.1:5500/study/day40/%EA%B4%91%EA%B3%A02.html?type=a" class="header_menu about1">ABOUT</a>
+                <a href="http://127.0.0.1:5500/study/day40/%EA%B4%91%EA%B3%A02.html?type=g" class="header_menu gallery1">GALLERY</a>
+                <a href="http://127.0.0.1:5500/study/day40/%EA%B4%91%EA%B3%A02.html?type=b" class="header_menu blog1">BLOG</a>
+                <a href="http://127.0.0.1:5500/study/day40/%EA%B4%91%EA%B3%A02.html?type=c" class="header_menu contact1">CONTACT</a>
             </div>
         </div>
         <div class="body">

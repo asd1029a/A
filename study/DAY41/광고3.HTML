@@ -281,14 +281,86 @@
         width: 95px;
         height: 68px;
     }
+    .best_station_str_box{
+        display: flex;
+    }
+    .best_station_strs{
+        display: block;
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+    .best_station_str_1{
+        font-weight: bold;
+        font-size: 14px;
+        margin-bottom: 3px;
+    }
+    .best_station_str_2{
+        font-size: 12px;
+        color: #777777;
+        margin-bottom: 15px;
+    }
+    .best_station_str_3{
+        font-size: 10px;
+        color: #a5a5a5;
+    }
+    .best_station_str_4{
+        font-size: 13px;
+        margin-top: 5px;
+    }
+    .best_station_str_5{
+        font-size: 13px;
+        margin-top: 4px;
+    }
     .best_str_2{
         height: 100%;
         width: calc(50% - 5px);
         margin-left: 10px;
+        padding-left: 5px;
     }
     .photo{
         height: 135px;
         width: 100%;
+    }
+    .photo_top{
+        border-bottom: 1px solid #dfdfdf;
+        font-size: 15px;
+        display: inline-block;
+        width: 100%;
+    }
+    .photo_top_1{
+        font-size: 14px;
+        float: left;
+        margin-bottom: 8px;
+    }
+    .photo_top_2{
+        font-size: 12px;
+        float: right;
+    }
+    .photo_bot{
+        display: flex;
+        padding:5px;
+    }
+    .photo_box{
+        width: 120px;
+        height: 80px;
+        margin: 0 5px 0 5px;
+        overflow: hidden;
+    }
+    .photo_str{
+        float: left;
+        font-size: 13px;
+        width: 120px;
+        text-align: center;
+        color: #777777;
+    }
+    .photo_str1{
+        margin-left: 8px;
+    }
+    .photo_str2{
+        margin-left: 6px;
+    }
+    .photo_str3{
+        margin-left: 6px;
     }
     /* body_right */
     .body_right{
@@ -373,7 +445,13 @@
     .padding2{
         padding: 12px 0 12px 0;
     }
-    
+    .bolder{
+        font-size: bold;
+    }
+    .bolder1{
+        font-size: bold;
+        color: black;
+    }
     </style>
 </head>
 <body>
@@ -473,15 +551,45 @@
                 <div class="best_str">
                     <div class="best_str_1">
                         <div class="best_station">&nbsp;6월 3일</div>
-                        <div class="best_station_icon"><img src="지하철.PNG" alt=""></div>
-                        <div>
-                            <div>지하철타고~</div>
-                            <div>900원 행복~</div>
+                        <div class="best_station_str_box">
+                            <div class="best_station_icon"><img src="지하철.PNG" alt=""></div>
+                            <div class="best_station_strs"> 
+                                <div class="best_station_str_1">지하철 타고 ...</div>
+                                <div class="best_station_str_2">900원의 행복~</div>
+                                <div class="best_station_str_3">여의도역</div>
+                            </div>
                         </div>
+                        <div class="best_station_str_4">· 지하철역 중 제일 깊은 역, 여의나루역</div>
+                        <div class="best_station_str_4">· 구로공단역? NO, NO! 구로디지털단지역</div>
+                        <div class="best_station_str_4">· 구로공단역? NO, NO! 구로디지털단지역</div>
                     </div>
-                    <div class="best_str_2"></div>
+                    <div class="best_str_2">
+                        <div class="best_station_str_5">· 재활용품의 재발견~</div>
+                        <div class="best_station_str_5">· 보는 재미가 있는 인사동 '쌈지길'</div>
+                        <div class="best_station_str_5 bolder">· 흠좀무?? 지못미???</div>
+                        <div class="best_station_str_5">· 궂은 날씨에도 이어진 촛불집회</div>
+                        <div class="best_station_str_5">· 알록달록 재미있는 공놀이</div>
+                        <div class="best_station_str_5">· 무럭무럭 잘 자라줘~</div>
+                        <div class="best_station_str_5 bolder">· 작지만 강한 촛불의 힘</div>
+                        <div class="best_station_str_5">· 한 번 도전해 보세요!</div>
+                    </div>
                 </div>
-                <div class="photo"></div>
+                <div class="photo">
+                    <div class="photo_top">
+                        <div class="photo_top_1 red">동영상<span class="bolder1">&</span>포토</div>
+                        <div class="photo_top_2"><img src="blog_2.png" alt=""> 전체보기</div>
+                    </div>
+                    <div class="photo_bot">
+                        <div class="photo_box"><img src="123123.png" alt=""></div>
+                        <div class="photo_box"><img src="chp2.PNG" alt=""></div>
+                        <div class="photo_box"><img src="chp3.PNG" alt=""></div>
+                        <div class="photo_box"><img src="chp4.PNG" alt=""></div>
+                    </div>
+                    <div class="photo_str photo_str1">도쿄의 모노레일</div>
+                    <div class="photo_str photo_str2">프로포즈 성공기</div>
+                    <div class="photo_str photo_str3">피곤해요</div>
+                    <div class="photo_str photo_str4">참외의 재발견</div>
+                </div>
             </div>
             <div class="body_right">
                 <div class="live_search"></div>
