@@ -35,17 +35,20 @@
         background: -webkit-linear-gradient(top, rgba(231, 37, 37, 0.5) 0%,rgb(202, 81, 81) 35%,rgba(224, 50, 50, 1) 65%,rgb(245, 7, 7) 100%);
         z-index: 100;
         text-align: center;
+        display: flex;
     }
     .header_bot{
         height: 30px;
         background-color: #f1f1f1;
     }
     .header_menu{
-        display: inline-block;
-        margin: 0 15px 0 15px;
+        margin: 10px 13px 0 13px;
         color: white;
         font-weight: 600;
         line-height: 15px;
+    }
+    .header_menu:first-of-type{
+        margin-left: calc(50% - 310px);
     }
     .header_box{
         color: black;
@@ -116,6 +119,48 @@
     }
     .search{
         height: 53px;
+    }
+    .search_box{
+        width: 390px;
+        margin: 7px 60px 7px 60px;
+        height: 40px;
+    }
+    .search_box1{
+        height: 20px;
+        display: flex;
+    }
+    .search_box1_1{
+        width: 93px;
+        height: 18px;
+        border: 1px solid #db3839;
+    }
+    input::-webkit-input-placeholder { color: #e77d7f; } 
+    .search_box1_2{
+        width: 226px;
+        height: 18px;
+        border: 1px solid #db3839;
+        margin: 0 5px 0 8px;
+    }
+    .search_box1_3{
+        all:unset;
+        height: 20px;
+        width: 50px;
+        background-color: #db3839;
+        border-radius: 3px;
+        text-align: center;
+        font-size: 12px;
+        color: white;
+        line-height: 0px;
+    }
+    .search_icon1{
+        position: relative;
+        left: -15px;
+        top: -3px;
+    }
+    .search_icon2{
+        position: relative;
+        left: -20px;
+        top: -3px;
     }
     .bloglife{
         height: 115px;
@@ -219,9 +264,17 @@
     }
     .jul2{
         border: 0.5px solid #d4d4d4;
+        height: 100%;
+    }
+    .jul22{
+        border: 0.5px solid #e77e7f;
+        height: 100%;
     }
     .padding{
-        padding: 5px 0 5px 0;
+        padding: 8px 0 8px 0;
+    }
+    .padding2{
+        padding: 12px 0 12px 0;
     }
     
     </style>
@@ -232,12 +285,19 @@
             <div class="header_logo"><img src="top1.png" alt=""></div>
             <div class="header_menus">
                 <div class="header_menu header_box">TOP짱</div>
+                <div class="padding2"><div class="jul22"></div></div>
                 <div class="header_menu">짱도전!!</div>
+                <div class="padding2"><div class="jul22"></div></div>
                 <div class="header_menu">FUN&FUN</div>
+                <div class="padding2"><div class="jul22"></div></div>
                 <div class="header_menu">셀카</div>
+                <div class="padding2"><div class="jul22"></div></div>
                 <div class="header_menu">무뇌人</div>
+                <div class="padding2"><div class="jul22"></div></div>
                 <div class="header_menu">UCC</div>
+                <div class="padding2"><div class="jul22"></div></div>
                 <div class="header_menu">내가최고</div>
+                <div class="padding2"><div class="jul22"></div></div>
                 <div class="header_menu">카페</div>
             </div>
             <div class="header_bot"></div>
@@ -277,7 +337,16 @@
             </div>
             <div class="body_middle">
                 <div class="where border"><img src="middle_1.png" alt=""></div>
-                <div class="search border"></div>
+                <div class="search border">
+                    <div class="search_box">
+                        <div class="search_box1">
+                            <input type="text" class="search_box1_1" placeholder="통합검색"><div class="search_icon1"><img src="search_1.png" alt=""></div>
+                            <input type="text" class="search_box1_2"><div class="search_icon2"><img src="search_2.png" alt=""></div>
+                            <button class="search_box1_3">검색</button>
+                        </div>
+                        <div class="search_box2"></div>
+                    </div>
+                </div>
                 <div class="bloglife">
                     <div class="bloglife_1"></div>
                     <div class="bloglife_2"></div>
