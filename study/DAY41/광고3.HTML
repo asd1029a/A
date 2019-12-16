@@ -25,11 +25,32 @@
     .header_logo{
         height: 255px;
         width: 100%;
-        text-align: center;
+        position: relative;
+    }
+    .header_head{
+        width: 780px;
+        height: 25px;
+        background-color: #da3a3a;
+        border-bottom-left-radius: 7px;
+        border-bottom-right-radius: 7px;
+        margin-top: 100px;
+        margin-left: calc(50% - 390px);
+        position: absolute;
     }
     .header_logo>img{
-        margin-top: 130px;
         z-index: 1;
+        margin-top: 132px;
+    }
+    .header_logo>img:first-of-type{
+        margin-left: 220px;
+    }
+    .header_login{
+        position: absolute;
+        color: red;
+        font-weight: bold;
+        bottom: 60px;
+        right: 250px;
+        cursor: pointer;
     }
     .header_menus{
         height: 35px;
@@ -48,6 +69,7 @@
         color: white;
         font-weight: 600;
         line-height: 15px;
+        cursor: pointer;
     }
     .header_menu:first-of-type{
         margin-left: calc(50% - 310px);
@@ -70,13 +92,43 @@
         width: 185px;
     }
     .login{
-        height: 98px;
+        height: 88px;
+        padding: 5px 8px 5px 8px;
+    }
+    .logins{
+        height: 17px;
+        width: 100%;
+        margin-top: 5px;
+        font-size: 11px;
+        display: flex;
+    }
+    .logins_range{
+        display: flex;
+    }
+    .login_box{
+        width: 15px;
+        height: 12px;
+        background-color: #8acf22;
+        border: 1px solid #6fbd00;
+        margin-top: 2px;
+        margin-left: 1px;
+        border-radius: 2px;
+        color: white;
+        font-size: 4px;
+        text-align: center;
+        line-height: 12px;
+        cursor: pointer;
+    }
+    .font_gray{
+        width: 96px;
+        border: 1px solid #cbdba8;
     }
     .blog{
         height: 44px;
         border: 3px solid #fa5065;
         margin-bottom: 10px;
         line-height: 70px;
+        cursor: pointer;
     }
     .post_in{
         height: 118px;
@@ -89,6 +141,7 @@
     }
     .post_in_top>img{
         float: right;
+        cursor: pointer;
     }
     .post_in_bot{
         font-size: 12px;
@@ -96,11 +149,15 @@
         height: 18px;
         overflow: hidden;
         margin-bottom: 1px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        cursor: pointer;
     }
     .body_icon{
         height: 35px;
         text-align: center;
         padding: 5px 0 0 0;
+        cursor: pointer;
     }
     .group{
         height: 298px;
@@ -110,6 +167,7 @@
     .body_middle{
         padding: 0 10px 0 10px;
         width: 510px;
+        cursor: pointer;
     }
     .where{
         height: 158px;
@@ -131,12 +189,14 @@
         height: 20px;
         display: flex;
     }
+    input.search_box1_1::-webkit-input-placeholder { 
+  color: #e77d7f;
+    }
     .search_box1_1{
         width: 93px;
         height: 18px;
         border: 1px solid #db3839;
     }
-    input::-webkit-input-placeholder { color: #e77d7f; } 
     .search_box1_2{
         width: 226px;
         height: 18px;
@@ -411,6 +471,7 @@
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: nowrap; 
+        cursor: pointer;
     }
     .live_search_bots>img{
         margin-left: 35px;
@@ -422,11 +483,44 @@
     .adds{
         height: 178px;
     }
+    .adds>img{
+        width: 100%;
+        cursor: pointer;
+        height: 100%;
+        margin: 0.5px 0 0 0.5px;
+    }
     .best_blog{
-        height: 163px;
+        height: 151px;
+        padding: 5px 5px 5px 5px;
+    }
+    .best_blog_top{
+        border-bottom: 1px solid #e5e5e5;
+        color: #5a5a5a;
+        font-size: 13px;
+        font-weight: bold;
+        line-height: 25px;
     }
     .dat{
         height: 135px;
+    }
+    .month{
+        height: 97px;
+        margin-bottom: 10px;
+        text-align: center;
+        font-size: 13px;
+        padding-top: 5px;
+    }
+    .singo{
+        height: 13px;
+        border: 1px solid #d4d4d4;
+        padding: 3px 10px 5px 10px; 
+        cursor: pointer;
+    }
+    .singo_box{
+        display: flex;
+        font-size: 10px;
+        font-weight: bold;
+        margin-left: 25px;
     }
     /* footer */
     .footer{
@@ -450,6 +544,7 @@
         width: 90px;
         line-height: 55px;
         height: 100%;
+        cursor: pointer;
     }
     .footermargin{
         margin-top: 10px;
@@ -480,6 +575,16 @@
         border: 0.5px solid #d4d4d4;
         height: 100%;
     }
+    .jul3{
+        border: 0.5px solid #d4d4d4;
+        height: 10px;
+        margin: 4px 0 0 0;
+    }
+    .jul4{
+        border: 0.5px solid #d4d4d4;
+        height: 14px;
+
+    }
     .jul22{
         border: 0.5px solid #e77e7f;
         height: 100%;
@@ -500,12 +605,50 @@
         font-size: bold;
         color: black;
     }
+    .checkboxs{
+        all:unset;
+        height: 12px;
+        width: 12px;
+        border: 1px solid #1c5180;
+        background-color: white;
+        display: inline-block;
+        margin-left: 2px;
+        margin-right: 2px;
+        margin-top: 2px;
+        cursor: pointer;
+    }
+    .login_btn{
+        all:unset;
+        cursor: pointer;
+        margin-left: 2px;
+        margin-right: 2px;
+        width: 50px;
+        border: 1px solid #b0b0b0;
+        text-align: center;
+        border-radius: 3px;
+    }
+    .letter{
+        letter-spacing: -1px;
+        cursor: pointer;
+    }
+    .orange{
+        color: #ed6c1f;
+        font-weight: bold;
+        cursor: pointer;
+    }
     </style>
 </head>
 <body>
     <div class="add">
         <div class="header">
-            <div class="header_logo"><img src="top1.png" alt=""></div>
+            <div class="header_logo">
+                    <div class="header_head"></div>
+                    <div class="header_login">회원가입 / 로그인 /</div>
+                    <img src="사람1.png" alt="">
+                    <img src="사람2.png" alt="">
+                    <img src="top1.png" alt="" class="header_logo_center">
+                    <img src="사람3.png" alt="">
+            </div>
             <div class="header_menus">
                 <div class="header_menu header_box">TOP짱</div>
                 <div class="padding2"><div class="jul22"></div></div>
@@ -527,7 +670,22 @@
         </div>
         <div class="boby">
             <div class="body_left">
-                <div class="login border"></div>
+                <div class="login border">
+                    <div class="logins">
+                        <div class="logins_range">
+                            <div><img src="123123123.png" alt=""></div>&nbsp;<div class="font_si">보안2단계</div>&nbsp;<div class="jul3"></div>&nbsp;<div class="font_si">ip 보안</div><div class="login_box">ON</div>
+                        </div>
+                    </div>
+                    <div class="logins">
+                        <input type="text" placeholder="아이디" class="font_gray"><div><input type="checkbox" name="" class="checkboxs"></div>ID 저장
+                    </div>
+                    <div class="logins">
+                        <input type="text" placeholder="비밀번호" class="font_gray"><div><button class="login_btn">로그인</button></div>
+                    </div>
+                    <div class="logins">
+                        <div class="orange">회원가입</div>&nbsp;&nbsp;<div class="letter">아이디 / 비밀번호 찾기</div>
+                    </div>
+                </div>
                 <div class="blog"><img src="blog_go.png" alt=""></div>
                 <div class="post_in border">
                     <div class="post_in_top">공지사항<img src="재생버튼.png" alt=""></div>
@@ -655,11 +813,19 @@
                         <div class="live_search_bots"><div class="live_search_box1">10</div>&nbsp;<div class="live_search_box2">안</div><img src="화살표.png" alt=""><div class="live_search_img">552</div></div>
                     </div>
                 </div>
-                <div class="adds border"></div>
-                <div class="best_blog border"></div>
+                <div class="adds border">
+                    <img src="촛불문화제.PNG" alt="">
+                </div>
+                <div class="best_blog border">
+                    <div class="best_blog_top">얼짱/몸짱 블로그</div>
+                    <div></div>
+                </div>
                 <div class="dat">
-                    <div class="month"></div>
-                    <div class="singo"></div>
+                    <div class="month border"><img src="날1.png" alt=""> <img src="날2.png" alt=""> 2006 년 / 7 월 <img src="날3.png" alt=""> <img src="날4.png" alt=""></div>
+                    <div class="singo">
+                        <div class="singo_box"><div><img src="별.png" alt=""></div> 문의하기&nbsp;&nbsp;<div class="jul4"></div>&nbsp;<div><img src="신고.png" alt=""></div> 신고하기
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
