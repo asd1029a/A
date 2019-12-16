@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <script src="../js/jquery.min.js"></script>
+    <script src="광고3.js"></script>
     <style>
         *{
         padding: 0;
@@ -370,6 +372,52 @@
         border: 3px solid #fa5065;
         height: 154px;
         margin-bottom: 10px;
+        overflow: hidden;
+    }
+    .live_search_top{
+        color: #ce0002;
+        font-size: 12px;
+        border-bottom: 1px solid #ffa8b3;
+        height: 25px;
+        line-height: 25px;
+        font-weight: bolder;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .live_search_bot{
+        overflow: hidden;
+        margin: 5px 5px 0 5px;
+    }
+    .live_search_bots{
+        display: flex;
+    }
+    .live_search_box1{
+        margin-top: 5px;
+        height: 10px;
+        width: 10px;
+        background-color: #fa5065;
+        color: white;
+        border-radius: 3px;
+        font-weight: bold;
+        font-size: 2px;
+        text-align: center;
+        line-height: 10px;
+        float: left;
+    }
+    .live_search_box2{
+        font-size: 13px;
+        width: 100px;
+        height: 18px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap; 
+    }
+    .live_search_bots>img{
+        margin-left: 35px;
+    }
+    .live_search_img{
+        font-size: 13px;
+        color: gray;
     }
     .adds{
         height: 178px;
@@ -592,7 +640,21 @@
                 </div>
             </div>
             <div class="body_right">
-                <div class="live_search"></div>
+                <div class="live_search">
+                    <div class="live_search_top"><img src="search_2.png" alt=""> 실시간 급상승 검색어</div>
+                    <div class="live_search_bot">
+                        <div class="live_search_bots"><div class="live_search_box1">1</div>&nbsp;<div class="live_search_box2">네덜란드 이탈리아</div><img src="화살표.png" alt=""><div class="live_search_img">512</div></div>
+                        <div class="live_search_bots"><div class="live_search_box1">2</div>&nbsp;<div class="live_search_box2">호잉</div><img src="화살표.png" alt=""><div class="live_search_img">51</div></div>
+                        <div class="live_search_bots"><div class="live_search_box1">3</div>&nbsp;<div class="live_search_box2">안녕</div><img src="화살표.png" alt=""><div class="live_search_img">12</div></div>
+                        <div class="live_search_bots"><div class="live_search_box1">4</div>&nbsp;<div class="live_search_box2">으아아아ㅏㅏㅏㅏ</div><img src="화살표.png" alt=""><div class="live_search_img">52</div></div>
+                        <div class="live_search_bots"><div class="live_search_box1">5</div>&nbsp;<div class="live_search_box2">사람</div><img src="화살표.png" alt=""><div class="live_search_img">12</div></div>
+                        <div class="live_search_bots"><div class="live_search_box1">6</div>&nbsp;<div class="live_search_box2">인간</div><img src="화살표.png" alt=""><div class="live_search_img">2</div></div>
+                        <div class="live_search_bots"><div class="live_search_box1">7</div>&nbsp;<div class="live_search_box2">안녕히</div><img src="화살표.png" alt=""><div class="live_search_img">32</div></div>
+                        <div class="live_search_bots"><div class="live_search_box1">8</div>&nbsp;<div class="live_search_box2">후</div><img src="화살표.png" alt=""><div class="live_search_img">2</div></div>
+                        <div class="live_search_bots"><div class="live_search_box1">9</div>&nbsp;<div class="live_search_box2">하이</div><img src="화살표.png" alt=""><div class="live_search_img">44</div></div>
+                        <div class="live_search_bots"><div class="live_search_box1">10</div>&nbsp;<div class="live_search_box2">안</div><img src="화살표.png" alt=""><div class="live_search_img">552</div></div>
+                    </div>
+                </div>
                 <div class="adds border"></div>
                 <div class="best_blog border"></div>
                 <div class="dat">
