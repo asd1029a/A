@@ -51,11 +51,33 @@
     .event{
         margin-left: calc(50% - 421.44px);
     }
+    .event2{
+        margin-left: calc(50% - 300px);
+        font-size: 42px;
+    }
     .art{
         margin-left: 200px;
     }
+    .art2{
+        font-size: 92px;
+        margin-left: 460px;
+        margin-top: -150px;
+        text-align: center;
+    }
+    .art_strs{
+        font-size: 24px;
+        color: #999999;
+        line-height:100px;
+    }
+    .art_strs:last-of-type{
+        line-height:10px;
+    }
     .exhibition{
         margin-left: 300px;
+    }
+    .exhibition2{
+        margin-left: 100px;
+        font-size: 42px;
     }
     .open{
         position: absolute;
@@ -126,11 +148,15 @@
         font-size: 15px;
 
     }
+    .display_none{
+        display: none;
+    }
     </style>
 </head>
 <body>
     <div class="all">
-        <img src="./image/배경1.png" alt="">
+        <img src="./image/배경1.png" alt="" class="main_bg display_none">
+        <img src="./image/배경2.png" alt="" class="main_bg1">
         <div class="header marginrl">
             <div class="menu_btn">
                 <img src="./image/메뉴1.png" alt="">
@@ -139,11 +165,14 @@
             <div class="arario"></div>
         </div>
         <div class="body">
-            <div class="art">ART</div>
-            <div class="border_wh"></div>
-            <div class="event">EVENT</div>
-            <div class="border_wh2"></div>
-            <div class="exhibition">EXHIBITION</div>
+            <div class="art art2">ART
+                <div class="art_strs">STORY</div>
+                <div class="art_strs">PIECE</div>
+            </div>
+            <div class="border_wh display_none"></div>
+            <div class="event event2">EVENT</div>
+            <div class="border_wh2 display_none"></div>
+            <div class="exhibition exhibition2">EXHIBITION</div>
             <div class="body_str open">OPEN : 11:00</div>
             <div class="body_str close">CLOSE : 19:00</div>
         </div>
