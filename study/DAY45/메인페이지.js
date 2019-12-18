@@ -1,0 +1,9 @@
+$(function(){
+    $('.menu_btn').click(function(){
+        $('.menus').slideToggle('slow')
+        $('.menus_str').slideToggle('slow')
+    })
+    $('.arrow1').click(function(){
+        $('.pictures').eq(0).removeClass('.display_none')
+    })
+})

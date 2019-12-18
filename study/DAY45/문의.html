@@ -38,14 +38,18 @@
         margin-left: calc(50% - 113.73px);
         color: white;
         font-family: HCR Batang;
+        font-weight: bold;
     }
     .menus{
         position: relative;
         top: -42px;
+        text-align: center;
         background-color: #aaaea6;
         width: 290px;
         height: 600px;
         opacity: 0.7;
+        line-height: 55px;
+        padding-top: 100px;
         z-index: 9;
     }
     .menus_str{
@@ -60,79 +64,43 @@
         cursor: pointer;
     }
     /* body */
-    .body{
-        height: 1440px;
-        width: 1600px;
-        position: absolute;
-        top: 80px;
-        left: 0;
-        padding-top: 300PX;
-        display: flex;
-        font-size: 68px;
-        color: white;
+    .inquiry_input{
+        all:unset;
+        border-bottom: 1px solid black;
+        margin-left: 130px;
+        width: 375px;
     }
-    .event{
-        margin-left: calc(50% - 421.44px);
+    .inquiry_input1{
+        all:unset;
+        border-bottom: 1px solid black;
+        margin-left: 162px;
+        width: 375px;
     }
-    .event2{
-        margin-left: calc(50% - 300px);
-        font-size: 42px;
-    }
-    .event3{
-        margin-left: calc(50% - 640px);
-        font-size: 42px;
-    }
-    .art{
-        margin-left: 200px;
-    }
-    .art2{
-        font-size: 92px;
-        margin-left: 460px;
-        margin-top: -150px;
-        text-align: center;
-    }
-    .art3{
-        font-size: 42px;
-        margin-top: 0px;
-        margin-left: 110px;
-        font-family: Century Gothic;
-    }
-    .art_strs{
-        font-size: 24px;
-        color: #999999;
-        line-height:100px;
-    }
-    .art_strs:last-of-type{
-        line-height:10px;
-    }
-    .exhibition{
-        margin-left: 300px;
-    }
-    .exhibition2{
-        margin-left: 100px;
-        font-size: 42px;
-    }
-    .exhibition3{
-        margin-left: 350px;
-        font-size: 92px;
-        margin-top: -150px;
-        text-align: center;
-    }
-    .exhibition_add{
-        font-size: 16px;
+    .inquiry_input2{
+        all:unset;
+        border: 1px solid black;
         position: relative;
-        left: 200px;
-        top: 120px;
+        left: 130px;
+        top: 140px;
+        width: 375px;
+        height: 245px;
+        text-indent: 50px;
     }
-    .open{
-        position: absolute;
-        top: 660px;
-        right: 50px;
+    .inquiry_box{
+        padding: 170px 400px 0 535px;
+        line-height: 60px;
     }
-    .close{
-        position: absolute;
-        top: 680px;
-        right: 50px;
+    .send_btn{
+        all:unset;
+        position: relative;
+        top: 130px;
+        left: 520px;
+        cursor: pointer;
+    }
+    .inquiry_img{
+        position: relative;
+        left: 1050px;
+        top: -600px;
     }
     /* footer */
     .footer{
@@ -196,13 +164,13 @@
     .display_none{
         display: none;
     }
+    .color_bk{
+        color: black;
+    }
     </style>
 </head>
 <body>
     <div class="all">
-        <img src="./image/배경1.png" alt="" class="main_bg display_none">
-        <img src="./image/배경2.png" alt="" class="main_bg1 display_none">
-        <img src="./image/배경3.png" alt="" class="main_bg2">
         <div class="header marginrl">
             <div class="menu_btn">
                 <img src="./image/메뉴1.png" alt="">
@@ -218,26 +186,20 @@
                     <div>오시는길</div>
                 </div>
             </div>
-            <div class="header_str">ARARIO GALLERY</div>
+            <div class="header_str color_bk">ARARIO GALLERY</div>
             <div class="arario"></div>
         </div>
-        <div class="body">
-            <div class="art art2 art3">ART
-                <div class="art_strs display_none">STORY</div>
-                <div class="art_strs display_none">PIECE</div>
+        <div class="body1">
+            <div class="inquiry_box">
+                <div>이름<input type="text" class="inquiry_input1"></div>
+                <div>전화번호<input type="text" class="inquiry_input"></div>
+                <div>문의이유<input type="text" class="inquiry_input"></div>
+                <div>문의내용<input type="text" class="inquiry_input2"></div>
+                <button class="send_btn">보내기</button>
             </div>
-            <div class="border_wh display_none"></div>
-            <div class="event event2 event3">EVENT</div>
-            <div class="border_wh2 display_none"></div>
-            <div class="exhibition exhibition2 exhibition3">EXHIBITION
-                <div class="art_strs">일정</div>
-                <div class="art_strs">지난전시</div>
-                <div class="exhibition_add">ARTIST CI KIM&nbsp;&nbsp;&nbsp;&nbsp;VOICE OF HAMONY<br>2019.05.23  ~  2019.10.13<br>성인3000원 청소년2000원 </div>
-            </div>
-            <div class="body_str open">OPEN : 11:00</div>
-            <div class="body_str close">CLOSE : 19:00</div>
+            <div class="inquiry_img"><img src="./image/허스트_찬가.png" alt=""></div>
         </div>
-    </div>
+    </div>    
     <div class="footer">
         <div class="footer_str footer_str1">COPYRIGHT@JEONGMIN,KIM  학생 포트폴리오용으로 작업되었습니다.</div>
         <div class="footer_str footer_str2">충남 천안시 동남구 만남로 43 신부동 354-1 아라리오 갤러리</div>

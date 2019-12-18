@@ -37,7 +37,6 @@
         margin-top: 25px;
         margin-left: calc(50% - 113.73px);
         color: white;
-        font-family: HCR Batang;
     }
     .menus{
         position: relative;
@@ -60,79 +59,28 @@
         cursor: pointer;
     }
     /* body */
-    .body{
-        height: 1440px;
-        width: 1600px;
-        position: absolute;
-        top: 80px;
-        left: 0;
-        padding-top: 300PX;
-        display: flex;
-        font-size: 68px;
-        color: white;
-    }
-    .event{
-        margin-left: calc(50% - 421.44px);
-    }
-    .event2{
-        margin-left: calc(50% - 300px);
-        font-size: 42px;
-    }
-    .event3{
-        margin-left: calc(50% - 640px);
-        font-size: 42px;
-    }
-    .art{
-        margin-left: 200px;
-    }
-    .art2{
-        font-size: 92px;
-        margin-left: 460px;
-        margin-top: -150px;
+    .pictures{
         text-align: center;
+
     }
-    .art3{
-        font-size: 42px;
-        margin-top: 0px;
-        margin-left: 110px;
-        font-family: Century Gothic;
+    .picture_box{
+        padding: 120px 300px 0 300px;
     }
-    .art_strs{
-        font-size: 24px;
-        color: #999999;
-        line-height:100px;
-    }
-    .art_strs:last-of-type{
-        line-height:10px;
-    }
-    .exhibition{
-        margin-left: 300px;
-    }
-    .exhibition2{
-        margin-left: 100px;
-        font-size: 42px;
-    }
-    .exhibition3{
-        margin-left: 350px;
-        font-size: 92px;
-        margin-top: -150px;
-        text-align: center;
-    }
-    .exhibition_add{
-        font-size: 16px;
+    .arrow1{
         position: relative;
-        left: 200px;
-        top: 120px;
+        top: -470px;
+        left: 350px;
+        cursor: pointer;
     }
-    .open{
-        position: absolute;
-        top: 660px;
-        right: 50px;
+    .arrow2{
+        position: relative;
+        top: -80px;
+        left: 1200px;
+        cursor: pointer;
     }
-    .close{
-        position: absolute;
-        top: 680px;
-        right: 50px;
+    .pictures>img{
+        width: 709px;
+        height: 473px;
     }
     /* footer */
     .footer{
@@ -196,13 +144,13 @@
     .display_none{
         display: none;
     }
+    .color_bk{
+        color: black;
+    }
     </style>
 </head>
 <body>
     <div class="all">
-        <img src="./image/배경1.png" alt="" class="main_bg display_none">
-        <img src="./image/배경2.png" alt="" class="main_bg1 display_none">
-        <img src="./image/배경3.png" alt="" class="main_bg2">
         <div class="header marginrl">
             <div class="menu_btn">
                 <img src="./image/메뉴1.png" alt="">
@@ -218,26 +166,20 @@
                     <div>오시는길</div>
                 </div>
             </div>
-            <div class="header_str">ARARIO GALLERY</div>
+            <div class="header_str color_bk">ARARIO GALLERY</div>
             <div class="arario"></div>
         </div>
-        <div class="body">
-            <div class="art art2 art3">ART
-                <div class="art_strs display_none">STORY</div>
-                <div class="art_strs display_none">PIECE</div>
+        <div class="body2">
+            <div class="picture_box">
+                <div class="pictures"><img src="./image/1.jpg" alt=""></div>
+                <div class="pictures display_none"><img src="./image/2.jpg" alt=""></div>
+                <div class="pictures display_none"><img src="./image/3.jpg" alt=""></div>
+                <div class="pictures display_none"><img src="./image/4.jpg" alt=""></div>
             </div>
-            <div class="border_wh display_none"></div>
-            <div class="event event2 event3">EVENT</div>
-            <div class="border_wh2 display_none"></div>
-            <div class="exhibition exhibition2 exhibition3">EXHIBITION
-                <div class="art_strs">일정</div>
-                <div class="art_strs">지난전시</div>
-                <div class="exhibition_add">ARTIST CI KIM&nbsp;&nbsp;&nbsp;&nbsp;VOICE OF HAMONY<br>2019.05.23  ~  2019.10.13<br>성인3000원 청소년2000원 </div>
-            </div>
-            <div class="body_str open">OPEN : 11:00</div>
-            <div class="body_str close">CLOSE : 19:00</div>
+            <div class="arrow1"><img src="./image/화살표1.png" alt=""></div>
+            <div class="arrow2"><img src="./image/화살표2.png" alt=""></div>
         </div>
-    </div>
+    </div>    
     <div class="footer">
         <div class="footer_str footer_str1">COPYRIGHT@JEONGMIN,KIM  학생 포트폴리오용으로 작업되었습니다.</div>
         <div class="footer_str footer_str2">충남 천안시 동남구 만남로 43 신부동 354-1 아라리오 갤러리</div>
