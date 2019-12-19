@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="../js/jquery.min.js"></script>
+    <script src="메인페이지.js"></script>
+    <style>
+    *{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    .all{
+        height: 3315px;
+        width: 1600px;
+        position: relative;
+        overflow: hidden;
+    }
+    /* header */
+    .header{
+        height: 80px;
+        width: 1600px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+    }
+    .menu_btn{
+        position: relative;
+        margin: 21px 0 0 0px;
+    }
+    .header_str{
+        position: absolute;
+        margin-top: 25px;
+        margin-left: calc(50% - 113.73px);
+        color: white;
+    }
+    .menus{
+        position: relative;
+        top: -42px;
+        background-color: #aaaea6;
+        width: 290px;
+        height: 600px;
+        opacity: 0.7;
+        z-index: 9;
+    }
+    .menus_str{
+        position: absolute;
+        top: -42px;
+        text-align: center;
+        width: 290px;
+        height: 600px;
+        line-height: 55px;
+        padding-top: 150px;
+        z-index: 19;
+        cursor: pointer;
+    }
+    /* body */
+    .exhibited_box1{
+        padding: 280px 0 0 50px;
+    }
+    .exhibited_box2{
+        padding: 155px 50px 0 0;
+    }
+    .exhibited_img1{
+        position: absolute;
+        top: 280px;
+        left: 1160px;
+        opacity: 0.7;
+    }
+    .exhibited_img2{
+        float: right;
+    }
+    .exhibited_img3{
+       position: absolute;
+       top: 1237px;
+       left: -560px;
+       opacity: 0.7;
+    }
+    .exhibited_img4{
+        position: absolute;
+        top: 2170px;
+        left: 1160px;
+        opacity: 0.7;
+    }
+    .exhibited_strs1{
+        line-height: 52px;
+        margin-top: 30px;
+    }
+    .exhibited_strs2{
+        line-height: 52px;
+        margin-top: 30px;
+        float: right;
+        text-align: right;
+    }
+    .exhibited_str1{
+        font-family: Nanum Gothic;
+        font-size: 32px;
+        color: #4a4a4a;
+        font-weight: bold;
+    }
+    .exhibited_str2{
+        font-family: Century Gothic;
+        font-size: 24px;
+        color: #474747;
+        font-weight: 500;
+    }
+    .exhibited_str3{
+        font-weight: bold;
+        font-size: 24px;
+        color:#4a4a4a;
+        font-family: NanumGothic;
+    }
+    /* footer */
+    .footer{
+        height: 80px;
+        width: 1600px;
+        background-color: black;
+        display: flex;  
+        padding: 35px 50px 35px 50px;
+        position: relative;
+    }
+    .footer_str{
+        color: white;
+        font-size: 10px;
+    }
+    .footer_str2{
+        margin-left: 470px;
+        font-size: 12px;
+    }
+    .footer_str3{
+        margin-left: 25px;
+        font-size: 12px;
+    }
+    .footer_img1{
+        position: absolute;
+        top: 22px;
+        right: 140px;
+    }
+    .footer_img2{
+        position: absolute;
+        top: 21px;
+        right: 90px;
+    }
+    .footer_img3{
+        position: absolute;
+        top: 15px;
+        right: 40px;
+    }
+    .marginrl{
+        margin: 0 50px 0 50px;
+    }
+    .border_wh{
+        width: 0.5px;
+        height: 50px;
+        border: 0.5px solid white;
+        margin-top: 24px;
+        position: absolute;
+        margin-left: 30%;
+    }
+    .border_wh2{
+        width: 0.5px;
+        height: 50px;
+        border: 0.5px solid white;
+        margin-top: 24px;
+        position: absolute;
+        margin-left: 70%;
+    }
+    .body_str{
+        font-size: 15px;
+
+    }
+    .display_none{
+        display: none;
+    }
+    .color_bk{
+        color: black;
+    }
+    .exhibited_img>img{
+        width: 1000px;
+        height: 660px;
+    }
+    .marginh{
+        margin-top: 130px;
+    }
+    .exhibited_page_number{
+        font-size: 24px;
+        text-align: center;
+        margin-top: 120px;
+    }
+    .red{
+        color: red;
+    }
+    </style>
+</head>
+<body>
+    <div class="all">
+        <div class="header marginrl">
+            <div class="menu_btn">
+                <img src="./image/메뉴1.png" alt="">
+                <div class="menus display_none"></div>
+                <div class="menus_str display_none">
+                    <div>STORY</div>
+                    <div>PIECE</div>
+                    <div>EVENT</div>
+                    <div>일정</div>
+                    <div>지난전시</div>
+                    <div>문의</div>
+                    <div>시설 및 안내</div>
+                    <div>오시는길</div>
+                </div>
+            </div>
+            <div class="header_str color_bk">ARARIO GALLERY</div>
+            <div class="arario"></div>
+        </div>
+        <div class="body">
+            <div class="exhibited_box1">
+                <div class="exhibited_img"><img src="./image/지난전시1.jpg" alt=""></div>
+                <div class="exhibited_img exhibited_img1"><img src="./image/지난전시2.jpg" alt=""></div>
+                <div class="exhibited_strs1">
+                    <div class="exhibited_str1"><span class="exhibited_str2">K.K</span>&nbsp;&nbsp;I DRAW: 그리는 것보다 멋진 건 없어</div>
+                    <div class="exhibited_str3">2019.01.15 ~ 2019.05.05</div>
+                </div> 
+            </div>
+            <div class="exhibited_box2">
+                <div class="exhibited_img exhibited_img2"><img src="./image/지난전시3.jpg" alt=""></div>
+                <div class="exhibited_img exhibited_img3"><img src="./image/지난전시4.jpg" alt=""></div>
+                <div class="exhibited_strs2">
+                    <div class="exhibited_str1"><span class="exhibited_str2">AHN,</span>&nbsp;&nbsp;CHANG HONG  Heart of the Artist</div>
+                    <div class="exhibited_str3">2018.08.23 ~ 2019.01.03</div>
+                </div> 
+            </div>
+            <div class="exhibited_box1">
+                <div class="exhibited_img"><img src="./image/지난전시1.jpg" alt="" class="marginh"></div>
+                <div class="exhibited_img exhibited_img4"><img src="./image/지난전시2.jpg" alt=""></div>
+                <div class="exhibited_strs1">
+                    <div class="exhibited_str1"><span class="exhibited_str2">Haesun JWA</span>&nbsp;&nbsp;The Most Ordinary Stories</div>
+                    <div class="exhibited_str3">2018.03.15 ~ 2018.08.02</div>
+                </div> 
+            </div>
+            <div class="exhibited_page_number"><span class="page_number red">1</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="page_number">2</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="page_number">3</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="page_number">4</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="page_number">5</span>&nbsp;&nbsp;&nbsp;&nbsp;>&nbsp;&nbsp;>></div>
+        </div>
+    </div>    
+    <div class="footer">
+        <div class="footer_str footer_str1">COPYRIGHT@JEONGMIN,KIM  학생 포트폴리오용으로 작업되었습니다.</div>
+        <div class="footer_str footer_str2">충남 천안시 동남구 만남로 43 신부동 354-1 아라리오 갤러리</div>
+        <div class="footer_str footer_str3">T : 041-551-5100&nbsp;&nbsp;&nbsp; kakao : arario123</div>
+        <div class="footer_img1"><img src="./image/인스타.png" alt=""></div>
+        <div class="footer_img2"><img src="./image/페북.png" alt=""></div>
+        <div class="footer_img3"><img src="./image/트위터.png" alt=""></div>
+    </div>
+</body>
+</html>

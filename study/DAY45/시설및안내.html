@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="../js/jquery.min.js"></script>
+    <script src="메인페이지.js"></script>
+    <style>
+    *{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    .all{
+        height: 2900px;
+        width: 1600px;
+        position: relative;
+        overflow: hidden;
+    }
+    /* header */
+    .header{
+        height: 80px;
+        width: 1600px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+    }
+    .menu_btn{
+        position: relative;
+        margin: 21px 0 0 0px;
+    }
+    .header_str{
+        position: absolute;
+        margin-top: 25px;
+        margin-left: calc(50% - 113.73px);
+        color: white;
+    }
+    .menus{
+        position: relative;
+        top: -42px;
+        background-color: #aaaea6;
+        width: 290px;
+        height: 600px;
+        opacity: 0.7;
+        z-index: 9;
+    }
+    .menus_str{
+        position: absolute;
+        top: -42px;
+        text-align: center;
+        width: 290px;
+        height: 600px;
+        line-height: 55px;
+        padding-top: 150px;
+        z-index: 19;
+        cursor: pointer;
+    }
+    /* body */
+    .guide_box1{
+        display: flex;
+        padding: 270px 0 0 175px;
+    }
+    .guide_box2{
+        padding: 230px 0 0 50px;
+        position: relative;
+    }
+    .guide_box3{
+        padding: 700px 0 0 50px;
+        display: flex;
+    }
+    .guide_str{
+       font-family: NanumGothic;
+       font-size: 24px;
+       text-align: start;
+       line-height: 60px;
+       margin-left: 150px;
+       margin-top: 80px;
+    }
+    .guide_box2_strbox{
+        width: 885px;
+        height: 410px;
+        background-color: black;
+        opacity: 0.9;
+        position: absolute;
+        top: 1450px;
+        left: 600px;
+    }
+    .guide_box2_str{
+        width: 885px;
+        height: 410px;
+        position: absolute;
+        top: 1500px;
+        left: 600px;
+        text-align: center;
+        color: #e5e3e3;
+        font-family: NanumGothic;
+        font-size: 20px;
+        line-height: 54px;
+    }
+    .guide_box3_str{
+        margin-top: -100px;
+        margin-left: 50px;
+        font-family: NanumGothic;
+        font-size: 20px;
+        line-height: 42px;
+        text-align: right;
+    }
+    .guide_img1{
+        position: absolute;
+        left: 1200px;
+        top: 700px;
+    }
+    .guide_img2{
+        position: absolute;
+        left: 1250px;
+        top: 2680px;
+    }
+    /* footer */
+    .footer{
+        height: 80px;
+        width: 1600px;
+        background-color: black;
+        display: flex;  
+        padding: 35px 50px 35px 50px;
+        position: relative;
+    }
+    .footer_str{
+        color: white;
+        font-size: 10px;
+    }
+    .footer_str2{
+        margin-left: 470px;
+        font-size: 12px;
+    }
+    .footer_str3{
+        margin-left: 25px;
+        font-size: 12px;
+    }
+    .footer_img1{
+        position: absolute;
+        top: 22px;
+        right: 140px;
+    }
+    .footer_img2{
+        position: absolute;
+        top: 21px;
+        right: 90px;
+    }
+    .footer_img3{
+        position: absolute;
+        top: 15px;
+        right: 40px;
+    }
+    .marginrl{
+        margin: 0 50px 0 50px;
+    }
+    .border{
+        font-weight: bold;
+    }
+    .border_wh{
+        width: 0.5px;
+        height: 50px;
+        border: 0.5px solid white;
+        margin-top: 24px;
+        position: absolute;
+        margin-left: 30%;
+    }
+    .border_wh2{
+        width: 0.5px;
+        height: 50px;
+        border: 0.5px solid white;
+        margin-top: 24px;
+        position: absolute;
+        margin-left: 70%;
+    }
+    .body_str{
+        font-size: 15px;
+
+    }
+    .display_none{
+        display: none;
+    }
+    .color_bk{
+        color: black;
+    }
+    </style>
+</head>
+<body>
+    <div class="all">
+        <div class="header marginrl">
+            <div class="menu_btn">
+                <img src="./image/메뉴1.png" alt="">
+                <div class="menus display_none"></div>
+                <div class="menus_str display_none">
+                    <div>STORY</div>
+                    <div>PIECE</div>
+                    <div>EVENT</div>
+                    <div>일정</div>
+                    <div>지난전시</div>
+                    <div>문의</div>
+                    <div>시설 및 안내</div>
+                    <div>오시는길</div>
+                </div>
+            </div>
+            <div class="header_str color_bk">ARARIO GALLERY</div>
+            <div class="arario"></div>
+        </div>
+        <div class="body">
+            <div class="guide_box1">
+                <div class="guide_img"><img src="./image/시설및안내사진1.png" alt=""></div>
+                <div class="guide_str"><span class="border">입장권</span><br> 성인 3000원<br> 청소년 2000원<br> 단체예매 현장구매<br> 단체 문의 T:041-551-5100 </div>
+            </div>
+            <div class="guide_box2"><img src="./image/시설및안내사진3.png" alt=""></div>
+            <div class="guide_box2_strbox"></div>
+            <div class="guide_box2_str">아라리오갤러리는<br>(주)아라리오 창업주인 씨킴(CI Kim)에 의해서 1989년 창립되었습니다.<br>
+                2002년 아라리오 갤러리 천안 지점을 현재의 공간에 재개관한 이래<br>
+                아라리오 갤러리는 아시아를 대표하는 갤러리로서<br>
+                서울에 2개, 천안에 1개, 중국 상하이에 1개로 총 4개의 갤러리를 운영하고 있습니다.
+            </div>
+            <div class="guide_box3"><img src="./image/시설및안내사진4.png" alt="">
+                <div class="guide_box3_str">김창일 회장의 예술에 대한 열정을 그대로 느낄 수 있는 아라리오갤러리 천안은 
+                    세계 각지의<br>다양한 현대미술을 국내에 알리는 데 앞장 서 왔습니다. 2002년 미국의 대표적인 팝 아티스트<br>
+                    키스 해링의 개인전, 2004년 떠오르는 독일작가 시그미 폴케 개인전과 더불어,2005년 독일<br>
+                    희화시의 공고한 전통을 잇는 라이프치히학파 예술가들의 단체전,2007년 극사실주의 초상으로<br>
+                    유명한 강형구 개인전,2010년 동남아 지역의 뜨거운 현대미술 현장을 소개한 단체전,<br>
+                    2011년 중국의 신진작자 단체전 등 양질의 전시기획을 통하여 지역문화발전에<br>
+                    이바지 했을 뿐 아니라 국내 미술계의 비전을 확장시키는 데 기여해 왔습니다. <br>
+                    이제 아라리오 갤러리 천안은 보다 많은 대중이 미술의 즐거움을<br>
+                    향유할 수 있도록 다양한 문화 프로그램을 기획합니다.    
+                </div>
+            </div>
+            <div class="guide_img1"><img src="./image/시설및안내모형1.png" alt=""></div>
+            <div class="guide_img2"><img src="./image/시설및안내모형2.png" alt=""></div>
+        </div>
+    </div>    
+    <div class="footer">
+        <div class="footer_str footer_str1">COPYRIGHT@JEONGMIN,KIM  학생 포트폴리오용으로 작업되었습니다.</div>
+        <div class="footer_str footer_str2">충남 천안시 동남구 만남로 43 신부동 354-1 아라리오 갤러리</div>
+        <div class="footer_str footer_str3">T : 041-551-5100&nbsp;&nbsp;&nbsp; kakao : arario123</div>
+        <div class="footer_img1"><img src="./image/인스타.png" alt=""></div>
+        <div class="footer_img2"><img src="./image/페북.png" alt=""></div>
+        <div class="footer_img3"><img src="./image/트위터.png" alt=""></div>
+    </div>
+</body>
+</html>
