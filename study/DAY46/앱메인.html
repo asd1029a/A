@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="../js/jquery.min.js"></script>
+    <script src="메인페이지.js"></script>
+    <style>
+    *{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    .all{
+        height: 2960px;
+        width: 1440px;
+        position: relative;
+        overflow: hidden;
+    }
+    /* header */
+    .header{
+        height: 180px;
+        width: 1440px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+    }
+    .menu_btn{
+        position: absolute;
+        margin: 35px 0 0 35px;
+    }
+    .menu_btn>img{
+        width: 105px;
+        height: 105px;
+    }
+    .header_str{
+        margin: 65px auto;
+        color: white;
+        font-family: Century Gothic;
+        font-size: 48px;
+    }
+    .menus{
+        position: relative;
+        top: -42px;
+        background-color: #aaaea6;
+        width: 290px;
+        height: 600px;
+        opacity: 0.7;
+        z-index: 9;
+    }
+    .menus_str{
+        position: absolute;
+        top: -42px;
+        text-align: center;
+        width: 290px;
+        height: 600px;
+        line-height: 55px;
+        padding-top: 150px;
+        z-index: 19;
+        cursor: pointer;
+    }
+    /* body */
+    .body{
+        height: 2960px;
+        width: 1440px;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        padding-top: 300PX;
+        font-size: 68px;
+        color: white;
+    }
+    .event{
+        margin: 0 auto;
+    }
+    .event2{
+        margin: 0 auto;
+        font-size: 42px;
+    }
+    .event3{
+        margin: 0 auto;
+        font-size: 42px;
+    }
+    .art{
+        margin: 0 auto;
+    }
+    .art2{
+        font-size: 92px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .art3{
+        font-size: 42px;
+        margin: 0 auto;
+        font-family: Century Gothic;
+    }
+    .art_strs{
+        font-size: 24px;
+        color: #999999;
+        line-height:100px;
+    }
+    .art_strs:last-of-type{
+        line-height:10px;
+    }
+    .exhibition{
+        margin: 0 auto;
+    }
+    .exhibition2{
+        margin: 0 auto;
+        font-size: 42px;
+    }
+    .exhibition3{
+        margin: 0 auto;
+        font-size: 92px;
+        margin-top: -150px;
+        text-align: center;
+    }
+    .exhibition_add{
+        font-size: 16px;
+        position: relative;
+        left: 200px;
+        top: 120px;
+    }
+    .open{
+        position: absolute;
+        top: 660px;
+        right: 50px;
+    }
+    .close{
+        position: absolute;
+        top: 680px;
+        right: 50px;
+    }
+    /* footer */
+    .footer{
+        height: 100px;
+        width: 1440px;
+        background-color: black; 
+        position: relative;
+        overflow: hidden;
+    }
+    .footer_str{
+        color: white;
+        font-family: NanumGothic;
+    }
+    .footer_str1{
+        font-size: 20px;
+        position: absolute;
+        top: 70px;
+        left: 13px;
+    }
+    .footer_str2{
+        font-size: 24px;
+        position: absolute;
+        top: 24px;
+        left: 200px;
+    }
+    .footer_str3{
+        font-size: 24px;
+        position: absolute;
+        top: 24px;
+        left: 914px;
+    }
+    .footer_str4{
+        font-size: 24px;
+        position: absolute;
+        top: 70px;
+        left: 914px;
+    }
+    .footer_img1{
+        position: absolute;
+        top: 12px;
+        right: 200px;
+    }
+    .footer_img1>img{
+        width: 75px;
+        height: 75px;
+    }
+    .footer_img2{
+        position: absolute;
+        top: 12px;
+        right: 105px;
+    }
+    .footer_img2>img{
+        width: 75px;
+        height: 75px;
+    }
+    .footer_img3{
+        position: absolute;
+        top: 8px;
+        right: 13px;
+    }
+    .footer_img3>img{
+        width: 75px;
+        height: 80px;
+    }
+    .marginrl{
+        margin: 0 50px 0 50px;
+    }
+    .border_wh{
+        width: 0.5px;
+        height: 50px;
+        border: 0.5px solid white;
+        margin-top: 24px;
+        position: absolute;
+        margin-left: 30%;
+    }
+    .border_wh2{
+        width: 0.5px;
+        height: 50px;
+        border: 0.5px solid white;
+        margin-top: 24px;
+        position: absolute;
+        margin-left: 70%;
+    }
+    .body_str{
+        font-size: 15px;
+
+    }
+    .display_none{
+        display: none;
+    }
+    </style>
+</head>
+<body>
+    <div class="all">
+        <img src="./image/앱배경3.png" alt="" class="main_bg display_none">
+        <img src="./image/앱배경2.png" alt="" class="main_bg1 display_none">
+        <img src="./image/앱배경1.png" alt="" class="main_bg2">
+        <div class="header">
+            <div class="menu_btn">
+                <img src="./image/메뉴1.png" alt="">
+                <div class="menus display_none"></div>
+                <div class="menus_str display_none">
+                    <div>STORY</div>
+                    <div>PIECE</div>
+                    <div>EVENT</div>
+                    <div>일정</div>
+                    <div>지난전시</div>
+                    <div>문의</div>
+                    <div>시설 및 안내</div>
+                    <div>오시는길</div>
+                </div>
+            </div>
+            <div class="header_str">ARARIO GALLERY</div>
+        </div>
+        <div class="body">
+            <div class="art art2 art3">ART
+                <div class="art_strs display_none">STORY</div>
+                <div class="art_strs display_none">PIECE</div>
+            </div>
+            <div class="border_wh display_none"></div>
+            <div class="event event2 event3">EVENT</div>
+            <div class="border_wh2 display_none"></div>
+            <div class="exhibition exhibition2 exhibition3">EXHIBITION
+                <div class="art_strs">일정</div>
+                <div class="art_strs">지난전시</div>
+                <div class="exhibition_add">ARTIST CI KIM&nbsp;&nbsp;&nbsp;&nbsp;VOICE OF HAMONY<br>2019.05.23  ~  2019.10.13<br>성인3000원 청소년2000원 </div>
+            </div>
+            <div class="body_str open">OPEN : 11:00</div>
+            <div class="body_str close">CLOSE : 19:00</div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer_str footer_str1">COPYRIGHT@JEONGMIN,KIM  학생 포트폴리오용으로 작업되었습니다.</div>
+        <div class="footer_str footer_str2">충남 천안시 동남구 만남로 43 신부동 354-1 아라리오 갤러리</div>
+        <div class="footer_str footer_str3">T : 041-551-5100</div>
+        <div class="footer_str footer_str4">kakao : arario123</div>
+        <div class="footer_img1"><img src="./image/인스타.png" alt=""></div>
+        <div class="footer_img2"><img src="./image/페북.png" alt=""></div>
+        <div class="footer_img3"><img src="./image/트위터.png" alt=""></div>
+    </div>
+</body>
+</html>
