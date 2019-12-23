@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+    $(function(){
+        $('.menu_btn').click(function(){
+            $('.click_box').toggleClass('display_none')
+        })
+    })
+    </script>
+    <style>
+    *{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    .menu{
+        height: 100px;
+        width: 100vw;
+        display: flex;
+    }
+    .menu_btn{
+        all:unset;
+        width: 96px;
+        height: 96px;
+        background-color: gray;
+        margin: 2px;
+    }
+    .menus{
+        width: calc(100% - 98px);
+        height: 100px;
+        background-color: gray;
+    }
+    .btn_line1{
+        width: 60px;
+        height: 10px;
+        background-color: black;
+        border-radius: 3px;
+        margin: 10px auto 15px;
+    }
+    .btn_line2{
+        width: 60px;
+        height: 10px;
+        background-color: black;
+        border-radius: 3px;
+        margin: 0 auto;
+    }
+    .btn_line3{
+        width: 60px;
+        height: 10px;
+        background-color: black;
+        border-radius: 3px;
+        margin: 15px auto ;
+    }
+    .click_box{
+        height: calc(100vh - 100px);
+        width: 400px;
+        background-color: teal;
+    }
+    .display_none{
+        display: none;
+    }
+    </style>
+</head>
+<body>
+    <div class="menu">
+        <button class="menu_btn">
+            <div class="btn_line1"></div>
+            <div class="btn_line2"></div>
+            <div class="btn_line3"></div>
+        </button>
+        <div class="menus"></div>
+    </div>
+    <div class="click_box display_none"></div>
+</body>
+</html>
