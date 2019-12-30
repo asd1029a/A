@@ -1,87 +1,87 @@
 $(function(){
-    $('.menu_btn').click(function(){
-        $('.menus').slideToggle('slow')
-        $('.menus_str').slideToggle('slow')
+    $('.menu_btnm').click(function(){
+        $('.menusm').slideToggle('slow')
+        $('.menus_strm').slideToggle('slow')
     })
-    $('.arrow1').click(function(){
-        $('.pictures').eq(0).removeClass('.display_none')
+    $('.arrow1m').click(function(){
+        $('.picturesm').eq(0).removeClass('.display_none')
     })
-    $('.exhibitions').click(function(){
-        $('.art').addClass('display_none')
-        $('.art2').addClass('display_none')
-        $('.event').addClass('display_none')
-        $('.event2').addClass('display_none')
-        $('.exhibition').addClass('display_none')
-        $('.exhibition2').addClass('display_none')
-        $('.main_bg').addClass('display_none')
-        $('.main_bg1').addClass('display_none')
-        $('.art3').removeClass('display_none')
-        $('.event3').removeClass('display_none')
-        $('.exhibition3').removeClass('display_none')
-        $('.main_bg2').removeClass('display_none')
-        $('.all_img').vegas('jump', 2);
-        $('.all_img').vegas('pause');
-        $('.art2').animate({opacity:0})
-        $('.event2').animate({opacity:0})
-        $('.exhibition2').animate({opacity:0})
-        $('.art').animate({opacity:0})
-        $('.event').animate({opacity:0})
-        $('.exhibition').animate({opacity:0})
-        $('.art3').animate({opacity:1},3000)
-        $('.event3').animate({opacity:1},3000)
-        $('.exhibition3').animate({opacity:1},3000)
+    $('.exhibitionsm').click(function(){
+        $('.artm').addClass('display_none')
+        $('.art2m').addClass('display_none')
+        $('.eventm').addClass('display_none')
+        $('.event2m').addClass('display_none')
+        $('.exhibitionm').addClass('display_none')
+        $('.exhibition2m').addClass('display_none')
+        $('.main_bgm').addClass('display_none')
+        $('.main_bg1m').addClass('display_none')
+        $('.art3m').removeClass('display_none')
+        $('.event3m').removeClass('display_none')
+        $('.exhibition3m').removeClass('display_none')
+        $('.main_bg2m').removeClass('display_none')
+        $('.all_imgm').vegas('jump', 2);
+        $('.all_imgm').vegas('pause');
+        $('.art2m').animate({opacity:0})
+        $('.event2m').animate({opacity:0})
+        $('.exhibition2m').animate({opacity:0})
+        $('.artm').animate({opacity:0})
+        $('.eventm').animate({opacity:0})
+        $('.exhibitionm').animate({opacity:0})
+        $('.art3m').animate({opacity:1},3000)
+        $('.event3m').animate({opacity:1},3000)
+        $('.exhibition3m').animate({opacity:1},3000)
     })
-    $('.arts').click(function(){
-        $('.art2').addClass('display_none')
-        $('.art3').addClass('display_none')
-        $('.event2').addClass('display_none')
-        $('.event3').addClass('display_none')
-        $('.exhibition2').addClass('display_none')
-        $('.exhibition3').addClass('display_none')
-        $('.main_bg').addClass('display_none')
-        $('.main_bg2').addClass('display_none')
-        $('.main_bg1').removeClass('display_none')
-        $('.art').removeClass('display_none')
-        $('.event').removeClass('display_none')
-        $('.exhibition').removeClass('display_none')
-        $('.all_img').vegas('jump', 1);
-        $('.all_img').vegas('pause');
-        $('.art2').animate({opacity:0})
-        $('.event2').animate({opacity:0})
-        $('.exhibition2').animate({opacity:0})
-        $('.art').animate({opacity:1},3000)
-        $('.event').animate({opacity:1},3000)
-        $('.exhibition').animate({opacity:1},3000)
-        $('.art3').animate({opacity:0})
-        $('.event3').animate({opacity:0})
-        $('.exhibition3').animate({opacity:0})
+    $('.artsm').click(function(){
+        $('.art2m').addClass('display_none')
+        $('.art3m').addClass('display_none')
+        $('.event2m').addClass('display_none')
+        $('.event3m').addClass('display_none')
+        $('.exhibition2m').addClass('display_none')
+        $('.exhibition3m').addClass('display_none')
+        $('.main_bgm').addClass('display_none')
+        $('.main_bg2m').addClass('display_none')
+        $('.main_bg1m').removeClass('display_none')
+        $('.artm').removeClass('display_none')
+        $('.eventm').removeClass('display_none')
+        $('.exhibitionm').removeClass('display_none')
+        $('.all_imgm').vegas('jump', 1);
+        $('.all_imgm').vegas('pause');
+        $('.art2m').animate({opacity:0})
+        $('.event2m').animate({opacity:0})
+        $('.exhibition2m').animate({opacity:0})
+        $('.artm').animate({opacity:1},3000)
+        $('.eventm').animate({opacity:1},3000)
+        $('.exhibitionm').animate({opacity:1},3000)
+        $('.art3m').animate({opacity:0})
+        $('.event3m').animate({opacity:0})
+        $('.exhibition3m').animate({opacity:0})
     })
-    $('.events').click(function(){
-        $('.art').addClass('display_none')
-        $('.art3').addClass('display_none')
-        $('.event').addClass('display_none')
-        $('.event3').addClass('display_none')
-        $('.exhibition').addClass('display_none')
-        $('.exhibition3').addClass('display_none')
-        $('.main_bg').removeClass('display_none')
-        $('.main_bg2').addClass('display_none')
-        $('.main_bg1').addClass('display_none')
-        $('.art2').removeClass('display_none')
-        $('.event2').removeClass('display_none')
-        $('.exhibition2').removeClass('display_none')
-        $('.all_img').vegas('jump', 0);
-        $('.all_img').vegas('pause');
-        $('.art2').animate({opacity:1},3000)
-        $('.event2').animate({opacity:1},3000)
-        $('.exhibition2').animate({opacity:1},3000)
-        $('.art').animate({opacity:0})
-        $('.event').animate({opacity:0})
-        $('.exhibition').animate({opacity:0})
-        $('.art3').animate({opacity:0})
-        $('.event3').animate({opacity:0})
-        $('.exhibition3').animate({opacity:0})
+    $('.eventsm').click(function(){
+        $('.artm').addClass('display_none')
+        $('.art3m').addClass('display_none')
+        $('.eventm').addClass('display_none')
+        $('.event3m').addClass('display_none')
+        $('.exhibitionm').addClass('display_none')
+        $('.exhibition3m').addClass('display_none')
+        $('.main_bgm').removeClass('display_none')
+        $('.main_bg2m').addClass('display_none')
+        $('.main_bg1m').addClass('display_none')
+        $('.art2m').removeClass('display_none')
+        $('.event2m').removeClass('display_none')
+        $('.exhibition2m').removeClass('display_none')
+        $('.all_imgm').vegas('jump', 0);
+        $('.all_imgm').vegas('pause');
+        $('.art2m').animate({opacity:1},3000)
+        $('.event2m').animate({opacity:1},3000)
+        $('.exhibition2m').animate({opacity:1},3000)
+        $('.artm').animate({opacity:0})
+        $('.eventm').animate({opacity:0})
+        $('.exhibitionm').animate({opacity:0})
+        $('.art3m').animate({opacity:0})
+        $('.event3m').animate({opacity:0})
+        $('.exhibition3m').animate({opacity:0})
     })
-    $('.all_img').vegas({
+    $('.all_imgm').vegas({
         loop:false,
         animationDuration:2000,
         transitionDuration:500,
@@ -92,5 +92,5 @@ $(function(){
         ],
         animation: 'kenburns'
     });
-    $('.all_img').vegas('pause');
+    $('.all_imgm').vegas('pause');
 })
