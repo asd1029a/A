@@ -1,0 +1,176 @@
+<!doctype html>
+<html>
+	<head>
+		<title>정보처리산업기사실기시험</title>
+		<meta charset="utf-8"> 
+		<style>
+		*{
+			margin:0px;
+			padding:0px;
+		}
+		a{
+			text-decoration:none;
+			color:white;
+		}
+		table,th,td{
+			border:1px solid black;
+			border-collapse:collapse;
+		}
+		body{
+			background-color:#cdcdcd;
+		}
+		/*header*/
+		.header{
+			background-color:blue;
+			color:white;
+			text-align:center;
+			padding:20px 0;
+		}
+		/*nav*/
+		.nav{
+			background-color:#77ff;
+			padding:20px 30px;
+		}
+		.nav ul li{
+			display:inline;
+			color:white;
+			padding:0 20px;
+		}
+		/*section*/
+		.section_main{
+			text-align:center;
+			margin-top:30px;
+			margin-bottom:30px;
+		}
+		.section_ol{
+			margin-left:30px;
+		}
+		section p{
+			margin-left:10px;
+		}
+		/*footer*/
+		.footer{
+			position:absolute;
+			bottom:0;
+			padding:20px 0;
+			width:100%;
+			height:30px;
+			font-size:20px;
+			text-align:center;
+			background-color:#27ff;
+		}
+		/*new.html*/
+		.section_new{
+			margin:0 auto;
+			width:80%;
+		}
+		.section_new tr th{
+			text-align:center;
+		}
+		.input_1{
+			width:60%;
+		}
+		.input_2{
+			width:70%;
+		}
+		.new_buttons{
+			text-align:center;
+		}
+		.new_button1{
+			width:60px;
+			height:25px;
+		}
+		</style>
+		<script>
+		function inputs(){
+			if(myform.new_name.value == ""){
+				alert("이름을 입력하세요.");
+				myform.new_name.focus();
+				return false;
+			}
+			if(myform.new_tell.value == ""){
+				alert("전화번호를 입력하세요.");
+				myform.new_tell.focus();
+				return false;
+			}
+			if(myform.new_address.value == ""){
+				alert("주소를 입력하세요.");
+				myform.new_address.focus();
+				return false;
+			}
+			if(myform.new_day.value == ""){
+				alert("날짜를 입력해주세요.");
+				myform.new_day.focus();
+				return false;
+			}
+			if(myform.new_level.value == ""){
+				alert("등급을 입력해주세요.");
+				myform.new_level.focus();
+				return false;
+			}
+			if(myform.new_code.value == ""){
+				alert("코드를 입력해주세요.");
+				myform.new_code.focus();
+				return false;
+			}
+		}
+		</script>
+	</head>
+	<body>
+		<header class="header">
+			<h1>쇼핑몰 회원관리 ver 1.0</h1>
+		</header>
+		<nav class="nav">
+			<ul>
+				<li><a href="new.html">회원등록</a></li>
+				<li><a href="check.html">회원목록조회/수정</a></li>
+				<li><a href="newcheck.html">회원매출조회</a></li>
+				<li><a href="index.html">홈으로.</a></li>
+			</ul>
+		</nav>
+		<section>
+			<h2 class="section_main">홈쇼핑 회원 등록</h2>
+			<form name="myform" action="home.jsp" method="post" onsubmit="return inputs();">
+			<table class="section_new">
+				<tr>
+					<th>회원번호(자동발생)</th>
+					<td><input type="text" name="number"></td>
+				</tr>
+				<tr>
+					<th>회원성명</th>
+					<td><input type="text" name="new_name"></td>
+				</tr>
+				<tr>
+					<th>회원전화</th>
+					<td><input class="input_1" type="text" name="new_tell"></td>
+				</tr>
+				<tr>
+					<th>회원주소</th>
+					<td><input class="input_2" type="text" name="new_address"></td>
+				</tr>
+				<tr>
+					<th>가입일자</th>
+					<td><input type="text" name="new_day"></td>
+				</tr>
+				<tr>
+					<th>고객등급(A:VIP,B:일반,C:직원)</th>
+					<td><input type="text" name="new_level"></td>
+				</tr>
+				<tr>
+					<th>도시코드</th>
+					<td><input type="text" name="new_code"></td>
+				</tr>
+				<tr>
+					<td colspan="2" class="new_buttons">
+						<input class="new_button1" type="submit" value="등 록">
+						<input class="new_button1" type="button" value="조 회" onclick="location.href='check.html';">
+					</td>
+				</tr>
+			<table>
+		</form>
+		</section>
+		<footer>
+			<div class="footer">HRDKOREA Copyright&copy;2016 All rights reserved. Human Resources Development Service of Korea.</div>
+		</footer>
+	</body>
+</html>
